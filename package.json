@@ -1,0 +1,45 @@
+{
+  "name": "@tsonic/core",
+  "version": "0.1.0",
+  "description": "Core type definitions for Tsonic - TypeScript to native compiler",
+  "type": "module",
+  "exports": {
+    "./types.js": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/types.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "dotnet",
+    "clr",
+    "runtime",
+    "primitives",
+    "interop",
+    "csharp",
+    "tsonic"
+  ],
+  "author": "Tsonic Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsoniclang/core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tsoniclang/core/issues"
+  },
+  "homepage": "https://github.com/tsoniclang/core#readme",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
