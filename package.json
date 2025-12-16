@@ -1,18 +1,8 @@
 {
   "name": "@tsonic/core",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Core type definitions for Tsonic - TypeScript to native compiler",
   "type": "module",
-  "exports": {
-    "./types.js": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/types.js"
-    }
-  },
-  "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
-  },
   "keywords": [
     "typescript",
     "dotnet",
@@ -32,8 +22,5 @@
   "bugs": {
     "url": "https://github.com/tsoniclang/core/issues"
   },
-  "homepage": "https://github.com/tsoniclang/core#readme",
-  "devDependencies": {
-    "typescript": "^5.7.2"
-  }
+  "homepage": "https://github.com/tsoniclang/core#readme"
 }
