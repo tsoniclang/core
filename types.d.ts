@@ -55,3 +55,44 @@ export type ptr<T> = unknown;
 // NOTE: ref<T>, out<T>, In<T> have been removed.
 // Parameter modifiers will be expressed via syntax, not types.
 // See spec for forthcoming ref/out/in parameter syntax.
+
+// ============================================================================
+// Value Type Markers
+// ============================================================================
+
+/**
+ * Marker interface for C# struct types.
+ *
+ * Types that extend `struct` will be emitted as C# structs instead of classes.
+ * This enables value semantics and stack allocation in the generated code.
+ *
+ * @example
+ * ```typescript
+ * import { struct } from "@tsonic/core/types.js";
+ *
+ * // This becomes a C# struct
+ * export interface Point extends struct {
+ *   x: number;
+ *   y: number;
+ * }
+ *
+ * // Use as generic constraint for nullable value types
+ * function wrap<T extends struct>(value: T | null): T | null {
+ *   return value;
+ * }
+ * ```
+ *
+ * In C#, this emits:
+ * ```csharp
+ * public struct Point {
+ *   public double x { get; set; }
+ *   public double y { get; set; }
+ * }
+ *
+ * // With constraint: where T : struct
+ * T? Wrap<T>(T? value) where T : struct => value;
+ * ```
+ */
+export interface struct {
+  readonly __brand: unique symbol;
+}
