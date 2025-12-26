@@ -52,9 +52,54 @@ export type char = string; // System.Char (single UTF-16 code unit)
 // Erases to unknown for type safety - requires explicit handling
 export type ptr<T> = unknown;
 
-// NOTE: ref<T>, out<T>, In<T> have been removed.
-// Parameter modifiers will be expressed via syntax, not types.
-// See spec for forthcoming ref/out/in parameter syntax.
+// ============================================================================
+// Parameter Passing Modifiers
+// ============================================================================
+
+/**
+ * Marks a parameter as `out` - callee sets the value.
+ * Use with `as out<T>` at call sites.
+ *
+ * @example
+ * ```typescript
+ * import { int, out } from "@tsonic/core/types.js";
+ *
+ * let value: int = 0;
+ * dict.tryGetValue("key", value as out<int>);
+ * // value now contains the result
+ * ```
+ */
+export type out<T> = T;
+
+/**
+ * Marks a parameter as `ref` - callee can read and modify.
+ * Use with `as ref<T>` at call sites.
+ *
+ * @example
+ * ```typescript
+ * import { int, ref } from "@tsonic/core/types.js";
+ *
+ * let count: int = 10;
+ * increment(count as ref<int>);
+ * // count is now modified
+ * ```
+ */
+export type ref<T> = T;
+
+/**
+ * Marks a parameter as `in` - read-only reference (optimization for large structs).
+ * Use with `as inref<T>` at call sites.
+ * Named `inref` because `in` is a TypeScript reserved keyword.
+ *
+ * @example
+ * ```typescript
+ * import { inref } from "@tsonic/core/types.js";
+ *
+ * const data: LargeStruct = { ... };
+ * process(data as inref<LargeStruct>);
+ * ```
+ */
+export type inref<T> = T;
 
 // ============================================================================
 // Value Type Markers
