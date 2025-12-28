@@ -142,35 +142,3 @@ export interface struct {
   readonly __brand: unique symbol;
 }
 
-// ============================================================================
-// Safe Casting
-// ============================================================================
-
-/**
- * Safe cast function - returns T or null if cast fails.
- *
- * TypeScript: `tryCast<Person>(obj)`
- * C#: `obj as Person`
- *
- * Unlike `x as T` which throws on failure (C# `(T)x`), this returns null.
- * This is the C# "as" operator behavior.
- *
- * @example
- * ```typescript
- * import { tryCast } from "@tsonic/core/types.js";
- *
- * const person = tryCast<Person>(unknownObj);
- * if (person !== null) {
- *   console.log(person.name);
- * }
- * ```
- *
- * In C#, this emits:
- * ```csharp
- * Person? person = unknownObj as Person;
- * if (person != null) {
- *   Console.WriteLine(person.name);
- * }
- * ```
- */
-export declare function tryCast<T>(value: unknown): T | null;
