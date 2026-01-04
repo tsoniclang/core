@@ -181,18 +181,18 @@ export declare function trycast<T>(value: unknown): T | null;
  *
  * @example
  * ```typescript
- * import type { thisArg } from "@tsonic/core/lang.js";
+ * import type { thisarg } from "@tsonic/core/lang.js";
  * import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
  *
  * export function where<TSource>(
- *   source: thisArg<IEnumerable<TSource>>,
+ *   source: thisarg<IEnumerable<TSource>>,
  *   predicate: (x: TSource) => boolean
  * ): IEnumerable<TSource> {
  *   throw new Error("not implemented");
  * }
  * ```
  */
-export type thisArg<T> = T;
+export type thisarg<T> = T;
 
 // ============================================================================
 // Span type (for stackalloc return type)
