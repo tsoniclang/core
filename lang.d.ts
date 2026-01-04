@@ -170,6 +170,31 @@ export declare function nameof(expression: unknown): string;
 export declare function trycast<T>(value: unknown): T | null;
 
 // ============================================================================
+// Extension Method Intrinsics
+// ============================================================================
+
+/**
+ * Marks the receiver parameter of a C# extension method.
+ *
+ * Use as a wrapper for the FIRST parameter type of a static function.
+ * The compiler emits `this` on that parameter.
+ *
+ * @example
+ * ```typescript
+ * import type { thisArg } from "@tsonic/core/lang.js";
+ * import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
+ *
+ * export function where<TSource>(
+ *   source: thisArg<IEnumerable<TSource>>,
+ *   predicate: (x: TSource) => boolean
+ * ): IEnumerable<TSource> {
+ *   throw new Error("not implemented");
+ * }
+ * ```
+ */
+export type thisArg<T> = T;
+
+// ============================================================================
 // Span type (for stackalloc return type)
 // ============================================================================
 
