@@ -9,7 +9,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { Dictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { Dictionary, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, Func, IEquatable, Int32, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
 
@@ -320,6 +320,8 @@ export const Union_8: {
 export type Union_8<T1, T2, T3, T4, T5, T6, T7, T8> = Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8>;
 
 export abstract class ArrayHelpers$instance {
+    static slice<T>(source: IEnumerable<T>, startIndex: int): T[];
+    static slice<T>(source: IList<T>, startIndex: int): T[];
     static slice<T>(source: T[], startIndex: int): T[];
 }
 

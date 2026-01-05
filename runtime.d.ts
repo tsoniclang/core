@@ -6,7 +6,7 @@
 import * as Internal from './runtime/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { Dictionary, IEnumerable } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { Dictionary, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Action, Boolean as ClrBoolean, Func, IEquatable, Int32, Object as ClrObject, String as ClrString, Type, ValueType, Void } from '@tsonic/dotnet/System.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
@@ -16,6 +16,8 @@ export { IteratorResult_1 as IteratorResult } from './runtime/internal/index.js'
 export { Operators$instance as Operators } from './runtime/internal/index.js';
 export { Structural$instance as Structural } from './runtime/internal/index.js';
 export { DictionaryAdapter_1 as DictionaryAdapter } from './runtime/internal/index.js';
+
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
 
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;

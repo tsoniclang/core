@@ -12,7 +12,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::ToString():System.String",
           "clrName": "ToString",
           "tsEmitName": "toString",
-          "metadataToken": 100663313,
+          "metadataToken": 100663315,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
@@ -26,7 +26,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
           "tsEmitName": "getHashCode",
-          "metadataToken": 100663317,
+          "metadataToken": 100663319,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -40,7 +40,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
           "tsEmitName": "equals",
-          "metadataToken": 100663318,
+          "metadataToken": 100663320,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -54,7 +54,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::Equals(IteratorResult_1):System.Boolean",
           "clrName": "Equals",
           "tsEmitName": "equals",
-          "metadataToken": 100663319,
+          "metadataToken": 100663321,
           "canonicalSignature": "(IteratorResult_1):System.Boolean",
           "normalizedSignature": "Equals|(IteratorResult_1):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -68,7 +68,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::Deconstruct(T\u0026,System.Boolean\u0026):System.Void",
           "clrName": "Deconstruct",
           "tsEmitName": "deconstruct",
-          "metadataToken": 100663320,
+          "metadataToken": 100663322,
           "canonicalSignature": "(T\u0026,System.Boolean\u0026):System.Void",
           "normalizedSignature": "Deconstruct|(T\u0026,System.Boolean\u0026):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -124,7 +124,7 @@
       "constructors": [
         {
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::.ctor(T,System.Boolean):void",
-          "metadataToken": 100663308,
+          "metadataToken": 100663310,
           "canonicalSignature": "(T,System.Boolean):void",
           "normalizedSignature": "constructor|(T,System.Boolean):void|static=false",
           "isStatic": false,
@@ -141,7 +141,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.IteratorResult\u00601",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663313
+            "metadataToken": 100663315
           }
         },
         {
@@ -151,7 +151,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.IteratorResult\u00601",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663317
+            "metadataToken": 100663319
           }
         },
         {
@@ -161,7 +161,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.IteratorResult\u00601",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663318
+            "metadataToken": 100663320
           }
         },
         {
@@ -171,7 +171,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.IteratorResult\u00601",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663319
+            "metadataToken": 100663321
           }
         },
         {
@@ -181,7 +181,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.IteratorResult\u00601",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663320
+            "metadataToken": 100663322
           }
         }
       ],
@@ -214,7 +214,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.IteratorResult\u00601",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663308
+            "metadataToken": 100663310
           }
         }
       ]
@@ -230,7 +230,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DictionaryAdapter\u00601::ContainsKey(System.String):System.Boolean",
           "clrName": "ContainsKey",
           "tsEmitName": "containsKey",
-          "metadataToken": 100663333,
+          "metadataToken": 100663335,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "ContainsKey|(System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -244,7 +244,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DictionaryAdapter\u00601::GetDictionary():System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetDictionary",
           "tsEmitName": "getDictionary",
-          "metadataToken": 100663334,
+          "metadataToken": 100663336,
           "canonicalSignature": "():System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetDictionary|():System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
@@ -304,7 +304,7 @@
       "constructors": [
         {
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DictionaryAdapter\u00601::.ctor(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
-          "metadataToken": 100663328,
+          "metadataToken": 100663330,
           "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
           "normalizedSignature": "constructor|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
@@ -321,7 +321,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DictionaryAdapter\u00601",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663333
+            "metadataToken": 100663335
           }
         },
         {
@@ -331,7 +331,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DictionaryAdapter\u00601",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663334
+            "metadataToken": 100663336
           }
         }
       ],
@@ -374,7 +374,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DictionaryAdapter\u00601",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663328
+            "metadataToken": 100663330
           }
         }
       ]
@@ -390,7 +390,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::GetProperty(System.String):T",
           "clrName": "GetProperty",
           "tsEmitName": "getProperty",
-          "metadataToken": 100663298,
+          "metadataToken": 100663300,
           "canonicalSignature": "(System.String):T",
           "normalizedSignature": "GetProperty|(System.String):T|static=false",
           "emitScope": "ClassSurface",
@@ -404,7 +404,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::SetProperty(System.String,System.Object):System.Void",
           "clrName": "SetProperty",
           "tsEmitName": "setProperty",
-          "metadataToken": 100663299,
+          "metadataToken": 100663301,
           "canonicalSignature": "(System.String,System.Object):System.Void",
           "normalizedSignature": "SetProperty|(System.String,System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -418,7 +418,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::HasProperty(System.String):System.Boolean",
           "clrName": "HasProperty",
           "tsEmitName": "hasProperty",
-          "metadataToken": 100663300,
+          "metadataToken": 100663302,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "HasProperty|(System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -432,7 +432,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::GetKeys():System.String[]",
           "clrName": "GetKeys",
           "tsEmitName": "getKeys",
-          "metadataToken": 100663301,
+          "metadataToken": 100663303,
           "canonicalSignature": "():System.String[]",
           "normalizedSignature": "GetKeys|():System.String[]|static=false",
           "emitScope": "ClassSurface",
@@ -446,7 +446,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::GetValues():System.Object[]",
           "clrName": "GetValues",
           "tsEmitName": "getValues",
-          "metadataToken": 100663302,
+          "metadataToken": 100663304,
           "canonicalSignature": "():System.Object[]",
           "normalizedSignature": "GetValues|():System.Object[]|static=false",
           "emitScope": "ClassSurface",
@@ -460,7 +460,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::FromDictionary(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Tsonic.Runtime.DynamicObject",
           "clrName": "FromDictionary",
           "tsEmitName": "fromDictionary",
-          "metadataToken": 100663305,
+          "metadataToken": 100663307,
           "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Tsonic.Runtime.DynamicObject",
           "normalizedSignature": "FromDictionary|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Tsonic.Runtime.DynamicObject|static=true",
           "emitScope": "ClassSurface",
@@ -474,7 +474,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::ToDictionary():System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "ToDictionary",
           "tsEmitName": "toDictionary",
-          "metadataToken": 100663306,
+          "metadataToken": 100663308,
           "canonicalSignature": "():System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ToDictionary|():System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ClassSurface",
@@ -506,7 +506,7 @@
       "constructors": [
         {
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::.ctor():void",
-          "metadataToken": 100663307,
+          "metadataToken": 100663309,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -523,7 +523,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DynamicObject",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663298
+            "metadataToken": 100663300
           }
         },
         {
@@ -533,7 +533,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DynamicObject",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663299
+            "metadataToken": 100663301
           }
         },
         {
@@ -543,7 +543,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DynamicObject",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663300
+            "metadataToken": 100663302
           }
         },
         {
@@ -553,7 +553,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DynamicObject",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663301
+            "metadataToken": 100663303
           }
         },
         {
@@ -563,7 +563,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DynamicObject",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663302
+            "metadataToken": 100663304
           }
         },
         {
@@ -573,7 +573,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DynamicObject",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663305
+            "metadataToken": 100663307
           }
         },
         {
@@ -583,7 +583,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DynamicObject",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663306
+            "metadataToken": 100663308
           }
         }
       ],
@@ -606,7 +606,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.DynamicObject",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663307
+            "metadataToken": 100663309
           }
         }
       ]
@@ -622,7 +622,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::From1(T1):Union_2",
           "clrName": "From1",
           "tsEmitName": "from1",
-          "metadataToken": 100663336,
+          "metadataToken": 100663338,
           "canonicalSignature": "(T1):Union_2",
           "normalizedSignature": "From1|(T1):Union_2|static=true",
           "emitScope": "ClassSurface",
@@ -636,7 +636,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::From2(T2):Union_2",
           "clrName": "From2",
           "tsEmitName": "from2",
-          "metadataToken": 100663337,
+          "metadataToken": 100663339,
           "canonicalSignature": "(T2):Union_2",
           "normalizedSignature": "From2|(T2):Union_2|static=true",
           "emitScope": "ClassSurface",
@@ -650,7 +650,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::Is1():System.Boolean",
           "clrName": "Is1",
           "tsEmitName": "is1",
-          "metadataToken": 100663338,
+          "metadataToken": 100663340,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is1|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -664,7 +664,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::Is2():System.Boolean",
           "clrName": "Is2",
           "tsEmitName": "is2",
-          "metadataToken": 100663339,
+          "metadataToken": 100663341,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is2|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -678,7 +678,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::As1():T1",
           "clrName": "As1",
           "tsEmitName": "as1",
-          "metadataToken": 100663340,
+          "metadataToken": 100663342,
           "canonicalSignature": "():T1",
           "normalizedSignature": "As1|():T1|static=false",
           "emitScope": "ClassSurface",
@@ -692,7 +692,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::As2():T2",
           "clrName": "As2",
           "tsEmitName": "as2",
-          "metadataToken": 100663341,
+          "metadataToken": 100663343,
           "canonicalSignature": "():T2",
           "normalizedSignature": "As2|():T2|static=false",
           "emitScope": "ClassSurface",
@@ -706,7 +706,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::TryAs1(T1\u0026):System.Boolean",
           "clrName": "TryAs1",
           "tsEmitName": "tryAs1",
-          "metadataToken": 100663342,
+          "metadataToken": 100663344,
           "canonicalSignature": "(T1\u0026):System.Boolean",
           "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -726,7 +726,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::TryAs2(T2\u0026):System.Boolean",
           "clrName": "TryAs2",
           "tsEmitName": "tryAs2",
-          "metadataToken": 100663343,
+          "metadataToken": 100663345,
           "canonicalSignature": "(T2\u0026):System.Boolean",
           "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -746,7 +746,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::Match(Func_2,Func_2):TResult",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663344,
+          "metadataToken": 100663346,
           "canonicalSignature": "(Func_2,Func_2):TResult",
           "normalizedSignature": "Match|(Func_2,Func_2):TResult|static=false",
           "emitScope": "ClassSurface",
@@ -760,7 +760,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::Match(Action_1,Action_1):System.Void",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663345,
+          "metadataToken": 100663347,
           "canonicalSignature": "(Action_1,Action_1):System.Void",
           "normalizedSignature": "Match|(Action_1,Action_1):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -774,7 +774,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::ToString():System.String",
           "clrName": "ToString",
           "tsEmitName": "toString",
-          "metadataToken": 100663348,
+          "metadataToken": 100663350,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
@@ -788,7 +788,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
           "tsEmitName": "equals",
-          "metadataToken": 100663349,
+          "metadataToken": 100663351,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -802,7 +802,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
           "tsEmitName": "getHashCode",
-          "metadataToken": 100663350,
+          "metadataToken": 100663352,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -825,7 +825,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663336
+            "metadataToken": 100663338
           }
         },
         {
@@ -835,7 +835,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663337
+            "metadataToken": 100663339
           }
         },
         {
@@ -845,7 +845,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663338
+            "metadataToken": 100663340
           }
         },
         {
@@ -855,7 +855,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663339
+            "metadataToken": 100663341
           }
         },
         {
@@ -865,7 +865,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663340
+            "metadataToken": 100663342
           }
         },
         {
@@ -875,7 +875,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663341
+            "metadataToken": 100663343
           }
         },
         {
@@ -885,7 +885,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663342
+            "metadataToken": 100663344
           }
         },
         {
@@ -895,7 +895,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663343
+            "metadataToken": 100663345
           }
         },
         {
@@ -905,7 +905,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663344
+            "metadataToken": 100663346
           }
         },
         {
@@ -915,7 +915,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663345
+            "metadataToken": 100663347
           }
         },
         {
@@ -925,7 +925,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663348
+            "metadataToken": 100663350
           }
         },
         {
@@ -935,7 +935,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663349
+            "metadataToken": 100663351
           }
         },
         {
@@ -945,7 +945,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00602",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663350
+            "metadataToken": 100663352
           }
         }
       ]
@@ -961,7 +961,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::From1(T1):Union_3",
           "clrName": "From1",
           "tsEmitName": "from1",
-          "metadataToken": 100663352,
+          "metadataToken": 100663354,
           "canonicalSignature": "(T1):Union_3",
           "normalizedSignature": "From1|(T1):Union_3|static=true",
           "emitScope": "ClassSurface",
@@ -975,7 +975,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::From2(T2):Union_3",
           "clrName": "From2",
           "tsEmitName": "from2",
-          "metadataToken": 100663353,
+          "metadataToken": 100663355,
           "canonicalSignature": "(T2):Union_3",
           "normalizedSignature": "From2|(T2):Union_3|static=true",
           "emitScope": "ClassSurface",
@@ -989,7 +989,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::From3(T3):Union_3",
           "clrName": "From3",
           "tsEmitName": "from3",
-          "metadataToken": 100663354,
+          "metadataToken": 100663356,
           "canonicalSignature": "(T3):Union_3",
           "normalizedSignature": "From3|(T3):Union_3|static=true",
           "emitScope": "ClassSurface",
@@ -1003,7 +1003,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Is1():System.Boolean",
           "clrName": "Is1",
           "tsEmitName": "is1",
-          "metadataToken": 100663355,
+          "metadataToken": 100663357,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is1|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1017,7 +1017,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Is2():System.Boolean",
           "clrName": "Is2",
           "tsEmitName": "is2",
-          "metadataToken": 100663356,
+          "metadataToken": 100663358,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is2|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1031,7 +1031,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Is3():System.Boolean",
           "clrName": "Is3",
           "tsEmitName": "is3",
-          "metadataToken": 100663357,
+          "metadataToken": 100663359,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is3|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1045,7 +1045,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::As1():T1",
           "clrName": "As1",
           "tsEmitName": "as1",
-          "metadataToken": 100663358,
+          "metadataToken": 100663360,
           "canonicalSignature": "():T1",
           "normalizedSignature": "As1|():T1|static=false",
           "emitScope": "ClassSurface",
@@ -1059,7 +1059,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::As2():T2",
           "clrName": "As2",
           "tsEmitName": "as2",
-          "metadataToken": 100663359,
+          "metadataToken": 100663361,
           "canonicalSignature": "():T2",
           "normalizedSignature": "As2|():T2|static=false",
           "emitScope": "ClassSurface",
@@ -1073,7 +1073,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::As3():T3",
           "clrName": "As3",
           "tsEmitName": "as3",
-          "metadataToken": 100663360,
+          "metadataToken": 100663362,
           "canonicalSignature": "():T3",
           "normalizedSignature": "As3|():T3|static=false",
           "emitScope": "ClassSurface",
@@ -1087,7 +1087,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::TryAs1(T1\u0026):System.Boolean",
           "clrName": "TryAs1",
           "tsEmitName": "tryAs1",
-          "metadataToken": 100663361,
+          "metadataToken": 100663363,
           "canonicalSignature": "(T1\u0026):System.Boolean",
           "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1107,7 +1107,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::TryAs2(T2\u0026):System.Boolean",
           "clrName": "TryAs2",
           "tsEmitName": "tryAs2",
-          "metadataToken": 100663362,
+          "metadataToken": 100663364,
           "canonicalSignature": "(T2\u0026):System.Boolean",
           "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1127,7 +1127,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::TryAs3(T3\u0026):System.Boolean",
           "clrName": "TryAs3",
           "tsEmitName": "tryAs3",
-          "metadataToken": 100663363,
+          "metadataToken": 100663365,
           "canonicalSignature": "(T3\u0026):System.Boolean",
           "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1147,7 +1147,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Match(Func_2,Func_2,Func_2):TResult",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663364,
+          "metadataToken": 100663366,
           "canonicalSignature": "(Func_2,Func_2,Func_2):TResult",
           "normalizedSignature": "Match|(Func_2,Func_2,Func_2):TResult|static=false",
           "emitScope": "ClassSurface",
@@ -1161,7 +1161,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Match(Action_1,Action_1,Action_1):System.Void",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663365,
+          "metadataToken": 100663367,
           "canonicalSignature": "(Action_1,Action_1,Action_1):System.Void",
           "normalizedSignature": "Match|(Action_1,Action_1,Action_1):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1175,7 +1175,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::ToString():System.String",
           "clrName": "ToString",
           "tsEmitName": "toString",
-          "metadataToken": 100663369,
+          "metadataToken": 100663371,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
@@ -1189,7 +1189,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
           "tsEmitName": "equals",
-          "metadataToken": 100663370,
+          "metadataToken": 100663372,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1203,7 +1203,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
           "tsEmitName": "getHashCode",
-          "metadataToken": 100663371,
+          "metadataToken": 100663373,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -1226,7 +1226,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663352
+            "metadataToken": 100663354
           }
         },
         {
@@ -1236,7 +1236,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663353
+            "metadataToken": 100663355
           }
         },
         {
@@ -1246,7 +1246,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663354
+            "metadataToken": 100663356
           }
         },
         {
@@ -1256,7 +1256,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663355
+            "metadataToken": 100663357
           }
         },
         {
@@ -1266,7 +1266,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663356
+            "metadataToken": 100663358
           }
         },
         {
@@ -1276,7 +1276,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663357
+            "metadataToken": 100663359
           }
         },
         {
@@ -1286,7 +1286,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663358
+            "metadataToken": 100663360
           }
         },
         {
@@ -1296,7 +1296,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663359
+            "metadataToken": 100663361
           }
         },
         {
@@ -1306,7 +1306,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663360
+            "metadataToken": 100663362
           }
         },
         {
@@ -1316,7 +1316,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663361
+            "metadataToken": 100663363
           }
         },
         {
@@ -1326,7 +1326,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663362
+            "metadataToken": 100663364
           }
         },
         {
@@ -1336,7 +1336,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663363
+            "metadataToken": 100663365
           }
         },
         {
@@ -1346,7 +1346,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663364
+            "metadataToken": 100663366
           }
         },
         {
@@ -1356,7 +1356,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663365
+            "metadataToken": 100663367
           }
         },
         {
@@ -1366,7 +1366,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663369
+            "metadataToken": 100663371
           }
         },
         {
@@ -1376,7 +1376,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663370
+            "metadataToken": 100663372
           }
         },
         {
@@ -1386,7 +1386,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00603",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663371
+            "metadataToken": 100663373
           }
         }
       ]
@@ -1402,7 +1402,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From1(T1):Union_4",
           "clrName": "From1",
           "tsEmitName": "from1",
-          "metadataToken": 100663373,
+          "metadataToken": 100663375,
           "canonicalSignature": "(T1):Union_4",
           "normalizedSignature": "From1|(T1):Union_4|static=true",
           "emitScope": "ClassSurface",
@@ -1416,7 +1416,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From2(T2):Union_4",
           "clrName": "From2",
           "tsEmitName": "from2",
-          "metadataToken": 100663374,
+          "metadataToken": 100663376,
           "canonicalSignature": "(T2):Union_4",
           "normalizedSignature": "From2|(T2):Union_4|static=true",
           "emitScope": "ClassSurface",
@@ -1430,7 +1430,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From3(T3):Union_4",
           "clrName": "From3",
           "tsEmitName": "from3",
-          "metadataToken": 100663375,
+          "metadataToken": 100663377,
           "canonicalSignature": "(T3):Union_4",
           "normalizedSignature": "From3|(T3):Union_4|static=true",
           "emitScope": "ClassSurface",
@@ -1444,7 +1444,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From4(T4):Union_4",
           "clrName": "From4",
           "tsEmitName": "from4",
-          "metadataToken": 100663376,
+          "metadataToken": 100663378,
           "canonicalSignature": "(T4):Union_4",
           "normalizedSignature": "From4|(T4):Union_4|static=true",
           "emitScope": "ClassSurface",
@@ -1458,7 +1458,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Is1():System.Boolean",
           "clrName": "Is1",
           "tsEmitName": "is1",
-          "metadataToken": 100663377,
+          "metadataToken": 100663379,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is1|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1472,7 +1472,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Is2():System.Boolean",
           "clrName": "Is2",
           "tsEmitName": "is2",
-          "metadataToken": 100663378,
+          "metadataToken": 100663380,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is2|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1486,7 +1486,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Is3():System.Boolean",
           "clrName": "Is3",
           "tsEmitName": "is3",
-          "metadataToken": 100663379,
+          "metadataToken": 100663381,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is3|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1500,7 +1500,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Is4():System.Boolean",
           "clrName": "Is4",
           "tsEmitName": "is4",
-          "metadataToken": 100663380,
+          "metadataToken": 100663382,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is4|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1514,7 +1514,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As1():T1",
           "clrName": "As1",
           "tsEmitName": "as1",
-          "metadataToken": 100663381,
+          "metadataToken": 100663383,
           "canonicalSignature": "():T1",
           "normalizedSignature": "As1|():T1|static=false",
           "emitScope": "ClassSurface",
@@ -1528,7 +1528,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As2():T2",
           "clrName": "As2",
           "tsEmitName": "as2",
-          "metadataToken": 100663382,
+          "metadataToken": 100663384,
           "canonicalSignature": "():T2",
           "normalizedSignature": "As2|():T2|static=false",
           "emitScope": "ClassSurface",
@@ -1542,7 +1542,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As3():T3",
           "clrName": "As3",
           "tsEmitName": "as3",
-          "metadataToken": 100663383,
+          "metadataToken": 100663385,
           "canonicalSignature": "():T3",
           "normalizedSignature": "As3|():T3|static=false",
           "emitScope": "ClassSurface",
@@ -1556,7 +1556,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As4():T4",
           "clrName": "As4",
           "tsEmitName": "as4",
-          "metadataToken": 100663384,
+          "metadataToken": 100663386,
           "canonicalSignature": "():T4",
           "normalizedSignature": "As4|():T4|static=false",
           "emitScope": "ClassSurface",
@@ -1570,7 +1570,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs1(T1\u0026):System.Boolean",
           "clrName": "TryAs1",
           "tsEmitName": "tryAs1",
-          "metadataToken": 100663385,
+          "metadataToken": 100663387,
           "canonicalSignature": "(T1\u0026):System.Boolean",
           "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1590,7 +1590,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs2(T2\u0026):System.Boolean",
           "clrName": "TryAs2",
           "tsEmitName": "tryAs2",
-          "metadataToken": 100663386,
+          "metadataToken": 100663388,
           "canonicalSignature": "(T2\u0026):System.Boolean",
           "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1610,7 +1610,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs3(T3\u0026):System.Boolean",
           "clrName": "TryAs3",
           "tsEmitName": "tryAs3",
-          "metadataToken": 100663387,
+          "metadataToken": 100663389,
           "canonicalSignature": "(T3\u0026):System.Boolean",
           "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1630,7 +1630,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs4(T4\u0026):System.Boolean",
           "clrName": "TryAs4",
           "tsEmitName": "tryAs4",
-          "metadataToken": 100663388,
+          "metadataToken": 100663390,
           "canonicalSignature": "(T4\u0026):System.Boolean",
           "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1650,7 +1650,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Match(Func_2,Func_2,Func_2,Func_2):TResult",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663389,
+          "metadataToken": 100663391,
           "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2):TResult",
           "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2):TResult|static=false",
           "emitScope": "ClassSurface",
@@ -1664,7 +1664,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Match(Action_1,Action_1,Action_1,Action_1):System.Void",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663390,
+          "metadataToken": 100663392,
           "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1):System.Void",
           "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1678,7 +1678,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::ToString():System.String",
           "clrName": "ToString",
           "tsEmitName": "toString",
-          "metadataToken": 100663395,
+          "metadataToken": 100663397,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
@@ -1692,7 +1692,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
           "tsEmitName": "equals",
-          "metadataToken": 100663396,
+          "metadataToken": 100663398,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -1706,7 +1706,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
           "tsEmitName": "getHashCode",
-          "metadataToken": 100663397,
+          "metadataToken": 100663399,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -1729,7 +1729,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663373
+            "metadataToken": 100663375
           }
         },
         {
@@ -1739,7 +1739,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663374
+            "metadataToken": 100663376
           }
         },
         {
@@ -1749,7 +1749,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663375
+            "metadataToken": 100663377
           }
         },
         {
@@ -1759,7 +1759,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663376
+            "metadataToken": 100663378
           }
         },
         {
@@ -1769,7 +1769,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663377
+            "metadataToken": 100663379
           }
         },
         {
@@ -1779,7 +1779,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663378
+            "metadataToken": 100663380
           }
         },
         {
@@ -1789,7 +1789,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663379
+            "metadataToken": 100663381
           }
         },
         {
@@ -1799,7 +1799,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663380
+            "metadataToken": 100663382
           }
         },
         {
@@ -1809,7 +1809,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663381
+            "metadataToken": 100663383
           }
         },
         {
@@ -1819,7 +1819,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663382
+            "metadataToken": 100663384
           }
         },
         {
@@ -1829,7 +1829,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663383
+            "metadataToken": 100663385
           }
         },
         {
@@ -1839,7 +1839,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663384
+            "metadataToken": 100663386
           }
         },
         {
@@ -1849,7 +1849,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663385
+            "metadataToken": 100663387
           }
         },
         {
@@ -1859,7 +1859,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663386
+            "metadataToken": 100663388
           }
         },
         {
@@ -1869,7 +1869,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663387
+            "metadataToken": 100663389
           }
         },
         {
@@ -1879,7 +1879,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663388
+            "metadataToken": 100663390
           }
         },
         {
@@ -1889,7 +1889,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663389
+            "metadataToken": 100663391
           }
         },
         {
@@ -1899,7 +1899,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663390
+            "metadataToken": 100663392
           }
         },
         {
@@ -1909,7 +1909,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663395
+            "metadataToken": 100663397
           }
         },
         {
@@ -1919,7 +1919,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663396
+            "metadataToken": 100663398
           }
         },
         {
@@ -1929,7 +1929,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00604",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663397
+            "metadataToken": 100663399
           }
         }
       ]
@@ -1945,7 +1945,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From1(T1):Union_5",
           "clrName": "From1",
           "tsEmitName": "from1",
-          "metadataToken": 100663399,
+          "metadataToken": 100663401,
           "canonicalSignature": "(T1):Union_5",
           "normalizedSignature": "From1|(T1):Union_5|static=true",
           "emitScope": "ClassSurface",
@@ -1959,7 +1959,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From2(T2):Union_5",
           "clrName": "From2",
           "tsEmitName": "from2",
-          "metadataToken": 100663400,
+          "metadataToken": 100663402,
           "canonicalSignature": "(T2):Union_5",
           "normalizedSignature": "From2|(T2):Union_5|static=true",
           "emitScope": "ClassSurface",
@@ -1973,7 +1973,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From3(T3):Union_5",
           "clrName": "From3",
           "tsEmitName": "from3",
-          "metadataToken": 100663401,
+          "metadataToken": 100663403,
           "canonicalSignature": "(T3):Union_5",
           "normalizedSignature": "From3|(T3):Union_5|static=true",
           "emitScope": "ClassSurface",
@@ -1987,7 +1987,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From4(T4):Union_5",
           "clrName": "From4",
           "tsEmitName": "from4",
-          "metadataToken": 100663402,
+          "metadataToken": 100663404,
           "canonicalSignature": "(T4):Union_5",
           "normalizedSignature": "From4|(T4):Union_5|static=true",
           "emitScope": "ClassSurface",
@@ -2001,7 +2001,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From5(T5):Union_5",
           "clrName": "From5",
           "tsEmitName": "from5",
-          "metadataToken": 100663403,
+          "metadataToken": 100663405,
           "canonicalSignature": "(T5):Union_5",
           "normalizedSignature": "From5|(T5):Union_5|static=true",
           "emitScope": "ClassSurface",
@@ -2015,7 +2015,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Is1():System.Boolean",
           "clrName": "Is1",
           "tsEmitName": "is1",
-          "metadataToken": 100663404,
+          "metadataToken": 100663406,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is1|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2029,7 +2029,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Is2():System.Boolean",
           "clrName": "Is2",
           "tsEmitName": "is2",
-          "metadataToken": 100663405,
+          "metadataToken": 100663407,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is2|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2043,7 +2043,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Is3():System.Boolean",
           "clrName": "Is3",
           "tsEmitName": "is3",
-          "metadataToken": 100663406,
+          "metadataToken": 100663408,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is3|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2057,7 +2057,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Is4():System.Boolean",
           "clrName": "Is4",
           "tsEmitName": "is4",
-          "metadataToken": 100663407,
+          "metadataToken": 100663409,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is4|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2071,7 +2071,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Is5():System.Boolean",
           "clrName": "Is5",
           "tsEmitName": "is5",
-          "metadataToken": 100663408,
+          "metadataToken": 100663410,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is5|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2085,7 +2085,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As1():T1",
           "clrName": "As1",
           "tsEmitName": "as1",
-          "metadataToken": 100663409,
+          "metadataToken": 100663411,
           "canonicalSignature": "():T1",
           "normalizedSignature": "As1|():T1|static=false",
           "emitScope": "ClassSurface",
@@ -2099,7 +2099,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As2():T2",
           "clrName": "As2",
           "tsEmitName": "as2",
-          "metadataToken": 100663410,
+          "metadataToken": 100663412,
           "canonicalSignature": "():T2",
           "normalizedSignature": "As2|():T2|static=false",
           "emitScope": "ClassSurface",
@@ -2113,7 +2113,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As3():T3",
           "clrName": "As3",
           "tsEmitName": "as3",
-          "metadataToken": 100663411,
+          "metadataToken": 100663413,
           "canonicalSignature": "():T3",
           "normalizedSignature": "As3|():T3|static=false",
           "emitScope": "ClassSurface",
@@ -2127,7 +2127,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As4():T4",
           "clrName": "As4",
           "tsEmitName": "as4",
-          "metadataToken": 100663412,
+          "metadataToken": 100663414,
           "canonicalSignature": "():T4",
           "normalizedSignature": "As4|():T4|static=false",
           "emitScope": "ClassSurface",
@@ -2141,7 +2141,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As5():T5",
           "clrName": "As5",
           "tsEmitName": "as5",
-          "metadataToken": 100663413,
+          "metadataToken": 100663415,
           "canonicalSignature": "():T5",
           "normalizedSignature": "As5|():T5|static=false",
           "emitScope": "ClassSurface",
@@ -2155,7 +2155,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs1(T1\u0026):System.Boolean",
           "clrName": "TryAs1",
           "tsEmitName": "tryAs1",
-          "metadataToken": 100663414,
+          "metadataToken": 100663416,
           "canonicalSignature": "(T1\u0026):System.Boolean",
           "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2175,7 +2175,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs2(T2\u0026):System.Boolean",
           "clrName": "TryAs2",
           "tsEmitName": "tryAs2",
-          "metadataToken": 100663415,
+          "metadataToken": 100663417,
           "canonicalSignature": "(T2\u0026):System.Boolean",
           "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2195,7 +2195,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs3(T3\u0026):System.Boolean",
           "clrName": "TryAs3",
           "tsEmitName": "tryAs3",
-          "metadataToken": 100663416,
+          "metadataToken": 100663418,
           "canonicalSignature": "(T3\u0026):System.Boolean",
           "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2215,7 +2215,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs4(T4\u0026):System.Boolean",
           "clrName": "TryAs4",
           "tsEmitName": "tryAs4",
-          "metadataToken": 100663417,
+          "metadataToken": 100663419,
           "canonicalSignature": "(T4\u0026):System.Boolean",
           "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2235,7 +2235,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs5(T5\u0026):System.Boolean",
           "clrName": "TryAs5",
           "tsEmitName": "tryAs5",
-          "metadataToken": 100663418,
+          "metadataToken": 100663420,
           "canonicalSignature": "(T5\u0026):System.Boolean",
           "normalizedSignature": "TryAs5|(T5\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2255,7 +2255,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Match(Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663419,
+          "metadataToken": 100663421,
           "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
           "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2,Func_2):TResult|static=false",
           "emitScope": "ClassSurface",
@@ -2269,7 +2269,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Match(Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663420,
+          "metadataToken": 100663422,
           "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
           "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2283,7 +2283,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::ToString():System.String",
           "clrName": "ToString",
           "tsEmitName": "toString",
-          "metadataToken": 100663426,
+          "metadataToken": 100663428,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
@@ -2297,7 +2297,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
           "tsEmitName": "equals",
-          "metadataToken": 100663427,
+          "metadataToken": 100663429,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2311,7 +2311,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
           "tsEmitName": "getHashCode",
-          "metadataToken": 100663428,
+          "metadataToken": 100663430,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -2334,7 +2334,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663399
+            "metadataToken": 100663401
           }
         },
         {
@@ -2344,7 +2344,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663400
+            "metadataToken": 100663402
           }
         },
         {
@@ -2354,7 +2354,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663401
+            "metadataToken": 100663403
           }
         },
         {
@@ -2364,7 +2364,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663402
+            "metadataToken": 100663404
           }
         },
         {
@@ -2374,7 +2374,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663403
+            "metadataToken": 100663405
           }
         },
         {
@@ -2384,7 +2384,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663404
+            "metadataToken": 100663406
           }
         },
         {
@@ -2394,7 +2394,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663405
+            "metadataToken": 100663407
           }
         },
         {
@@ -2404,7 +2404,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663406
+            "metadataToken": 100663408
           }
         },
         {
@@ -2414,7 +2414,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663407
+            "metadataToken": 100663409
           }
         },
         {
@@ -2424,7 +2424,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663408
+            "metadataToken": 100663410
           }
         },
         {
@@ -2434,7 +2434,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663409
+            "metadataToken": 100663411
           }
         },
         {
@@ -2444,7 +2444,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663410
+            "metadataToken": 100663412
           }
         },
         {
@@ -2454,7 +2454,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663411
+            "metadataToken": 100663413
           }
         },
         {
@@ -2464,7 +2464,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663412
+            "metadataToken": 100663414
           }
         },
         {
@@ -2474,7 +2474,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663413
+            "metadataToken": 100663415
           }
         },
         {
@@ -2484,7 +2484,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663414
+            "metadataToken": 100663416
           }
         },
         {
@@ -2494,7 +2494,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663415
+            "metadataToken": 100663417
           }
         },
         {
@@ -2504,7 +2504,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663416
+            "metadataToken": 100663418
           }
         },
         {
@@ -2514,7 +2514,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663417
+            "metadataToken": 100663419
           }
         },
         {
@@ -2524,7 +2524,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663418
+            "metadataToken": 100663420
           }
         },
         {
@@ -2534,7 +2534,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663419
+            "metadataToken": 100663421
           }
         },
         {
@@ -2544,7 +2544,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663420
+            "metadataToken": 100663422
           }
         },
         {
@@ -2554,7 +2554,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663426
+            "metadataToken": 100663428
           }
         },
         {
@@ -2564,7 +2564,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663427
+            "metadataToken": 100663429
           }
         },
         {
@@ -2574,7 +2574,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00605",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663428
+            "metadataToken": 100663430
           }
         }
       ]
@@ -2590,7 +2590,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From1(T1):Union_6",
           "clrName": "From1",
           "tsEmitName": "from1",
-          "metadataToken": 100663430,
+          "metadataToken": 100663432,
           "canonicalSignature": "(T1):Union_6",
           "normalizedSignature": "From1|(T1):Union_6|static=true",
           "emitScope": "ClassSurface",
@@ -2604,7 +2604,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From2(T2):Union_6",
           "clrName": "From2",
           "tsEmitName": "from2",
-          "metadataToken": 100663431,
+          "metadataToken": 100663433,
           "canonicalSignature": "(T2):Union_6",
           "normalizedSignature": "From2|(T2):Union_6|static=true",
           "emitScope": "ClassSurface",
@@ -2618,7 +2618,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From3(T3):Union_6",
           "clrName": "From3",
           "tsEmitName": "from3",
-          "metadataToken": 100663432,
+          "metadataToken": 100663434,
           "canonicalSignature": "(T3):Union_6",
           "normalizedSignature": "From3|(T3):Union_6|static=true",
           "emitScope": "ClassSurface",
@@ -2632,7 +2632,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From4(T4):Union_6",
           "clrName": "From4",
           "tsEmitName": "from4",
-          "metadataToken": 100663433,
+          "metadataToken": 100663435,
           "canonicalSignature": "(T4):Union_6",
           "normalizedSignature": "From4|(T4):Union_6|static=true",
           "emitScope": "ClassSurface",
@@ -2646,7 +2646,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From5(T5):Union_6",
           "clrName": "From5",
           "tsEmitName": "from5",
-          "metadataToken": 100663434,
+          "metadataToken": 100663436,
           "canonicalSignature": "(T5):Union_6",
           "normalizedSignature": "From5|(T5):Union_6|static=true",
           "emitScope": "ClassSurface",
@@ -2660,7 +2660,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From6(T6):Union_6",
           "clrName": "From6",
           "tsEmitName": "from6",
-          "metadataToken": 100663435,
+          "metadataToken": 100663437,
           "canonicalSignature": "(T6):Union_6",
           "normalizedSignature": "From6|(T6):Union_6|static=true",
           "emitScope": "ClassSurface",
@@ -2674,7 +2674,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Is1():System.Boolean",
           "clrName": "Is1",
           "tsEmitName": "is1",
-          "metadataToken": 100663436,
+          "metadataToken": 100663438,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is1|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2688,7 +2688,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Is2():System.Boolean",
           "clrName": "Is2",
           "tsEmitName": "is2",
-          "metadataToken": 100663437,
+          "metadataToken": 100663439,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is2|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2702,7 +2702,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Is3():System.Boolean",
           "clrName": "Is3",
           "tsEmitName": "is3",
-          "metadataToken": 100663438,
+          "metadataToken": 100663440,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is3|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2716,7 +2716,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Is4():System.Boolean",
           "clrName": "Is4",
           "tsEmitName": "is4",
-          "metadataToken": 100663439,
+          "metadataToken": 100663441,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is4|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2730,7 +2730,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Is5():System.Boolean",
           "clrName": "Is5",
           "tsEmitName": "is5",
-          "metadataToken": 100663440,
+          "metadataToken": 100663442,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is5|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2744,7 +2744,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Is6():System.Boolean",
           "clrName": "Is6",
           "tsEmitName": "is6",
-          "metadataToken": 100663441,
+          "metadataToken": 100663443,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is6|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2758,7 +2758,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As1():T1",
           "clrName": "As1",
           "tsEmitName": "as1",
-          "metadataToken": 100663442,
+          "metadataToken": 100663444,
           "canonicalSignature": "():T1",
           "normalizedSignature": "As1|():T1|static=false",
           "emitScope": "ClassSurface",
@@ -2772,7 +2772,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As2():T2",
           "clrName": "As2",
           "tsEmitName": "as2",
-          "metadataToken": 100663443,
+          "metadataToken": 100663445,
           "canonicalSignature": "():T2",
           "normalizedSignature": "As2|():T2|static=false",
           "emitScope": "ClassSurface",
@@ -2786,7 +2786,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As3():T3",
           "clrName": "As3",
           "tsEmitName": "as3",
-          "metadataToken": 100663444,
+          "metadataToken": 100663446,
           "canonicalSignature": "():T3",
           "normalizedSignature": "As3|():T3|static=false",
           "emitScope": "ClassSurface",
@@ -2800,7 +2800,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As4():T4",
           "clrName": "As4",
           "tsEmitName": "as4",
-          "metadataToken": 100663445,
+          "metadataToken": 100663447,
           "canonicalSignature": "():T4",
           "normalizedSignature": "As4|():T4|static=false",
           "emitScope": "ClassSurface",
@@ -2814,7 +2814,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As5():T5",
           "clrName": "As5",
           "tsEmitName": "as5",
-          "metadataToken": 100663446,
+          "metadataToken": 100663448,
           "canonicalSignature": "():T5",
           "normalizedSignature": "As5|():T5|static=false",
           "emitScope": "ClassSurface",
@@ -2828,7 +2828,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As6():T6",
           "clrName": "As6",
           "tsEmitName": "as6",
-          "metadataToken": 100663447,
+          "metadataToken": 100663449,
           "canonicalSignature": "():T6",
           "normalizedSignature": "As6|():T6|static=false",
           "emitScope": "ClassSurface",
@@ -2842,7 +2842,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs1(T1\u0026):System.Boolean",
           "clrName": "TryAs1",
           "tsEmitName": "tryAs1",
-          "metadataToken": 100663448,
+          "metadataToken": 100663450,
           "canonicalSignature": "(T1\u0026):System.Boolean",
           "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2862,7 +2862,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs2(T2\u0026):System.Boolean",
           "clrName": "TryAs2",
           "tsEmitName": "tryAs2",
-          "metadataToken": 100663449,
+          "metadataToken": 100663451,
           "canonicalSignature": "(T2\u0026):System.Boolean",
           "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2882,7 +2882,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs3(T3\u0026):System.Boolean",
           "clrName": "TryAs3",
           "tsEmitName": "tryAs3",
-          "metadataToken": 100663450,
+          "metadataToken": 100663452,
           "canonicalSignature": "(T3\u0026):System.Boolean",
           "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2902,7 +2902,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs4(T4\u0026):System.Boolean",
           "clrName": "TryAs4",
           "tsEmitName": "tryAs4",
-          "metadataToken": 100663451,
+          "metadataToken": 100663453,
           "canonicalSignature": "(T4\u0026):System.Boolean",
           "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2922,7 +2922,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs5(T5\u0026):System.Boolean",
           "clrName": "TryAs5",
           "tsEmitName": "tryAs5",
-          "metadataToken": 100663452,
+          "metadataToken": 100663454,
           "canonicalSignature": "(T5\u0026):System.Boolean",
           "normalizedSignature": "TryAs5|(T5\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2942,7 +2942,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs6(T6\u0026):System.Boolean",
           "clrName": "TryAs6",
           "tsEmitName": "tryAs6",
-          "metadataToken": 100663453,
+          "metadataToken": 100663455,
           "canonicalSignature": "(T6\u0026):System.Boolean",
           "normalizedSignature": "TryAs6|(T6\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2962,7 +2962,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Match(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663454,
+          "metadataToken": 100663456,
           "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
           "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult|static=false",
           "emitScope": "ClassSurface",
@@ -2976,7 +2976,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Match(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663455,
+          "metadataToken": 100663457,
           "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
           "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2990,7 +2990,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::ToString():System.String",
           "clrName": "ToString",
           "tsEmitName": "toString",
-          "metadataToken": 100663462,
+          "metadataToken": 100663464,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
@@ -3004,7 +3004,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
           "tsEmitName": "equals",
-          "metadataToken": 100663463,
+          "metadataToken": 100663465,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3018,7 +3018,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
           "tsEmitName": "getHashCode",
-          "metadataToken": 100663464,
+          "metadataToken": 100663466,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -3041,7 +3041,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663430
+            "metadataToken": 100663432
           }
         },
         {
@@ -3051,7 +3051,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663431
+            "metadataToken": 100663433
           }
         },
         {
@@ -3061,7 +3061,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663432
+            "metadataToken": 100663434
           }
         },
         {
@@ -3071,7 +3071,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663433
+            "metadataToken": 100663435
           }
         },
         {
@@ -3081,7 +3081,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663434
+            "metadataToken": 100663436
           }
         },
         {
@@ -3091,7 +3091,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663435
+            "metadataToken": 100663437
           }
         },
         {
@@ -3101,7 +3101,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663436
+            "metadataToken": 100663438
           }
         },
         {
@@ -3111,7 +3111,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663437
+            "metadataToken": 100663439
           }
         },
         {
@@ -3121,7 +3121,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663438
+            "metadataToken": 100663440
           }
         },
         {
@@ -3131,7 +3131,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663439
+            "metadataToken": 100663441
           }
         },
         {
@@ -3141,7 +3141,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663440
+            "metadataToken": 100663442
           }
         },
         {
@@ -3151,7 +3151,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663441
+            "metadataToken": 100663443
           }
         },
         {
@@ -3161,7 +3161,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663442
+            "metadataToken": 100663444
           }
         },
         {
@@ -3171,7 +3171,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663443
+            "metadataToken": 100663445
           }
         },
         {
@@ -3181,7 +3181,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663444
+            "metadataToken": 100663446
           }
         },
         {
@@ -3191,7 +3191,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663445
+            "metadataToken": 100663447
           }
         },
         {
@@ -3201,7 +3201,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663446
+            "metadataToken": 100663448
           }
         },
         {
@@ -3211,7 +3211,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663447
+            "metadataToken": 100663449
           }
         },
         {
@@ -3221,7 +3221,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663448
+            "metadataToken": 100663450
           }
         },
         {
@@ -3231,7 +3231,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663449
+            "metadataToken": 100663451
           }
         },
         {
@@ -3241,7 +3241,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663450
+            "metadataToken": 100663452
           }
         },
         {
@@ -3251,7 +3251,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663451
+            "metadataToken": 100663453
           }
         },
         {
@@ -3261,7 +3261,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663452
+            "metadataToken": 100663454
           }
         },
         {
@@ -3271,7 +3271,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663453
+            "metadataToken": 100663455
           }
         },
         {
@@ -3281,7 +3281,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663454
+            "metadataToken": 100663456
           }
         },
         {
@@ -3291,7 +3291,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663455
+            "metadataToken": 100663457
           }
         },
         {
@@ -3301,7 +3301,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663462
+            "metadataToken": 100663464
           }
         },
         {
@@ -3311,7 +3311,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663463
+            "metadataToken": 100663465
           }
         },
         {
@@ -3321,7 +3321,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00606",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663464
+            "metadataToken": 100663466
           }
         }
       ]
@@ -3337,7 +3337,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From1(T1):Union_7",
           "clrName": "From1",
           "tsEmitName": "from1",
-          "metadataToken": 100663466,
+          "metadataToken": 100663468,
           "canonicalSignature": "(T1):Union_7",
           "normalizedSignature": "From1|(T1):Union_7|static=true",
           "emitScope": "ClassSurface",
@@ -3351,7 +3351,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From2(T2):Union_7",
           "clrName": "From2",
           "tsEmitName": "from2",
-          "metadataToken": 100663467,
+          "metadataToken": 100663469,
           "canonicalSignature": "(T2):Union_7",
           "normalizedSignature": "From2|(T2):Union_7|static=true",
           "emitScope": "ClassSurface",
@@ -3365,7 +3365,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From3(T3):Union_7",
           "clrName": "From3",
           "tsEmitName": "from3",
-          "metadataToken": 100663468,
+          "metadataToken": 100663470,
           "canonicalSignature": "(T3):Union_7",
           "normalizedSignature": "From3|(T3):Union_7|static=true",
           "emitScope": "ClassSurface",
@@ -3379,7 +3379,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From4(T4):Union_7",
           "clrName": "From4",
           "tsEmitName": "from4",
-          "metadataToken": 100663469,
+          "metadataToken": 100663471,
           "canonicalSignature": "(T4):Union_7",
           "normalizedSignature": "From4|(T4):Union_7|static=true",
           "emitScope": "ClassSurface",
@@ -3393,7 +3393,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From5(T5):Union_7",
           "clrName": "From5",
           "tsEmitName": "from5",
-          "metadataToken": 100663470,
+          "metadataToken": 100663472,
           "canonicalSignature": "(T5):Union_7",
           "normalizedSignature": "From5|(T5):Union_7|static=true",
           "emitScope": "ClassSurface",
@@ -3407,7 +3407,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From6(T6):Union_7",
           "clrName": "From6",
           "tsEmitName": "from6",
-          "metadataToken": 100663471,
+          "metadataToken": 100663473,
           "canonicalSignature": "(T6):Union_7",
           "normalizedSignature": "From6|(T6):Union_7|static=true",
           "emitScope": "ClassSurface",
@@ -3421,7 +3421,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From7(T7):Union_7",
           "clrName": "From7",
           "tsEmitName": "from7",
-          "metadataToken": 100663472,
+          "metadataToken": 100663474,
           "canonicalSignature": "(T7):Union_7",
           "normalizedSignature": "From7|(T7):Union_7|static=true",
           "emitScope": "ClassSurface",
@@ -3435,7 +3435,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Is1():System.Boolean",
           "clrName": "Is1",
           "tsEmitName": "is1",
-          "metadataToken": 100663473,
+          "metadataToken": 100663475,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is1|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3449,7 +3449,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Is2():System.Boolean",
           "clrName": "Is2",
           "tsEmitName": "is2",
-          "metadataToken": 100663474,
+          "metadataToken": 100663476,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is2|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3463,7 +3463,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Is3():System.Boolean",
           "clrName": "Is3",
           "tsEmitName": "is3",
-          "metadataToken": 100663475,
+          "metadataToken": 100663477,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is3|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3477,7 +3477,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Is4():System.Boolean",
           "clrName": "Is4",
           "tsEmitName": "is4",
-          "metadataToken": 100663476,
+          "metadataToken": 100663478,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is4|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3491,7 +3491,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Is5():System.Boolean",
           "clrName": "Is5",
           "tsEmitName": "is5",
-          "metadataToken": 100663477,
+          "metadataToken": 100663479,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is5|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3505,7 +3505,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Is6():System.Boolean",
           "clrName": "Is6",
           "tsEmitName": "is6",
-          "metadataToken": 100663478,
+          "metadataToken": 100663480,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is6|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3519,7 +3519,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Is7():System.Boolean",
           "clrName": "Is7",
           "tsEmitName": "is7",
-          "metadataToken": 100663479,
+          "metadataToken": 100663481,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is7|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3533,7 +3533,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As1():T1",
           "clrName": "As1",
           "tsEmitName": "as1",
-          "metadataToken": 100663480,
+          "metadataToken": 100663482,
           "canonicalSignature": "():T1",
           "normalizedSignature": "As1|():T1|static=false",
           "emitScope": "ClassSurface",
@@ -3547,7 +3547,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As2():T2",
           "clrName": "As2",
           "tsEmitName": "as2",
-          "metadataToken": 100663481,
+          "metadataToken": 100663483,
           "canonicalSignature": "():T2",
           "normalizedSignature": "As2|():T2|static=false",
           "emitScope": "ClassSurface",
@@ -3561,7 +3561,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As3():T3",
           "clrName": "As3",
           "tsEmitName": "as3",
-          "metadataToken": 100663482,
+          "metadataToken": 100663484,
           "canonicalSignature": "():T3",
           "normalizedSignature": "As3|():T3|static=false",
           "emitScope": "ClassSurface",
@@ -3575,7 +3575,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As4():T4",
           "clrName": "As4",
           "tsEmitName": "as4",
-          "metadataToken": 100663483,
+          "metadataToken": 100663485,
           "canonicalSignature": "():T4",
           "normalizedSignature": "As4|():T4|static=false",
           "emitScope": "ClassSurface",
@@ -3589,7 +3589,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As5():T5",
           "clrName": "As5",
           "tsEmitName": "as5",
-          "metadataToken": 100663484,
+          "metadataToken": 100663486,
           "canonicalSignature": "():T5",
           "normalizedSignature": "As5|():T5|static=false",
           "emitScope": "ClassSurface",
@@ -3603,7 +3603,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As6():T6",
           "clrName": "As6",
           "tsEmitName": "as6",
-          "metadataToken": 100663485,
+          "metadataToken": 100663487,
           "canonicalSignature": "():T6",
           "normalizedSignature": "As6|():T6|static=false",
           "emitScope": "ClassSurface",
@@ -3617,7 +3617,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As7():T7",
           "clrName": "As7",
           "tsEmitName": "as7",
-          "metadataToken": 100663486,
+          "metadataToken": 100663488,
           "canonicalSignature": "():T7",
           "normalizedSignature": "As7|():T7|static=false",
           "emitScope": "ClassSurface",
@@ -3631,7 +3631,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs1(T1\u0026):System.Boolean",
           "clrName": "TryAs1",
           "tsEmitName": "tryAs1",
-          "metadataToken": 100663487,
+          "metadataToken": 100663489,
           "canonicalSignature": "(T1\u0026):System.Boolean",
           "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3651,7 +3651,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs2(T2\u0026):System.Boolean",
           "clrName": "TryAs2",
           "tsEmitName": "tryAs2",
-          "metadataToken": 100663488,
+          "metadataToken": 100663490,
           "canonicalSignature": "(T2\u0026):System.Boolean",
           "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3671,7 +3671,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs3(T3\u0026):System.Boolean",
           "clrName": "TryAs3",
           "tsEmitName": "tryAs3",
-          "metadataToken": 100663489,
+          "metadataToken": 100663491,
           "canonicalSignature": "(T3\u0026):System.Boolean",
           "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3691,7 +3691,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs4(T4\u0026):System.Boolean",
           "clrName": "TryAs4",
           "tsEmitName": "tryAs4",
-          "metadataToken": 100663490,
+          "metadataToken": 100663492,
           "canonicalSignature": "(T4\u0026):System.Boolean",
           "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3711,7 +3711,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs5(T5\u0026):System.Boolean",
           "clrName": "TryAs5",
           "tsEmitName": "tryAs5",
-          "metadataToken": 100663491,
+          "metadataToken": 100663493,
           "canonicalSignature": "(T5\u0026):System.Boolean",
           "normalizedSignature": "TryAs5|(T5\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3731,7 +3731,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs6(T6\u0026):System.Boolean",
           "clrName": "TryAs6",
           "tsEmitName": "tryAs6",
-          "metadataToken": 100663492,
+          "metadataToken": 100663494,
           "canonicalSignature": "(T6\u0026):System.Boolean",
           "normalizedSignature": "TryAs6|(T6\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3751,7 +3751,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs7(T7\u0026):System.Boolean",
           "clrName": "TryAs7",
           "tsEmitName": "tryAs7",
-          "metadataToken": 100663493,
+          "metadataToken": 100663495,
           "canonicalSignature": "(T7\u0026):System.Boolean",
           "normalizedSignature": "TryAs7|(T7\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3771,7 +3771,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Match(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663494,
+          "metadataToken": 100663496,
           "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
           "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult|static=false",
           "emitScope": "ClassSurface",
@@ -3785,7 +3785,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Match(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663495,
+          "metadataToken": 100663497,
           "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
           "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3799,7 +3799,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::ToString():System.String",
           "clrName": "ToString",
           "tsEmitName": "toString",
-          "metadataToken": 100663503,
+          "metadataToken": 100663505,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
@@ -3813,7 +3813,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
           "tsEmitName": "equals",
-          "metadataToken": 100663504,
+          "metadataToken": 100663506,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -3827,7 +3827,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
           "tsEmitName": "getHashCode",
-          "metadataToken": 100663505,
+          "metadataToken": 100663507,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -3850,7 +3850,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663466
+            "metadataToken": 100663468
           }
         },
         {
@@ -3860,7 +3860,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663467
+            "metadataToken": 100663469
           }
         },
         {
@@ -3870,7 +3870,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663468
+            "metadataToken": 100663470
           }
         },
         {
@@ -3880,7 +3880,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663469
+            "metadataToken": 100663471
           }
         },
         {
@@ -3890,7 +3890,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663470
+            "metadataToken": 100663472
           }
         },
         {
@@ -3900,7 +3900,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663471
+            "metadataToken": 100663473
           }
         },
         {
@@ -3910,7 +3910,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663472
+            "metadataToken": 100663474
           }
         },
         {
@@ -3920,7 +3920,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663473
+            "metadataToken": 100663475
           }
         },
         {
@@ -3930,7 +3930,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663474
+            "metadataToken": 100663476
           }
         },
         {
@@ -3940,7 +3940,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663475
+            "metadataToken": 100663477
           }
         },
         {
@@ -3950,7 +3950,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663476
+            "metadataToken": 100663478
           }
         },
         {
@@ -3960,7 +3960,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663477
+            "metadataToken": 100663479
           }
         },
         {
@@ -3970,7 +3970,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663478
+            "metadataToken": 100663480
           }
         },
         {
@@ -3980,7 +3980,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663479
+            "metadataToken": 100663481
           }
         },
         {
@@ -3990,7 +3990,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663480
+            "metadataToken": 100663482
           }
         },
         {
@@ -4000,7 +4000,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663481
+            "metadataToken": 100663483
           }
         },
         {
@@ -4010,7 +4010,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663482
+            "metadataToken": 100663484
           }
         },
         {
@@ -4020,7 +4020,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663483
+            "metadataToken": 100663485
           }
         },
         {
@@ -4030,7 +4030,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663484
+            "metadataToken": 100663486
           }
         },
         {
@@ -4040,7 +4040,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663485
+            "metadataToken": 100663487
           }
         },
         {
@@ -4050,7 +4050,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663486
+            "metadataToken": 100663488
           }
         },
         {
@@ -4060,7 +4060,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663487
+            "metadataToken": 100663489
           }
         },
         {
@@ -4070,7 +4070,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663488
+            "metadataToken": 100663490
           }
         },
         {
@@ -4080,7 +4080,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663489
+            "metadataToken": 100663491
           }
         },
         {
@@ -4090,7 +4090,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663490
+            "metadataToken": 100663492
           }
         },
         {
@@ -4100,7 +4100,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663491
+            "metadataToken": 100663493
           }
         },
         {
@@ -4110,7 +4110,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663492
+            "metadataToken": 100663494
           }
         },
         {
@@ -4120,7 +4120,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663493
+            "metadataToken": 100663495
           }
         },
         {
@@ -4130,7 +4130,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663494
+            "metadataToken": 100663496
           }
         },
         {
@@ -4140,7 +4140,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663495
+            "metadataToken": 100663497
           }
         },
         {
@@ -4150,7 +4150,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663503
+            "metadataToken": 100663505
           }
         },
         {
@@ -4160,7 +4160,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663504
+            "metadataToken": 100663506
           }
         },
         {
@@ -4170,7 +4170,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00607",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663505
+            "metadataToken": 100663507
           }
         }
       ]
@@ -4186,7 +4186,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From1(T1):Union_8",
           "clrName": "From1",
           "tsEmitName": "from1",
-          "metadataToken": 100663507,
+          "metadataToken": 100663509,
           "canonicalSignature": "(T1):Union_8",
           "normalizedSignature": "From1|(T1):Union_8|static=true",
           "emitScope": "ClassSurface",
@@ -4200,7 +4200,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From2(T2):Union_8",
           "clrName": "From2",
           "tsEmitName": "from2",
-          "metadataToken": 100663508,
+          "metadataToken": 100663510,
           "canonicalSignature": "(T2):Union_8",
           "normalizedSignature": "From2|(T2):Union_8|static=true",
           "emitScope": "ClassSurface",
@@ -4214,7 +4214,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From3(T3):Union_8",
           "clrName": "From3",
           "tsEmitName": "from3",
-          "metadataToken": 100663509,
+          "metadataToken": 100663511,
           "canonicalSignature": "(T3):Union_8",
           "normalizedSignature": "From3|(T3):Union_8|static=true",
           "emitScope": "ClassSurface",
@@ -4228,7 +4228,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From4(T4):Union_8",
           "clrName": "From4",
           "tsEmitName": "from4",
-          "metadataToken": 100663510,
+          "metadataToken": 100663512,
           "canonicalSignature": "(T4):Union_8",
           "normalizedSignature": "From4|(T4):Union_8|static=true",
           "emitScope": "ClassSurface",
@@ -4242,7 +4242,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From5(T5):Union_8",
           "clrName": "From5",
           "tsEmitName": "from5",
-          "metadataToken": 100663511,
+          "metadataToken": 100663513,
           "canonicalSignature": "(T5):Union_8",
           "normalizedSignature": "From5|(T5):Union_8|static=true",
           "emitScope": "ClassSurface",
@@ -4256,7 +4256,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From6(T6):Union_8",
           "clrName": "From6",
           "tsEmitName": "from6",
-          "metadataToken": 100663512,
+          "metadataToken": 100663514,
           "canonicalSignature": "(T6):Union_8",
           "normalizedSignature": "From6|(T6):Union_8|static=true",
           "emitScope": "ClassSurface",
@@ -4270,7 +4270,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From7(T7):Union_8",
           "clrName": "From7",
           "tsEmitName": "from7",
-          "metadataToken": 100663513,
+          "metadataToken": 100663515,
           "canonicalSignature": "(T7):Union_8",
           "normalizedSignature": "From7|(T7):Union_8|static=true",
           "emitScope": "ClassSurface",
@@ -4284,7 +4284,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From8(T8):Union_8",
           "clrName": "From8",
           "tsEmitName": "from8",
-          "metadataToken": 100663514,
+          "metadataToken": 100663516,
           "canonicalSignature": "(T8):Union_8",
           "normalizedSignature": "From8|(T8):Union_8|static=true",
           "emitScope": "ClassSurface",
@@ -4298,7 +4298,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Is1():System.Boolean",
           "clrName": "Is1",
           "tsEmitName": "is1",
-          "metadataToken": 100663515,
+          "metadataToken": 100663517,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is1|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4312,7 +4312,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Is2():System.Boolean",
           "clrName": "Is2",
           "tsEmitName": "is2",
-          "metadataToken": 100663516,
+          "metadataToken": 100663518,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is2|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4326,7 +4326,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Is3():System.Boolean",
           "clrName": "Is3",
           "tsEmitName": "is3",
-          "metadataToken": 100663517,
+          "metadataToken": 100663519,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is3|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4340,7 +4340,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Is4():System.Boolean",
           "clrName": "Is4",
           "tsEmitName": "is4",
-          "metadataToken": 100663518,
+          "metadataToken": 100663520,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is4|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4354,7 +4354,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Is5():System.Boolean",
           "clrName": "Is5",
           "tsEmitName": "is5",
-          "metadataToken": 100663519,
+          "metadataToken": 100663521,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is5|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4368,7 +4368,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Is6():System.Boolean",
           "clrName": "Is6",
           "tsEmitName": "is6",
-          "metadataToken": 100663520,
+          "metadataToken": 100663522,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is6|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4382,7 +4382,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Is7():System.Boolean",
           "clrName": "Is7",
           "tsEmitName": "is7",
-          "metadataToken": 100663521,
+          "metadataToken": 100663523,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is7|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4396,7 +4396,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Is8():System.Boolean",
           "clrName": "Is8",
           "tsEmitName": "is8",
-          "metadataToken": 100663522,
+          "metadataToken": 100663524,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Is8|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4410,7 +4410,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As1():T1",
           "clrName": "As1",
           "tsEmitName": "as1",
-          "metadataToken": 100663523,
+          "metadataToken": 100663525,
           "canonicalSignature": "():T1",
           "normalizedSignature": "As1|():T1|static=false",
           "emitScope": "ClassSurface",
@@ -4424,7 +4424,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As2():T2",
           "clrName": "As2",
           "tsEmitName": "as2",
-          "metadataToken": 100663524,
+          "metadataToken": 100663526,
           "canonicalSignature": "():T2",
           "normalizedSignature": "As2|():T2|static=false",
           "emitScope": "ClassSurface",
@@ -4438,7 +4438,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As3():T3",
           "clrName": "As3",
           "tsEmitName": "as3",
-          "metadataToken": 100663525,
+          "metadataToken": 100663527,
           "canonicalSignature": "():T3",
           "normalizedSignature": "As3|():T3|static=false",
           "emitScope": "ClassSurface",
@@ -4452,7 +4452,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As4():T4",
           "clrName": "As4",
           "tsEmitName": "as4",
-          "metadataToken": 100663526,
+          "metadataToken": 100663528,
           "canonicalSignature": "():T4",
           "normalizedSignature": "As4|():T4|static=false",
           "emitScope": "ClassSurface",
@@ -4466,7 +4466,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As5():T5",
           "clrName": "As5",
           "tsEmitName": "as5",
-          "metadataToken": 100663527,
+          "metadataToken": 100663529,
           "canonicalSignature": "():T5",
           "normalizedSignature": "As5|():T5|static=false",
           "emitScope": "ClassSurface",
@@ -4480,7 +4480,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As6():T6",
           "clrName": "As6",
           "tsEmitName": "as6",
-          "metadataToken": 100663528,
+          "metadataToken": 100663530,
           "canonicalSignature": "():T6",
           "normalizedSignature": "As6|():T6|static=false",
           "emitScope": "ClassSurface",
@@ -4494,7 +4494,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As7():T7",
           "clrName": "As7",
           "tsEmitName": "as7",
-          "metadataToken": 100663529,
+          "metadataToken": 100663531,
           "canonicalSignature": "():T7",
           "normalizedSignature": "As7|():T7|static=false",
           "emitScope": "ClassSurface",
@@ -4508,7 +4508,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As8():T8",
           "clrName": "As8",
           "tsEmitName": "as8",
-          "metadataToken": 100663530,
+          "metadataToken": 100663532,
           "canonicalSignature": "():T8",
           "normalizedSignature": "As8|():T8|static=false",
           "emitScope": "ClassSurface",
@@ -4522,7 +4522,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs1(T1\u0026):System.Boolean",
           "clrName": "TryAs1",
           "tsEmitName": "tryAs1",
-          "metadataToken": 100663531,
+          "metadataToken": 100663533,
           "canonicalSignature": "(T1\u0026):System.Boolean",
           "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4542,7 +4542,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs2(T2\u0026):System.Boolean",
           "clrName": "TryAs2",
           "tsEmitName": "tryAs2",
-          "metadataToken": 100663532,
+          "metadataToken": 100663534,
           "canonicalSignature": "(T2\u0026):System.Boolean",
           "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4562,7 +4562,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs3(T3\u0026):System.Boolean",
           "clrName": "TryAs3",
           "tsEmitName": "tryAs3",
-          "metadataToken": 100663533,
+          "metadataToken": 100663535,
           "canonicalSignature": "(T3\u0026):System.Boolean",
           "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4582,7 +4582,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs4(T4\u0026):System.Boolean",
           "clrName": "TryAs4",
           "tsEmitName": "tryAs4",
-          "metadataToken": 100663534,
+          "metadataToken": 100663536,
           "canonicalSignature": "(T4\u0026):System.Boolean",
           "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4602,7 +4602,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs5(T5\u0026):System.Boolean",
           "clrName": "TryAs5",
           "tsEmitName": "tryAs5",
-          "metadataToken": 100663535,
+          "metadataToken": 100663537,
           "canonicalSignature": "(T5\u0026):System.Boolean",
           "normalizedSignature": "TryAs5|(T5\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4622,7 +4622,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs6(T6\u0026):System.Boolean",
           "clrName": "TryAs6",
           "tsEmitName": "tryAs6",
-          "metadataToken": 100663536,
+          "metadataToken": 100663538,
           "canonicalSignature": "(T6\u0026):System.Boolean",
           "normalizedSignature": "TryAs6|(T6\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4642,7 +4642,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs7(T7\u0026):System.Boolean",
           "clrName": "TryAs7",
           "tsEmitName": "tryAs7",
-          "metadataToken": 100663537,
+          "metadataToken": 100663539,
           "canonicalSignature": "(T7\u0026):System.Boolean",
           "normalizedSignature": "TryAs7|(T7\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4662,7 +4662,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs8(T8\u0026):System.Boolean",
           "clrName": "TryAs8",
           "tsEmitName": "tryAs8",
-          "metadataToken": 100663538,
+          "metadataToken": 100663540,
           "canonicalSignature": "(T8\u0026):System.Boolean",
           "normalizedSignature": "TryAs8|(T8\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4682,7 +4682,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Match(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663539,
+          "metadataToken": 100663541,
           "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
           "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult|static=false",
           "emitScope": "ClassSurface",
@@ -4696,7 +4696,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Match(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
           "clrName": "Match",
           "tsEmitName": "match",
-          "metadataToken": 100663540,
+          "metadataToken": 100663542,
           "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
           "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4710,7 +4710,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::ToString():System.String",
           "clrName": "ToString",
           "tsEmitName": "toString",
-          "metadataToken": 100663549,
+          "metadataToken": 100663551,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
@@ -4724,7 +4724,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
           "tsEmitName": "equals",
-          "metadataToken": 100663550,
+          "metadataToken": 100663552,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4738,7 +4738,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
           "tsEmitName": "getHashCode",
-          "metadataToken": 100663551,
+          "metadataToken": 100663553,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -4761,7 +4761,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663507
+            "metadataToken": 100663509
           }
         },
         {
@@ -4771,7 +4771,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663508
+            "metadataToken": 100663510
           }
         },
         {
@@ -4781,7 +4781,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663509
+            "metadataToken": 100663511
           }
         },
         {
@@ -4791,7 +4791,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663510
+            "metadataToken": 100663512
           }
         },
         {
@@ -4801,7 +4801,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663511
+            "metadataToken": 100663513
           }
         },
         {
@@ -4811,7 +4811,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663512
+            "metadataToken": 100663514
           }
         },
         {
@@ -4821,7 +4821,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663513
+            "metadataToken": 100663515
           }
         },
         {
@@ -4831,7 +4831,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663514
+            "metadataToken": 100663516
           }
         },
         {
@@ -4841,7 +4841,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663515
+            "metadataToken": 100663517
           }
         },
         {
@@ -4851,7 +4851,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663516
+            "metadataToken": 100663518
           }
         },
         {
@@ -4861,7 +4861,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663517
+            "metadataToken": 100663519
           }
         },
         {
@@ -4871,7 +4871,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663518
+            "metadataToken": 100663520
           }
         },
         {
@@ -4881,7 +4881,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663519
+            "metadataToken": 100663521
           }
         },
         {
@@ -4891,7 +4891,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663520
+            "metadataToken": 100663522
           }
         },
         {
@@ -4901,7 +4901,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663521
+            "metadataToken": 100663523
           }
         },
         {
@@ -4911,7 +4911,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663522
+            "metadataToken": 100663524
           }
         },
         {
@@ -4921,7 +4921,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663523
+            "metadataToken": 100663525
           }
         },
         {
@@ -4931,7 +4931,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663524
+            "metadataToken": 100663526
           }
         },
         {
@@ -4941,7 +4941,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663525
+            "metadataToken": 100663527
           }
         },
         {
@@ -4951,7 +4951,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663526
+            "metadataToken": 100663528
           }
         },
         {
@@ -4961,7 +4961,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663527
+            "metadataToken": 100663529
           }
         },
         {
@@ -4971,7 +4971,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663528
+            "metadataToken": 100663530
           }
         },
         {
@@ -4981,7 +4981,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663529
+            "metadataToken": 100663531
           }
         },
         {
@@ -4991,7 +4991,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663530
+            "metadataToken": 100663532
           }
         },
         {
@@ -5001,7 +5001,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663531
+            "metadataToken": 100663533
           }
         },
         {
@@ -5011,7 +5011,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663532
+            "metadataToken": 100663534
           }
         },
         {
@@ -5021,7 +5021,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663533
+            "metadataToken": 100663535
           }
         },
         {
@@ -5031,7 +5031,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663534
+            "metadataToken": 100663536
           }
         },
         {
@@ -5041,7 +5041,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663535
+            "metadataToken": 100663537
           }
         },
         {
@@ -5051,7 +5051,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663536
+            "metadataToken": 100663538
           }
         },
         {
@@ -5061,7 +5061,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663537
+            "metadataToken": 100663539
           }
         },
         {
@@ -5071,7 +5071,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663538
+            "metadataToken": 100663540
           }
         },
         {
@@ -5081,7 +5081,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663539
+            "metadataToken": 100663541
           }
         },
         {
@@ -5091,7 +5091,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663540
+            "metadataToken": 100663542
           }
         },
         {
@@ -5101,7 +5101,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663549
+            "metadataToken": 100663551
           }
         },
         {
@@ -5111,7 +5111,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663550
+            "metadataToken": 100663552
           }
         },
         {
@@ -5121,7 +5121,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Union\u00608",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663551
+            "metadataToken": 100663553
           }
         }
       ]
@@ -5146,6 +5146,34 @@
           "declaringClrType": "Tsonic.Runtime.ArrayHelpers",
           "declaringAssemblyName": "Tsonic.Runtime",
           "isExtensionMethod": false
+        },
+        {
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(IList_1,System.Int32):T[]",
+          "clrName": "Slice",
+          "tsEmitName": "slice",
+          "metadataToken": 100663298,
+          "canonicalSignature": "(IList_1,System.Int32):T[]",
+          "normalizedSignature": "Slice|(IList_1,System.Int32):T[]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "Tsonic.Runtime.ArrayHelpers",
+          "declaringAssemblyName": "Tsonic.Runtime",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(IEnumerable_1,System.Int32):T[]",
+          "clrName": "Slice",
+          "tsEmitName": "slice",
+          "metadataToken": 100663299,
+          "canonicalSignature": "(IEnumerable_1,System.Int32):T[]",
+          "normalizedSignature": "Slice|(IEnumerable_1,System.Int32):T[]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "Tsonic.Runtime.ArrayHelpers",
+          "declaringAssemblyName": "Tsonic.Runtime",
+          "isExtensionMethod": false
         }
       ],
       "properties": [],
@@ -5162,6 +5190,26 @@
             "declaringAssemblyName": "Tsonic.Runtime",
             "metadataToken": 100663297
           }
+        },
+        {
+          "tsName": "slice",
+          "isStatic": true,
+          "tsSignatureId": "Slice|(IList_1,System.Int32):T[]|static=true",
+          "target": {
+            "declaringClrType": "Tsonic.Runtime.ArrayHelpers",
+            "declaringAssemblyName": "Tsonic.Runtime",
+            "metadataToken": 100663298
+          }
+        },
+        {
+          "tsName": "slice",
+          "isStatic": true,
+          "tsSignatureId": "Slice|(IEnumerable_1,System.Int32):T[]|static=true",
+          "target": {
+            "declaringClrType": "Tsonic.Runtime.ArrayHelpers",
+            "declaringAssemblyName": "Tsonic.Runtime",
+            "metadataToken": 100663299
+          }
         }
       ]
     },
@@ -5176,7 +5224,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Operators::typeof(System.Object):System.String",
           "clrName": "typeof",
           "tsEmitName": "typeof_",
-          "metadataToken": 100663321,
+          "metadataToken": 100663323,
           "canonicalSignature": "(System.Object):System.String",
           "normalizedSignature": "typeof|(System.Object):System.String|static=true",
           "emitScope": "ClassSurface",
@@ -5190,7 +5238,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Operators::instanceof(System.Object,System.Type):System.Boolean",
           "clrName": "instanceof",
           "tsEmitName": "instanceof_",
-          "metadataToken": 100663322,
+          "metadataToken": 100663324,
           "canonicalSignature": "(System.Object,System.Type):System.Boolean",
           "normalizedSignature": "instanceof|(System.Object,System.Type):System.Boolean|static=true",
           "emitScope": "ClassSurface",
@@ -5213,7 +5261,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Operators",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663321
+            "metadataToken": 100663323
           }
         },
         {
@@ -5223,7 +5271,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Operators",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663322
+            "metadataToken": 100663324
           }
         }
       ]
@@ -5239,7 +5287,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::Clone(System.Object):T",
           "clrName": "Clone",
           "tsEmitName": "clone",
-          "metadataToken": 100663323,
+          "metadataToken": 100663325,
           "canonicalSignature": "(System.Object):T",
           "normalizedSignature": "Clone|(System.Object):T|static=true",
           "emitScope": "ClassSurface",
@@ -5253,7 +5301,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::CloneFromDictionary(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "CloneFromDictionary",
           "tsEmitName": "cloneFromDictionary",
-          "metadataToken": 100663324,
+          "metadataToken": 100663326,
           "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "CloneFromDictionary|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=true",
           "emitScope": "ClassSurface",
@@ -5267,7 +5315,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::ToDictionary(System.Object):System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "ToDictionary",
           "tsEmitName": "toDictionary",
-          "metadataToken": 100663325,
+          "metadataToken": 100663327,
           "canonicalSignature": "(System.Object):System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ToDictionary|(System.Object):System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
           "emitScope": "ClassSurface",
@@ -5281,7 +5329,7 @@
           "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::CreateDictionaryAdapter(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):DictionaryAdapter_1",
           "clrName": "CreateDictionaryAdapter",
           "tsEmitName": "createDictionaryAdapter",
-          "metadataToken": 100663326,
+          "metadataToken": 100663328,
           "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):DictionaryAdapter_1",
           "normalizedSignature": "CreateDictionaryAdapter|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):DictionaryAdapter_1|static=true",
           "emitScope": "ClassSurface",
@@ -5304,7 +5352,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Structural",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663323
+            "metadataToken": 100663325
           }
         },
         {
@@ -5314,7 +5362,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Structural",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663324
+            "metadataToken": 100663326
           }
         },
         {
@@ -5324,7 +5372,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Structural",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663325
+            "metadataToken": 100663327
           }
         },
         {
@@ -5334,7 +5382,7 @@
           "target": {
             "declaringClrType": "Tsonic.Runtime.Structural",
             "declaringAssemblyName": "Tsonic.Runtime",
-            "metadataToken": 100663326
+            "metadataToken": 100663328
           }
         }
       ]
