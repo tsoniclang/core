@@ -3555,6 +3555,38 @@
           "arity": 1,
           "parameterCount": 2,
           "isExtensionMethod": false
+        },
+        {
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(IList_1,System.Int32):T[]",
+          "clrName": "Slice",
+          "tsEmitName": "slice",
+          "normalizedSignature": "Slice|(IList_1,System.Int32):T[]|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 1,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(IEnumerable_1,System.Int32):T[]",
+          "clrName": "Slice",
+          "tsEmitName": "slice",
+          "normalizedSignature": "Slice|(IEnumerable_1,System.Int32):T[]|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 1,
+          "parameterCount": 2,
+          "isExtensionMethod": false
         }
       ],
       "properties": [],

@@ -1,6 +1,6 @@
 {
   "name": "@tsonic/core",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Core type definitions for Tsonic - TypeScript to native compiler",
   "type": "module",
   "keywords": [
