@@ -25,11 +25,46 @@ export type Ctor<T = unknown, Args extends readonly any[] = readonly any[]> = ne
 /** Any attribute class constructor. */
 export type AttributeCtor = Ctor<object, readonly any[]>;
 
+/**
+ * Extract constructor parameters across multiple overloads.
+ *
+ * TypeScript's built-in ConstructorParameters<C> collapses overloads to the
+ * last signature, which makes attribute ctor typing unusably strict for many
+ * .NET attributes.
+ */
+export type OverloadedConstructorParameters<C extends AttributeCtor> =
+  C extends {
+    new (...args: infer A1): any;
+    new (...args: infer A2): any;
+    new (...args: infer A3): any;
+    new (...args: infer A4): any;
+    new (...args: infer A5): any;
+  }
+    ? A1 | A2 | A3 | A4 | A5
+    : C extends {
+          new (...args: infer A1): any;
+          new (...args: infer A2): any;
+          new (...args: infer A3): any;
+          new (...args: infer A4): any;
+        }
+      ? A1 | A2 | A3 | A4
+      : C extends {
+            new (...args: infer A1): any;
+            new (...args: infer A2): any;
+            new (...args: infer A3): any;
+          }
+        ? A1 | A2 | A3
+        : C extends { new (...args: infer A1): any; new (...args: infer A2): any }
+          ? A1 | A2
+          : C extends { new (...args: infer A): any }
+            ? A
+            : never;
+
 /** Attribute application (constructor + ctor arguments). */
 export interface AttributeDescriptor<C extends AttributeCtor = AttributeCtor> {
   readonly kind: "attribute";
   readonly ctor: C;
-  readonly args: readonly ConstructorParameters<C>;
+  readonly args: readonly OverloadedConstructorParameters<C>;
 }
 
 /** Extract instance type of a constructor. */
@@ -107,7 +142,7 @@ export interface AttributeTargetBuilder {
    */
   add<C extends AttributeCtor>(
     ctor: C,
-    ...args: ConstructorParameters<C>
+    ...args: OverloadedConstructorParameters<C>
   ): void;
 
   /**
@@ -147,7 +182,7 @@ export interface AttributesApi {
    */
   attr<C extends AttributeCtor>(
     ctor: C,
-    ...args: ConstructorParameters<C>
+    ...args: OverloadedConstructorParameters<C>
   ): AttributeDescriptor<C>;
 }
 
