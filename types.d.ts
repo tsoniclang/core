@@ -139,6 +139,5 @@ export type inref<T> = T;
  * ```
  */
 export interface struct {
-  readonly __brand: unique symbol;
+  readonly __brand?: unique symbol;
 }
-
