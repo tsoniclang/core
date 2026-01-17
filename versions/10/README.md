@@ -2,14 +2,6 @@
 
 Core type definitions for Tsonic - a TypeScript to native compiler.
 
-## Versioning
-
-This repo is versioned by **.NET major**:
-
-- **.NET 10** → `versions/10/` → npm: `@tsonic/core@10.x`
-
-When publishing, run: `npm publish versions/10 --access public`
-
 ## Installation
 
 ```bash

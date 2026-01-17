@@ -10,7 +10,7 @@
 #   - runtime repository cloned at ../runtime (sibling directory)
 #
 # Usage:
-#   ./__build/scripts/generate.sh
+#   ./__build/scripts/generate.sh [dotnetMajor]
 
 set -e
 
@@ -18,7 +18,12 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 TSBINDGEN_DIR="$PROJECT_DIR/../tsbindgen"
 RUNTIME_DIR="$PROJECT_DIR/../runtime"
-DOTNET_LIB="$PROJECT_DIR/../dotnet"
+
+# .NET major to generate (publishes to versions/<major>/)
+DOTNET_MAJOR="${1:-10}"
+OUT_DIR="$PROJECT_DIR/versions/$DOTNET_MAJOR"
+
+DOTNET_LIB="$PROJECT_DIR/../dotnet/versions/$DOTNET_MAJOR"
 
 # .NET runtime path (needed for BCL type resolution)
 DOTNET_VERSION="${DOTNET_VERSION:-10.0.0}"
@@ -26,7 +31,7 @@ DOTNET_HOME="${DOTNET_HOME:-$HOME/.dotnet}"
 DOTNET_RUNTIME_PATH="$DOTNET_HOME/shared/Microsoft.NETCore.App/$DOTNET_VERSION"
 
 # Tsonic.Runtime.dll path
-RUNTIME_DLL="$RUNTIME_DIR/artifacts/bin/Tsonic.Runtime/Release/net10.0/Tsonic.Runtime.dll"
+RUNTIME_DLL="$RUNTIME_DIR/artifacts/bin/Tsonic.Runtime/Release/net${DOTNET_MAJOR}.0/Tsonic.Runtime.dll"
 
 echo "================================================================"
 echo "Generating Tsonic.Runtime TypeScript Declarations for @tsonic/core"
@@ -37,7 +42,7 @@ echo "  Runtime.dll:   $RUNTIME_DLL"
 echo "  .NET Runtime:  $DOTNET_RUNTIME_PATH"
 echo "  BCL Library:   $DOTNET_LIB (external reference)"
 echo "  tsbindgen:     $TSBINDGEN_DIR"
-echo "  Output:        $PROJECT_DIR"
+echo "  Output:        $OUT_DIR"
 echo "  Naming:        JS (camelCase)"
 echo ""
 
@@ -68,7 +73,8 @@ fi
 
 # Clean only generated runtime files (keep hand-written types.d.ts, attributes.d.ts)
 echo "[1/3] Cleaning generated runtime files..."
-cd "$PROJECT_DIR"
+mkdir -p "$OUT_DIR"
+cd "$OUT_DIR"
 
 # Remove only the generated runtime directory and facade files
 rm -rf Tsonic.Runtime/ runtime/ 2>/dev/null || true
@@ -88,10 +94,13 @@ echo "  Done"
 # Uses --namespace-map to emit as runtime.d.ts/runtime.js for cleaner imports
 echo "[3/3] Generating TypeScript declarations..."
 dotnet run --project src/tsbindgen/tsbindgen.csproj --no-build -c Release -- \
-    generate -a "$RUNTIME_DLL" -d "$DOTNET_RUNTIME_PATH" -o "$PROJECT_DIR" \
+    generate -a "$RUNTIME_DLL" -d "$DOTNET_RUNTIME_PATH" -o "$OUT_DIR" \
     --lib "$DOTNET_LIB" \
     --naming js \
     --namespace-map "Tsonic.Runtime=runtime"
+
+cp -f "$PROJECT_DIR/README.md" "$OUT_DIR/README.md"
+cp -f "$PROJECT_DIR/LICENSE" "$OUT_DIR/LICENSE"
 
 echo ""
 echo "================================================================"
