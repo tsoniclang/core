@@ -1,26 +1,10 @@
 {
-  "name": "@tsonic/core",
-  "version": "0.6.3",
-  "description": "Core type definitions for Tsonic - TypeScript to native compiler",
+  "name": "@tsonic/core-repo",
+  "private": true,
+  "description": "Repo for @tsonic/core (versioned by .NET major in versions/<major>/)",
   "type": "module",
-  "keywords": [
-    "typescript",
-    "dotnet",
-    "clr",
-    "runtime",
-    "primitives",
-    "interop",
-    "csharp",
-    "tsonic"
-  ],
-  "author": "Tsonic Team",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tsoniclang/core.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tsoniclang/core/issues"
-  },
-  "homepage": "https://github.com/tsoniclang/core#readme"
+  "scripts": {
+    "generate:10": "./__build/scripts/generate.sh 10",
+    "publish:10": "npm publish ./versions/10 --access public"
+  }
 }

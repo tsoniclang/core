@@ -203,6 +203,6 @@ export type thisarg<T> = T;
  * Used as the return type of stackalloc.
  */
 export interface Span<T> {
-  readonly length: int;
+  readonly Length: int;
   [index: number]: T;
 }
