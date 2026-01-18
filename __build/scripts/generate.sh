@@ -43,7 +43,6 @@ echo "  .NET Runtime:  $DOTNET_RUNTIME_PATH"
 echo "  BCL Library:   $DOTNET_LIB (external reference)"
 echo "  tsbindgen:     $TSBINDGEN_DIR"
 echo "  Output:        $OUT_DIR"
-echo "  Naming:        JS (camelCase)"
 echo ""
 
 # Verify prerequisites
@@ -89,14 +88,13 @@ cd "$TSBINDGEN_DIR"
 dotnet build src/tsbindgen/tsbindgen.csproj -c Release --verbosity quiet
 echo "  Done"
 
-# Generate types with JavaScript-style naming
+# Generate types with CLR-faithful naming.
 # Uses --lib to reference BCL types from @tsonic/dotnet instead of regenerating them
 # Uses --namespace-map to emit as runtime.d.ts/runtime.js for cleaner imports
 echo "[3/3] Generating TypeScript declarations..."
 dotnet run --project src/tsbindgen/tsbindgen.csproj --no-build -c Release -- \
     generate -a "$RUNTIME_DLL" -d "$DOTNET_RUNTIME_PATH" -o "$OUT_DIR" \
     --lib "$DOTNET_LIB" \
-    --naming js \
     --namespace-map "Tsonic.Runtime=runtime"
 
 cp -f "$PROJECT_DIR/README.md" "$OUT_DIR/README.md"
