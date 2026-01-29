@@ -169,6 +169,33 @@ export declare function nameof(expression: unknown): string;
  */
 export declare function trycast<T>(value: unknown): T | null;
 
+/**
+ * Compile-time-only type selection marker.
+ *
+ * This is NOT a runtime type test. The compiler must erase this call before emitting C#.
+ *
+ * Primary use: specialize a single TypeScript overload implementation into one CLR method
+ * per signature (e.g., overriding a protected virtual overload family).
+ *
+ * @example
+ * ```ts
+ * import { isType } from "@tsonic/core/lang.js";
+ * import type { int } from "@tsonic/core/types.js";
+ *
+ * // Overload signatures
+ * Foo(x: int): int;
+ * Foo(x: string): int;
+ *
+ * // Single implementation (compile-time specialized)
+ * Foo(p0: unknown): unknown {
+ *   if (isType<int>(p0)) return p0 + 1;
+ *   if (isType<string>(p0)) return p0.length;
+ *   throw new Error("unreachable");
+ * }
+ * ```
+ */
+export declare function isType<T>(value: unknown): value is T;
+
 // ============================================================================
 // Extension Method Intrinsics
 // ============================================================================
