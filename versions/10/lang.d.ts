@@ -170,6 +170,25 @@ export declare function nameof(expression: unknown): string;
 export declare function trycast<T>(value: unknown): T | null;
 
 /**
+ * Compile-time-only interface view.
+ *
+ * This is NOT a runtime cast. The compiler must erase this call before emitting C#.
+ *
+ * Primary use: treat a value as a CLR interface/nominal type for TypeScript type checking,
+ * without introducing runtime casts in emitted C# (important for EF Core precompilation).
+ *
+ * @example
+ * ```ts
+ * import { asinterface } from "@tsonic/core/lang.js";
+ * import type { IQueryable } from "@tsonic/dotnet/System.Linq.js";
+ *
+ * const q = asinterface<IQueryable<User>>(db.Users);
+ * // q is typed as IQueryable<User> in TS, but emits without a cast in C#.
+ * ```
+ */
+export declare function asinterface<T>(value: unknown): T;
+
+/**
  * Compile-time-only type selection marker.
  *
  * This is NOT a runtime type test. The compiler must erase this call before emitting C#.
@@ -179,7 +198,7 @@ export declare function trycast<T>(value: unknown): T | null;
  *
  * @example
  * ```ts
- * import { isType } from "@tsonic/core/lang.js";
+ * import { istype } from "@tsonic/core/lang.js";
  * import type { int } from "@tsonic/core/types.js";
  *
  * // Overload signatures
@@ -188,13 +207,18 @@ export declare function trycast<T>(value: unknown): T | null;
  *
  * // Single implementation (compile-time specialized)
  * Foo(p0: unknown): unknown {
- *   if (isType<int>(p0)) return p0 + 1;
- *   if (isType<string>(p0)) return p0.length;
+ *   if (istype<int>(p0)) return p0 + 1;
+ *   if (istype<string>(p0)) return p0.length;
  *   throw new Error("unreachable");
  * }
  * ```
  */
-export declare function isType<T>(value: unknown): value is T;
+export declare function istype<T>(value: unknown): value is T;
+
+/**
+ * @deprecated Use istype<T>(...) instead.
+ */
+export declare const isType: typeof istype;
 
 // ============================================================================
 // Extension Method Intrinsics
