@@ -215,11 +215,6 @@ export declare function asinterface<T>(value: unknown): T;
  */
 export declare function istype<T>(value: unknown): value is T;
 
-/**
- * @deprecated Use istype<T>(...) instead.
- */
-export declare const isType: typeof istype;
-
 // ============================================================================
 // Extension Method Intrinsics
 // ============================================================================
