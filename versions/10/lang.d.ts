@@ -189,6 +189,38 @@ export declare function trycast<T>(value: unknown): T | null;
 export declare function asinterface<T>(value: unknown): T;
 
 /**
+ * Parameter passing modifiers (call-site markers).
+ *
+ * These are compile-time-only intrinsics. The compiler must erase them and emit
+ * the corresponding C# argument modifiers: `out`, `ref`, `in`.
+ *
+ * These are *not* runtime functions.
+ *
+ * @example
+ * ```ts
+ * import { defaultof, out } from "@tsonic/core/lang.js";
+ *
+ * let value = defaultof<int>();
+ * if (dict.TryGetValue("key", out(value))) {
+ *   // value is assigned by the call
+ * }
+ * ```
+ */
+export declare function out<T>(value: T): T;
+
+/**
+ * Compile-time-only `ref` argument marker (emits `ref x`).
+ */
+export declare function ref<T>(value: T): T;
+
+/**
+ * Compile-time-only `in` argument marker (emits `in x`).
+ *
+ * Named `inref` because `in` is a TypeScript reserved keyword.
+ */
+export declare function inref<T>(value: T): T;
+
+/**
  * Compile-time-only type selection marker.
  *
  * This is NOT a runtime type test. The compiler must erase this call before emitting C#.
