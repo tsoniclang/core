@@ -1,6 +1,6 @@
 {
   "name": "@tsonic/core",
-  "version": "10.0.4",
+  "version": "10.0.5",
   "description": "Core type definitions for Tsonic (versioned by .NET major)",
   "type": "module",
   "keywords": [
