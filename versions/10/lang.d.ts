@@ -196,19 +196,24 @@ export declare function asinterface<T>(value: unknown): T;
  *
  * @example
  * ```ts
- * import type { Implements } from "@tsonic/core/lang.js";
+ * import type { Interface } from "@tsonic/core/lang.js";
  * import type { IDesignTimeDbContextFactory } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js";
  *
- * export class MyFactory implements Implements<IDesignTimeDbContextFactory<MyDbContext>> {
+ * export class MyFactory implements Interface<IDesignTimeDbContextFactory<MyDbContext>> {
  *   CreateDbContext(_args: string[]): MyDbContext {
  *     return new MyDbContext();
  *   }
  * }
  * ```
  */
-export type Implements<T> = {
+export type Interface<T> = {
   [K in keyof T as K extends `__tsonic_iface_${string}` ? never : K]: T[K];
 };
+
+/**
+ * @deprecated Use `Interface<T>` instead.
+ */
+export type Implements<T> = Interface<T>;
 
 /**
  * Parameter passing modifiers (call-site markers).
