@@ -295,6 +295,46 @@ export declare function istype<T>(value: unknown): value is T;
 export type thisarg<T> = T;
 
 // ============================================================================
+// Sticky Extension Scopes (used by generated bindings)
+// ============================================================================
+
+type __TsonicUnionToIntersection<T> =
+  (T extends unknown ? (k: T) => void : never) extends (k: infer I) => void ? I : never;
+
+type __TsonicExtMapOf<T> = T extends { __tsonic_ext?: infer M } ? M : {};
+
+type __TsonicExtApplierUnion<T> = __TsonicExtMapOf<T>[keyof __TsonicExtMapOf<T>];
+
+type __TsonicApplyApplier<TApplier, TShape> = TApplier extends (shape: TShape) => infer R ? R : never;
+
+type __TsonicApplyAllAppliers<TReceiver, TShape> =
+  [__TsonicExtApplierUnion<TReceiver>] extends [never]
+    ? {}
+    : __TsonicUnionToIntersection<
+      __TsonicExtApplierUnion<TReceiver> extends infer A
+        ? A extends unknown
+          ? __TsonicApplyApplier<A, TShape>
+          : never
+        : never
+    >;
+
+type __TsonicExtCarrier<TReceiver> =
+  TReceiver extends { __tsonic_ext?: infer M } ? { __tsonic_ext?: M } : {};
+
+/**
+ * Rewrap a return shape with the extension scopes that were in scope on the receiver.
+ *
+ * This is used by generated `ExtensionMethods_*` typings so fluent chains keep the same
+ * extension namespaces "sticky" (similar to C# `using` semantics).
+ *
+ * This is compile-time-only. There is no runtime behavior.
+ */
+export type Rewrap<TReceiver, TNewShape> =
+  TNewShape extends null | undefined ? TNewShape
+  : TNewShape extends void ? void
+  : TNewShape & __TsonicExtCarrier<TReceiver> & __TsonicApplyAllAppliers<TReceiver, TNewShape>;
+
+// ============================================================================
 // Span type (for stackalloc return type)
 // ============================================================================
 
