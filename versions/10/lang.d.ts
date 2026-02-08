@@ -189,6 +189,28 @@ export declare function trycast<T>(value: unknown): T | null;
 export declare function asinterface<T>(value: unknown): T;
 
 /**
+ * Makes a CLR interface type implementable in TypeScript without requiring
+ * internal `__tsonic_iface_*` nominal brand fields.
+ *
+ * Use ONLY in `implements` clauses.
+ *
+ * @example
+ * ```ts
+ * import type { Implements } from "@tsonic/core/lang.js";
+ * import type { IDesignTimeDbContextFactory } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js";
+ *
+ * export class MyFactory implements Implements<IDesignTimeDbContextFactory<MyDbContext>> {
+ *   CreateDbContext(_args: string[]): MyDbContext {
+ *     return new MyDbContext();
+ *   }
+ * }
+ * ```
+ */
+export type Implements<T> = {
+  [K in keyof T as K extends `__tsonic_iface_${string}` ? never : K]: T[K];
+};
+
+/**
  * Parameter passing modifiers (call-site markers).
  *
  * These are compile-time-only intrinsics. The compiler must erase them and emit
