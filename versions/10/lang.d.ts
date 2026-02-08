@@ -305,7 +305,10 @@ type __TsonicExtMapOf<T> = T extends { __tsonic_ext?: infer M } ? M : {};
 
 type __TsonicExtApplierUnion<T> = __TsonicExtMapOf<T>[keyof __TsonicExtMapOf<T>];
 
-type __TsonicApplyApplier<TApplier, TShape> = TApplier extends (shape: TShape) => infer R ? R : never;
+type __TsonicApplyApplier<TApplier, TShape> =
+  TApplier extends { __tsonic_type: unknown }
+    ? (TApplier & { __tsonic_shape: TShape })["__tsonic_type"]
+    : never;
 
 type __TsonicApplyAllAppliers<TReceiver, TShape> =
   [__TsonicExtApplierUnion<TReceiver>] extends [never]
