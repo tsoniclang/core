@@ -211,11 +211,6 @@ export type Interface<T> = {
 };
 
 /**
- * @deprecated Use `Interface<T>` instead.
- */
-export type Implements<T> = Interface<T>;
-
-/**
  * Parameter passing modifiers (call-site markers).
  *
  * These are compile-time-only intrinsics. The compiler must erase them and emit
