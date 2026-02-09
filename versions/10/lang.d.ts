@@ -189,6 +189,28 @@ export declare function trycast<T>(value: unknown): T | null;
 export declare function asinterface<T>(value: unknown): T;
 
 /**
+ * Makes a CLR interface type implementable in TypeScript without requiring
+ * internal `__tsonic_iface_*` nominal brand fields.
+ *
+ * Use ONLY in `implements` clauses.
+ *
+ * @example
+ * ```ts
+ * import type { Interface } from "@tsonic/core/lang.js";
+ * import type { IDesignTimeDbContextFactory } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js";
+ *
+ * export class MyFactory implements Interface<IDesignTimeDbContextFactory<MyDbContext>> {
+ *   CreateDbContext(_args: string[]): MyDbContext {
+ *     return new MyDbContext();
+ *   }
+ * }
+ * ```
+ */
+export type Interface<T> = {
+  [K in keyof T as K extends `__tsonic_iface_${string}` ? never : K]: T[K];
+};
+
+/**
  * Parameter passing modifiers (call-site markers).
  *
  * These are compile-time-only intrinsics. The compiler must erase them and emit
@@ -271,6 +293,49 @@ export declare function istype<T>(value: unknown): value is T;
  * ```
  */
 export type thisarg<T> = T;
+
+// ============================================================================
+// Sticky Extension Scopes (used by generated bindings)
+// ============================================================================
+
+type __TsonicUnionToIntersection<T> =
+  (T extends unknown ? (k: T) => void : never) extends (k: infer I) => void ? I : never;
+
+type __TsonicExtMapOf<T> = T extends { __tsonic_ext?: infer M } ? M : {};
+
+type __TsonicExtApplierUnion<T> = __TsonicExtMapOf<T>[keyof __TsonicExtMapOf<T>];
+
+type __TsonicApplyApplier<TApplier, TShape> =
+  TApplier extends { __tsonic_type: unknown }
+    ? (TApplier & { __tsonic_shape: TShape })["__tsonic_type"]
+    : never;
+
+type __TsonicApplyAllAppliers<TReceiver, TShape> =
+  [__TsonicExtApplierUnion<TReceiver>] extends [never]
+    ? {}
+    : __TsonicUnionToIntersection<
+      __TsonicExtApplierUnion<TReceiver> extends infer A
+        ? A extends unknown
+          ? __TsonicApplyApplier<A, TShape>
+          : never
+        : never
+    >;
+
+type __TsonicExtCarrier<TReceiver> =
+  TReceiver extends { __tsonic_ext?: infer M } ? { __tsonic_ext?: M } : {};
+
+/**
+ * Rewrap a return shape with the extension scopes that were in scope on the receiver.
+ *
+ * This is used by generated `ExtensionMethods_*` typings so fluent chains keep the same
+ * extension namespaces "sticky" (similar to C# `using` semantics).
+ *
+ * This is compile-time-only. There is no runtime behavior.
+ */
+export type Rewrap<TReceiver, TNewShape> =
+  TNewShape extends null | undefined ? TNewShape
+  : TNewShape extends void ? void
+  : TNewShape & __TsonicExtCarrier<TReceiver> & __TsonicApplyAllAppliers<TReceiver, TNewShape>;
 
 // ============================================================================
 // Span type (for stackalloc return type)
