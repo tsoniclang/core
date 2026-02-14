@@ -334,9 +334,9 @@ export const Union_8: {
 export type Union_8<T1, T2, T3, T4, T5, T6, T7, T8> = Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8>;
 
 export abstract class ArrayHelpers$instance {
-    static Slice<T>(source: T[], startIndex: int): T[];
     static Slice<T>(source: IEnumerable_1<T>, startIndex: int): T[];
     static Slice<T>(source: IList_1<T>, startIndex: int): T[];
+    static Slice<T>(source: T[], startIndex: int): T[];
 }
 
 
