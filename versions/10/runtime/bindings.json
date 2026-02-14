@@ -93,11 +93,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::Equals(IteratorResult_1):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::Equals(Tsonic.Runtime.IteratorResult_1[[!0]]):System.Boolean",
           "clrName": "Equals",
           "metadataToken": 100663323,
-          "canonicalSignature": "(IteratorResult_1):System.Boolean",
-          "normalizedSignature": "Equals|(IteratorResult_1):System.Boolean|static=false",
+          "canonicalSignature": "(Tsonic.Runtime.IteratorResult_1[[!0]]):System.Boolean",
+          "normalizedSignature": "Equals|(Tsonic.Runtime.IteratorResult_1[[!0]]):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -113,11 +113,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::Deconstruct(T\u0026,System.Boolean\u0026):System.Void",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::Deconstruct(!0\u0026,System.Boolean\u0026):System.Void",
           "clrName": "Deconstruct",
           "metadataToken": 100663324,
-          "canonicalSignature": "(T\u0026,System.Boolean\u0026):System.Void",
-          "normalizedSignature": "Deconstruct|(T\u0026,System.Boolean\u0026):System.Void|static=false",
+          "canonicalSignature": "(!0\u0026,System.Boolean\u0026):System.Void",
+          "normalizedSignature": "Deconstruct|(!0\u0026,System.Boolean\u0026):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -145,11 +145,11 @@
       ],
       "properties": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::Value:T",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::Value:!0",
           "clrName": "Value",
           "metadataToken": 385875970,
-          "canonicalSignature": ":T",
-          "normalizedSignature": "Value|:T|static=false|accessor=getset",
+          "canonicalSignature": ":!0",
+          "normalizedSignature": "Value|:!0|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
@@ -183,11 +183,11 @@
           "declaringAssemblyName": "Tsonic.Runtime"
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::value:T",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::value:!0",
           "clrName": "value",
           "metadataToken": 385875972,
-          "canonicalSignature": ":T",
-          "normalizedSignature": "value|:T|static=false|accessor=get",
+          "canonicalSignature": ":!0",
+          "normalizedSignature": "value|:!0|static=false|accessor=get",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
@@ -225,10 +225,10 @@
       "events": [],
       "constructors": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::.ctor(T,System.Boolean):void",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.IteratorResult\u00601::.ctor(!0,System.Boolean):void",
           "metadataToken": 100663310,
-          "canonicalSignature": "(T,System.Boolean):void",
-          "normalizedSignature": "constructor|(T,System.Boolean):void|static=false",
+          "canonicalSignature": "(!0,System.Boolean):void",
+          "normalizedSignature": "constructor|(!0,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
@@ -299,11 +299,11 @@
       ],
       "properties": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.DictionaryAdapter\u00601::Item[System.String]:T",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.DictionaryAdapter\u00601::Item[System.String]:!0",
           "clrName": "Item",
           "metadataToken": 385875974,
-          "canonicalSignature": "[System.String]:T",
-          "normalizedSignature": "Item|[System.String]:T|static=false|accessor=getset",
+          "canonicalSignature": "[System.String]:!0",
+          "normalizedSignature": "Item|[System.String]:!0|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": true,
@@ -337,11 +337,11 @@
           "declaringAssemblyName": "Tsonic.Runtime"
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.DictionaryAdapter\u00601::Values:IEnumerable_1",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.DictionaryAdapter\u00601::Values:System.Collections.Generic.IEnumerable_1[[!0]]",
           "clrName": "Values",
           "metadataToken": 385875976,
-          "canonicalSignature": ":IEnumerable_1",
-          "normalizedSignature": "Values|:IEnumerable_1|static=false|accessor=get",
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[!0]]",
+          "normalizedSignature": "Values|:System.Collections.Generic.IEnumerable_1[[!0]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
@@ -389,11 +389,11 @@
       },
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::GetProperty(System.String):T",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.DynamicObject::GetProperty(System.String):!!0",
           "clrName": "GetProperty",
           "metadataToken": 100663300,
-          "canonicalSignature": "(System.String):T",
-          "normalizedSignature": "GetProperty|(System.String):T|static=false",
+          "canonicalSignature": "(System.String):!!0",
+          "normalizedSignature": "GetProperty|(System.String):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -587,11 +587,11 @@
       ],
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::From1(T1):Union_2",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::From1(!0):Tsonic.Runtime.Union_2[[!0],[!1]]",
           "clrName": "From1",
           "metadataToken": 100663340,
-          "canonicalSignature": "(T1):Union_2",
-          "normalizedSignature": "From1|(T1):Union_2|static=true",
+          "canonicalSignature": "(!0):Tsonic.Runtime.Union_2[[!0],[!1]]",
+          "normalizedSignature": "From1|(!0):Tsonic.Runtime.Union_2[[!0],[!1]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -607,11 +607,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::From2(T2):Union_2",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::From2(!1):Tsonic.Runtime.Union_2[[!0],[!1]]",
           "clrName": "From2",
           "metadataToken": 100663341,
-          "canonicalSignature": "(T2):Union_2",
-          "normalizedSignature": "From2|(T2):Union_2|static=true",
+          "canonicalSignature": "(!1):Tsonic.Runtime.Union_2[[!0],[!1]]",
+          "normalizedSignature": "From2|(!1):Tsonic.Runtime.Union_2[[!0],[!1]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -667,11 +667,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::As1():T1",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::As1():!0",
           "clrName": "As1",
           "metadataToken": 100663344,
-          "canonicalSignature": "():T1",
-          "normalizedSignature": "As1|():T1|static=false",
+          "canonicalSignature": "():!0",
+          "normalizedSignature": "As1|():!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -687,11 +687,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::As2():T2",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::As2():!1",
           "clrName": "As2",
           "metadataToken": 100663345,
-          "canonicalSignature": "():T2",
-          "normalizedSignature": "As2|():T2|static=false",
+          "canonicalSignature": "():!1",
+          "normalizedSignature": "As2|():!1|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -707,11 +707,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::TryAs1(T1\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::TryAs1(!0\u0026):System.Boolean",
           "clrName": "TryAs1",
           "metadataToken": 100663346,
-          "canonicalSignature": "(T1\u0026):System.Boolean",
-          "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!0\u0026):System.Boolean",
+          "normalizedSignature": "TryAs1|(!0\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -733,11 +733,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::TryAs2(T2\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::TryAs2(!1\u0026):System.Boolean",
           "clrName": "TryAs2",
           "metadataToken": 100663347,
-          "canonicalSignature": "(T2\u0026):System.Boolean",
-          "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!1\u0026):System.Boolean",
+          "normalizedSignature": "TryAs2|(!1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -759,11 +759,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::Match(Func_2,Func_2):TResult",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::Match(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]]):!!0",
           "clrName": "Match",
           "metadataToken": 100663348,
-          "canonicalSignature": "(Func_2,Func_2):TResult",
-          "normalizedSignature": "Match|(Func_2,Func_2):TResult|static=false",
+          "canonicalSignature": "(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]]):!!0",
+          "normalizedSignature": "Match|(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]]):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -779,11 +779,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::Match(Action_1,Action_1):System.Void",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00602::Match(System.Action_1[[!0]],System.Action_1[[!1]]):System.Void",
           "clrName": "Match",
           "metadataToken": 100663349,
-          "canonicalSignature": "(Action_1,Action_1):System.Void",
-          "normalizedSignature": "Match|(Action_1,Action_1):System.Void|static=false",
+          "canonicalSignature": "(System.Action_1[[!0]],System.Action_1[[!1]]):System.Void",
+          "normalizedSignature": "Match|(System.Action_1[[!0]],System.Action_1[[!1]]):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -886,11 +886,11 @@
       ],
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::From1(T1):Union_3",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::From1(!0):Tsonic.Runtime.Union_3[[!0],[!1],[!2]]",
           "clrName": "From1",
           "metadataToken": 100663356,
-          "canonicalSignature": "(T1):Union_3",
-          "normalizedSignature": "From1|(T1):Union_3|static=true",
+          "canonicalSignature": "(!0):Tsonic.Runtime.Union_3[[!0],[!1],[!2]]",
+          "normalizedSignature": "From1|(!0):Tsonic.Runtime.Union_3[[!0],[!1],[!2]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -906,11 +906,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::From2(T2):Union_3",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::From2(!1):Tsonic.Runtime.Union_3[[!0],[!1],[!2]]",
           "clrName": "From2",
           "metadataToken": 100663357,
-          "canonicalSignature": "(T2):Union_3",
-          "normalizedSignature": "From2|(T2):Union_3|static=true",
+          "canonicalSignature": "(!1):Tsonic.Runtime.Union_3[[!0],[!1],[!2]]",
+          "normalizedSignature": "From2|(!1):Tsonic.Runtime.Union_3[[!0],[!1],[!2]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -926,11 +926,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::From3(T3):Union_3",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::From3(!2):Tsonic.Runtime.Union_3[[!0],[!1],[!2]]",
           "clrName": "From3",
           "metadataToken": 100663358,
-          "canonicalSignature": "(T3):Union_3",
-          "normalizedSignature": "From3|(T3):Union_3|static=true",
+          "canonicalSignature": "(!2):Tsonic.Runtime.Union_3[[!0],[!1],[!2]]",
+          "normalizedSignature": "From3|(!2):Tsonic.Runtime.Union_3[[!0],[!1],[!2]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1006,11 +1006,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::As1():T1",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::As1():!0",
           "clrName": "As1",
           "metadataToken": 100663362,
-          "canonicalSignature": "():T1",
-          "normalizedSignature": "As1|():T1|static=false",
+          "canonicalSignature": "():!0",
+          "normalizedSignature": "As1|():!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1026,11 +1026,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::As2():T2",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::As2():!1",
           "clrName": "As2",
           "metadataToken": 100663363,
-          "canonicalSignature": "():T2",
-          "normalizedSignature": "As2|():T2|static=false",
+          "canonicalSignature": "():!1",
+          "normalizedSignature": "As2|():!1|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1046,11 +1046,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::As3():T3",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::As3():!2",
           "clrName": "As3",
           "metadataToken": 100663364,
-          "canonicalSignature": "():T3",
-          "normalizedSignature": "As3|():T3|static=false",
+          "canonicalSignature": "():!2",
+          "normalizedSignature": "As3|():!2|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1066,11 +1066,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::TryAs1(T1\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::TryAs1(!0\u0026):System.Boolean",
           "clrName": "TryAs1",
           "metadataToken": 100663365,
-          "canonicalSignature": "(T1\u0026):System.Boolean",
-          "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!0\u0026):System.Boolean",
+          "normalizedSignature": "TryAs1|(!0\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1092,11 +1092,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::TryAs2(T2\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::TryAs2(!1\u0026):System.Boolean",
           "clrName": "TryAs2",
           "metadataToken": 100663366,
-          "canonicalSignature": "(T2\u0026):System.Boolean",
-          "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!1\u0026):System.Boolean",
+          "normalizedSignature": "TryAs2|(!1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1118,11 +1118,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::TryAs3(T3\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::TryAs3(!2\u0026):System.Boolean",
           "clrName": "TryAs3",
           "metadataToken": 100663367,
-          "canonicalSignature": "(T3\u0026):System.Boolean",
-          "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!2\u0026):System.Boolean",
+          "normalizedSignature": "TryAs3|(!2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1144,11 +1144,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Match(Func_2,Func_2,Func_2):TResult",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Match(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]]):!!0",
           "clrName": "Match",
           "metadataToken": 100663368,
-          "canonicalSignature": "(Func_2,Func_2,Func_2):TResult",
-          "normalizedSignature": "Match|(Func_2,Func_2,Func_2):TResult|static=false",
+          "canonicalSignature": "(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]]):!!0",
+          "normalizedSignature": "Match|(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]]):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -1164,11 +1164,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Match(Action_1,Action_1,Action_1):System.Void",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00603::Match(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]]):System.Void",
           "clrName": "Match",
           "metadataToken": 100663369,
-          "canonicalSignature": "(Action_1,Action_1,Action_1):System.Void",
-          "normalizedSignature": "Match|(Action_1,Action_1,Action_1):System.Void|static=false",
+          "canonicalSignature": "(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]]):System.Void",
+          "normalizedSignature": "Match|(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]]):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1272,11 +1272,11 @@
       ],
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From1(T1):Union_4",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From1(!0):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]",
           "clrName": "From1",
           "metadataToken": 100663377,
-          "canonicalSignature": "(T1):Union_4",
-          "normalizedSignature": "From1|(T1):Union_4|static=true",
+          "canonicalSignature": "(!0):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]",
+          "normalizedSignature": "From1|(!0):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1292,11 +1292,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From2(T2):Union_4",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From2(!1):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]",
           "clrName": "From2",
           "metadataToken": 100663378,
-          "canonicalSignature": "(T2):Union_4",
-          "normalizedSignature": "From2|(T2):Union_4|static=true",
+          "canonicalSignature": "(!1):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]",
+          "normalizedSignature": "From2|(!1):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1312,11 +1312,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From3(T3):Union_4",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From3(!2):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]",
           "clrName": "From3",
           "metadataToken": 100663379,
-          "canonicalSignature": "(T3):Union_4",
-          "normalizedSignature": "From3|(T3):Union_4|static=true",
+          "canonicalSignature": "(!2):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]",
+          "normalizedSignature": "From3|(!2):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1332,11 +1332,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From4(T4):Union_4",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::From4(!3):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]",
           "clrName": "From4",
           "metadataToken": 100663380,
-          "canonicalSignature": "(T4):Union_4",
-          "normalizedSignature": "From4|(T4):Union_4|static=true",
+          "canonicalSignature": "(!3):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]",
+          "normalizedSignature": "From4|(!3):Tsonic.Runtime.Union_4[[!0],[!1],[!2],[!3]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1432,11 +1432,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As1():T1",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As1():!0",
           "clrName": "As1",
           "metadataToken": 100663385,
-          "canonicalSignature": "():T1",
-          "normalizedSignature": "As1|():T1|static=false",
+          "canonicalSignature": "():!0",
+          "normalizedSignature": "As1|():!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1452,11 +1452,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As2():T2",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As2():!1",
           "clrName": "As2",
           "metadataToken": 100663386,
-          "canonicalSignature": "():T2",
-          "normalizedSignature": "As2|():T2|static=false",
+          "canonicalSignature": "():!1",
+          "normalizedSignature": "As2|():!1|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1472,11 +1472,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As3():T3",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As3():!2",
           "clrName": "As3",
           "metadataToken": 100663387,
-          "canonicalSignature": "():T3",
-          "normalizedSignature": "As3|():T3|static=false",
+          "canonicalSignature": "():!2",
+          "normalizedSignature": "As3|():!2|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1492,11 +1492,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As4():T4",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::As4():!3",
           "clrName": "As4",
           "metadataToken": 100663388,
-          "canonicalSignature": "():T4",
-          "normalizedSignature": "As4|():T4|static=false",
+          "canonicalSignature": "():!3",
+          "normalizedSignature": "As4|():!3|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1512,11 +1512,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs1(T1\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs1(!0\u0026):System.Boolean",
           "clrName": "TryAs1",
           "metadataToken": 100663389,
-          "canonicalSignature": "(T1\u0026):System.Boolean",
-          "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!0\u0026):System.Boolean",
+          "normalizedSignature": "TryAs1|(!0\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1538,11 +1538,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs2(T2\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs2(!1\u0026):System.Boolean",
           "clrName": "TryAs2",
           "metadataToken": 100663390,
-          "canonicalSignature": "(T2\u0026):System.Boolean",
-          "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!1\u0026):System.Boolean",
+          "normalizedSignature": "TryAs2|(!1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1564,11 +1564,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs3(T3\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs3(!2\u0026):System.Boolean",
           "clrName": "TryAs3",
           "metadataToken": 100663391,
-          "canonicalSignature": "(T3\u0026):System.Boolean",
-          "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!2\u0026):System.Boolean",
+          "normalizedSignature": "TryAs3|(!2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1590,11 +1590,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs4(T4\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::TryAs4(!3\u0026):System.Boolean",
           "clrName": "TryAs4",
           "metadataToken": 100663392,
-          "canonicalSignature": "(T4\u0026):System.Boolean",
-          "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!3\u0026):System.Boolean",
+          "normalizedSignature": "TryAs4|(!3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1616,11 +1616,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Match(Func_2,Func_2,Func_2,Func_2):TResult",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Match(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]]):!!0",
           "clrName": "Match",
           "metadataToken": 100663393,
-          "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2):TResult",
-          "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2):TResult|static=false",
+          "canonicalSignature": "(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]]):!!0",
+          "normalizedSignature": "Match|(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]]):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -1636,11 +1636,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Match(Action_1,Action_1,Action_1,Action_1):System.Void",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00604::Match(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]]):System.Void",
           "clrName": "Match",
           "metadataToken": 100663394,
-          "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1):System.Void",
-          "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
+          "canonicalSignature": "(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]]):System.Void",
+          "normalizedSignature": "Match|(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]]):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1745,11 +1745,11 @@
       ],
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From1(T1):Union_5",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From1(!0):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
           "clrName": "From1",
           "metadataToken": 100663403,
-          "canonicalSignature": "(T1):Union_5",
-          "normalizedSignature": "From1|(T1):Union_5|static=true",
+          "canonicalSignature": "(!0):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
+          "normalizedSignature": "From1|(!0):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1765,11 +1765,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From2(T2):Union_5",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From2(!1):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
           "clrName": "From2",
           "metadataToken": 100663404,
-          "canonicalSignature": "(T2):Union_5",
-          "normalizedSignature": "From2|(T2):Union_5|static=true",
+          "canonicalSignature": "(!1):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
+          "normalizedSignature": "From2|(!1):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1785,11 +1785,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From3(T3):Union_5",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From3(!2):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
           "clrName": "From3",
           "metadataToken": 100663405,
-          "canonicalSignature": "(T3):Union_5",
-          "normalizedSignature": "From3|(T3):Union_5|static=true",
+          "canonicalSignature": "(!2):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
+          "normalizedSignature": "From3|(!2):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1805,11 +1805,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From4(T4):Union_5",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From4(!3):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
           "clrName": "From4",
           "metadataToken": 100663406,
-          "canonicalSignature": "(T4):Union_5",
-          "normalizedSignature": "From4|(T4):Union_5|static=true",
+          "canonicalSignature": "(!3):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
+          "normalizedSignature": "From4|(!3):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1825,11 +1825,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From5(T5):Union_5",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::From5(!4):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
           "clrName": "From5",
           "metadataToken": 100663407,
-          "canonicalSignature": "(T5):Union_5",
-          "normalizedSignature": "From5|(T5):Union_5|static=true",
+          "canonicalSignature": "(!4):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]",
+          "normalizedSignature": "From5|(!4):Tsonic.Runtime.Union_5[[!0],[!1],[!2],[!3],[!4]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1945,11 +1945,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As1():T1",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As1():!0",
           "clrName": "As1",
           "metadataToken": 100663413,
-          "canonicalSignature": "():T1",
-          "normalizedSignature": "As1|():T1|static=false",
+          "canonicalSignature": "():!0",
+          "normalizedSignature": "As1|():!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1965,11 +1965,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As2():T2",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As2():!1",
           "clrName": "As2",
           "metadataToken": 100663414,
-          "canonicalSignature": "():T2",
-          "normalizedSignature": "As2|():T2|static=false",
+          "canonicalSignature": "():!1",
+          "normalizedSignature": "As2|():!1|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1985,11 +1985,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As3():T3",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As3():!2",
           "clrName": "As3",
           "metadataToken": 100663415,
-          "canonicalSignature": "():T3",
-          "normalizedSignature": "As3|():T3|static=false",
+          "canonicalSignature": "():!2",
+          "normalizedSignature": "As3|():!2|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2005,11 +2005,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As4():T4",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As4():!3",
           "clrName": "As4",
           "metadataToken": 100663416,
-          "canonicalSignature": "():T4",
-          "normalizedSignature": "As4|():T4|static=false",
+          "canonicalSignature": "():!3",
+          "normalizedSignature": "As4|():!3|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2025,11 +2025,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As5():T5",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::As5():!4",
           "clrName": "As5",
           "metadataToken": 100663417,
-          "canonicalSignature": "():T5",
-          "normalizedSignature": "As5|():T5|static=false",
+          "canonicalSignature": "():!4",
+          "normalizedSignature": "As5|():!4|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2045,11 +2045,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs1(T1\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs1(!0\u0026):System.Boolean",
           "clrName": "TryAs1",
           "metadataToken": 100663418,
-          "canonicalSignature": "(T1\u0026):System.Boolean",
-          "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!0\u0026):System.Boolean",
+          "normalizedSignature": "TryAs1|(!0\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2071,11 +2071,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs2(T2\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs2(!1\u0026):System.Boolean",
           "clrName": "TryAs2",
           "metadataToken": 100663419,
-          "canonicalSignature": "(T2\u0026):System.Boolean",
-          "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!1\u0026):System.Boolean",
+          "normalizedSignature": "TryAs2|(!1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2097,11 +2097,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs3(T3\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs3(!2\u0026):System.Boolean",
           "clrName": "TryAs3",
           "metadataToken": 100663420,
-          "canonicalSignature": "(T3\u0026):System.Boolean",
-          "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!2\u0026):System.Boolean",
+          "normalizedSignature": "TryAs3|(!2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2123,11 +2123,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs4(T4\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs4(!3\u0026):System.Boolean",
           "clrName": "TryAs4",
           "metadataToken": 100663421,
-          "canonicalSignature": "(T4\u0026):System.Boolean",
-          "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!3\u0026):System.Boolean",
+          "normalizedSignature": "TryAs4|(!3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2149,11 +2149,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs5(T5\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::TryAs5(!4\u0026):System.Boolean",
           "clrName": "TryAs5",
           "metadataToken": 100663422,
-          "canonicalSignature": "(T5\u0026):System.Boolean",
-          "normalizedSignature": "TryAs5|(T5\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!4\u0026):System.Boolean",
+          "normalizedSignature": "TryAs5|(!4\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2175,11 +2175,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Match(Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Match(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]]):!!0",
           "clrName": "Match",
           "metadataToken": 100663423,
-          "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
-          "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2,Func_2):TResult|static=false",
+          "canonicalSignature": "(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]]):!!0",
+          "normalizedSignature": "Match|(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]]):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -2195,11 +2195,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Match(Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00605::Match(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]]):System.Void",
           "clrName": "Match",
           "metadataToken": 100663424,
-          "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
-          "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
+          "canonicalSignature": "(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]]):System.Void",
+          "normalizedSignature": "Match|(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]]):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2305,11 +2305,11 @@
       ],
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From1(T1):Union_6",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From1(!0):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
           "clrName": "From1",
           "metadataToken": 100663434,
-          "canonicalSignature": "(T1):Union_6",
-          "normalizedSignature": "From1|(T1):Union_6|static=true",
+          "canonicalSignature": "(!0):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
+          "normalizedSignature": "From1|(!0):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2325,11 +2325,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From2(T2):Union_6",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From2(!1):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
           "clrName": "From2",
           "metadataToken": 100663435,
-          "canonicalSignature": "(T2):Union_6",
-          "normalizedSignature": "From2|(T2):Union_6|static=true",
+          "canonicalSignature": "(!1):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
+          "normalizedSignature": "From2|(!1):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2345,11 +2345,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From3(T3):Union_6",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From3(!2):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
           "clrName": "From3",
           "metadataToken": 100663436,
-          "canonicalSignature": "(T3):Union_6",
-          "normalizedSignature": "From3|(T3):Union_6|static=true",
+          "canonicalSignature": "(!2):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
+          "normalizedSignature": "From3|(!2):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2365,11 +2365,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From4(T4):Union_6",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From4(!3):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
           "clrName": "From4",
           "metadataToken": 100663437,
-          "canonicalSignature": "(T4):Union_6",
-          "normalizedSignature": "From4|(T4):Union_6|static=true",
+          "canonicalSignature": "(!3):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
+          "normalizedSignature": "From4|(!3):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2385,11 +2385,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From5(T5):Union_6",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From5(!4):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
           "clrName": "From5",
           "metadataToken": 100663438,
-          "canonicalSignature": "(T5):Union_6",
-          "normalizedSignature": "From5|(T5):Union_6|static=true",
+          "canonicalSignature": "(!4):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
+          "normalizedSignature": "From5|(!4):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2405,11 +2405,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From6(T6):Union_6",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::From6(!5):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
           "clrName": "From6",
           "metadataToken": 100663439,
-          "canonicalSignature": "(T6):Union_6",
-          "normalizedSignature": "From6|(T6):Union_6|static=true",
+          "canonicalSignature": "(!5):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]",
+          "normalizedSignature": "From6|(!5):Tsonic.Runtime.Union_6[[!0],[!1],[!2],[!3],[!4],[!5]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2545,11 +2545,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As1():T1",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As1():!0",
           "clrName": "As1",
           "metadataToken": 100663446,
-          "canonicalSignature": "():T1",
-          "normalizedSignature": "As1|():T1|static=false",
+          "canonicalSignature": "():!0",
+          "normalizedSignature": "As1|():!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2565,11 +2565,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As2():T2",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As2():!1",
           "clrName": "As2",
           "metadataToken": 100663447,
-          "canonicalSignature": "():T2",
-          "normalizedSignature": "As2|():T2|static=false",
+          "canonicalSignature": "():!1",
+          "normalizedSignature": "As2|():!1|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2585,11 +2585,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As3():T3",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As3():!2",
           "clrName": "As3",
           "metadataToken": 100663448,
-          "canonicalSignature": "():T3",
-          "normalizedSignature": "As3|():T3|static=false",
+          "canonicalSignature": "():!2",
+          "normalizedSignature": "As3|():!2|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2605,11 +2605,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As4():T4",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As4():!3",
           "clrName": "As4",
           "metadataToken": 100663449,
-          "canonicalSignature": "():T4",
-          "normalizedSignature": "As4|():T4|static=false",
+          "canonicalSignature": "():!3",
+          "normalizedSignature": "As4|():!3|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2625,11 +2625,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As5():T5",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As5():!4",
           "clrName": "As5",
           "metadataToken": 100663450,
-          "canonicalSignature": "():T5",
-          "normalizedSignature": "As5|():T5|static=false",
+          "canonicalSignature": "():!4",
+          "normalizedSignature": "As5|():!4|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2645,11 +2645,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As6():T6",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::As6():!5",
           "clrName": "As6",
           "metadataToken": 100663451,
-          "canonicalSignature": "():T6",
-          "normalizedSignature": "As6|():T6|static=false",
+          "canonicalSignature": "():!5",
+          "normalizedSignature": "As6|():!5|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2665,11 +2665,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs1(T1\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs1(!0\u0026):System.Boolean",
           "clrName": "TryAs1",
           "metadataToken": 100663452,
-          "canonicalSignature": "(T1\u0026):System.Boolean",
-          "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!0\u0026):System.Boolean",
+          "normalizedSignature": "TryAs1|(!0\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2691,11 +2691,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs2(T2\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs2(!1\u0026):System.Boolean",
           "clrName": "TryAs2",
           "metadataToken": 100663453,
-          "canonicalSignature": "(T2\u0026):System.Boolean",
-          "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!1\u0026):System.Boolean",
+          "normalizedSignature": "TryAs2|(!1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2717,11 +2717,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs3(T3\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs3(!2\u0026):System.Boolean",
           "clrName": "TryAs3",
           "metadataToken": 100663454,
-          "canonicalSignature": "(T3\u0026):System.Boolean",
-          "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!2\u0026):System.Boolean",
+          "normalizedSignature": "TryAs3|(!2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2743,11 +2743,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs4(T4\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs4(!3\u0026):System.Boolean",
           "clrName": "TryAs4",
           "metadataToken": 100663455,
-          "canonicalSignature": "(T4\u0026):System.Boolean",
-          "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!3\u0026):System.Boolean",
+          "normalizedSignature": "TryAs4|(!3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2769,11 +2769,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs5(T5\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs5(!4\u0026):System.Boolean",
           "clrName": "TryAs5",
           "metadataToken": 100663456,
-          "canonicalSignature": "(T5\u0026):System.Boolean",
-          "normalizedSignature": "TryAs5|(T5\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!4\u0026):System.Boolean",
+          "normalizedSignature": "TryAs5|(!4\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2795,11 +2795,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs6(T6\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::TryAs6(!5\u0026):System.Boolean",
           "clrName": "TryAs6",
           "metadataToken": 100663457,
-          "canonicalSignature": "(T6\u0026):System.Boolean",
-          "normalizedSignature": "TryAs6|(T6\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!5\u0026):System.Boolean",
+          "normalizedSignature": "TryAs6|(!5\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2821,11 +2821,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Match(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Match(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]],System.Func_2[[!5],[!!0]]):!!0",
           "clrName": "Match",
           "metadataToken": 100663458,
-          "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
-          "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult|static=false",
+          "canonicalSignature": "(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]],System.Func_2[[!5],[!!0]]):!!0",
+          "normalizedSignature": "Match|(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]],System.Func_2[[!5],[!!0]]):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -2841,11 +2841,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Match(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00606::Match(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]],System.Action_1[[!5]]):System.Void",
           "clrName": "Match",
           "metadataToken": 100663459,
-          "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
-          "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
+          "canonicalSignature": "(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]],System.Action_1[[!5]]):System.Void",
+          "normalizedSignature": "Match|(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]],System.Action_1[[!5]]):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2952,11 +2952,11 @@
       ],
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From1(T1):Union_7",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From1(!0):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
           "clrName": "From1",
           "metadataToken": 100663470,
-          "canonicalSignature": "(T1):Union_7",
-          "normalizedSignature": "From1|(T1):Union_7|static=true",
+          "canonicalSignature": "(!0):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
+          "normalizedSignature": "From1|(!0):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2972,11 +2972,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From2(T2):Union_7",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From2(!1):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
           "clrName": "From2",
           "metadataToken": 100663471,
-          "canonicalSignature": "(T2):Union_7",
-          "normalizedSignature": "From2|(T2):Union_7|static=true",
+          "canonicalSignature": "(!1):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
+          "normalizedSignature": "From2|(!1):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -2992,11 +2992,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From3(T3):Union_7",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From3(!2):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
           "clrName": "From3",
           "metadataToken": 100663472,
-          "canonicalSignature": "(T3):Union_7",
-          "normalizedSignature": "From3|(T3):Union_7|static=true",
+          "canonicalSignature": "(!2):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
+          "normalizedSignature": "From3|(!2):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3012,11 +3012,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From4(T4):Union_7",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From4(!3):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
           "clrName": "From4",
           "metadataToken": 100663473,
-          "canonicalSignature": "(T4):Union_7",
-          "normalizedSignature": "From4|(T4):Union_7|static=true",
+          "canonicalSignature": "(!3):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
+          "normalizedSignature": "From4|(!3):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3032,11 +3032,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From5(T5):Union_7",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From5(!4):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
           "clrName": "From5",
           "metadataToken": 100663474,
-          "canonicalSignature": "(T5):Union_7",
-          "normalizedSignature": "From5|(T5):Union_7|static=true",
+          "canonicalSignature": "(!4):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
+          "normalizedSignature": "From5|(!4):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3052,11 +3052,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From6(T6):Union_7",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From6(!5):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
           "clrName": "From6",
           "metadataToken": 100663475,
-          "canonicalSignature": "(T6):Union_7",
-          "normalizedSignature": "From6|(T6):Union_7|static=true",
+          "canonicalSignature": "(!5):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
+          "normalizedSignature": "From6|(!5):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3072,11 +3072,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From7(T7):Union_7",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::From7(!6):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
           "clrName": "From7",
           "metadataToken": 100663476,
-          "canonicalSignature": "(T7):Union_7",
-          "normalizedSignature": "From7|(T7):Union_7|static=true",
+          "canonicalSignature": "(!6):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]",
+          "normalizedSignature": "From7|(!6):Tsonic.Runtime.Union_7[[!0],[!1],[!2],[!3],[!4],[!5],[!6]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3232,11 +3232,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As1():T1",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As1():!0",
           "clrName": "As1",
           "metadataToken": 100663484,
-          "canonicalSignature": "():T1",
-          "normalizedSignature": "As1|():T1|static=false",
+          "canonicalSignature": "():!0",
+          "normalizedSignature": "As1|():!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3252,11 +3252,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As2():T2",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As2():!1",
           "clrName": "As2",
           "metadataToken": 100663485,
-          "canonicalSignature": "():T2",
-          "normalizedSignature": "As2|():T2|static=false",
+          "canonicalSignature": "():!1",
+          "normalizedSignature": "As2|():!1|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3272,11 +3272,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As3():T3",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As3():!2",
           "clrName": "As3",
           "metadataToken": 100663486,
-          "canonicalSignature": "():T3",
-          "normalizedSignature": "As3|():T3|static=false",
+          "canonicalSignature": "():!2",
+          "normalizedSignature": "As3|():!2|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3292,11 +3292,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As4():T4",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As4():!3",
           "clrName": "As4",
           "metadataToken": 100663487,
-          "canonicalSignature": "():T4",
-          "normalizedSignature": "As4|():T4|static=false",
+          "canonicalSignature": "():!3",
+          "normalizedSignature": "As4|():!3|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3312,11 +3312,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As5():T5",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As5():!4",
           "clrName": "As5",
           "metadataToken": 100663488,
-          "canonicalSignature": "():T5",
-          "normalizedSignature": "As5|():T5|static=false",
+          "canonicalSignature": "():!4",
+          "normalizedSignature": "As5|():!4|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3332,11 +3332,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As6():T6",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As6():!5",
           "clrName": "As6",
           "metadataToken": 100663489,
-          "canonicalSignature": "():T6",
-          "normalizedSignature": "As6|():T6|static=false",
+          "canonicalSignature": "():!5",
+          "normalizedSignature": "As6|():!5|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3352,11 +3352,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As7():T7",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::As7():!6",
           "clrName": "As7",
           "metadataToken": 100663490,
-          "canonicalSignature": "():T7",
-          "normalizedSignature": "As7|():T7|static=false",
+          "canonicalSignature": "():!6",
+          "normalizedSignature": "As7|():!6|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3372,11 +3372,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs1(T1\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs1(!0\u0026):System.Boolean",
           "clrName": "TryAs1",
           "metadataToken": 100663491,
-          "canonicalSignature": "(T1\u0026):System.Boolean",
-          "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!0\u0026):System.Boolean",
+          "normalizedSignature": "TryAs1|(!0\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3398,11 +3398,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs2(T2\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs2(!1\u0026):System.Boolean",
           "clrName": "TryAs2",
           "metadataToken": 100663492,
-          "canonicalSignature": "(T2\u0026):System.Boolean",
-          "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!1\u0026):System.Boolean",
+          "normalizedSignature": "TryAs2|(!1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3424,11 +3424,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs3(T3\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs3(!2\u0026):System.Boolean",
           "clrName": "TryAs3",
           "metadataToken": 100663493,
-          "canonicalSignature": "(T3\u0026):System.Boolean",
-          "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!2\u0026):System.Boolean",
+          "normalizedSignature": "TryAs3|(!2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3450,11 +3450,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs4(T4\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs4(!3\u0026):System.Boolean",
           "clrName": "TryAs4",
           "metadataToken": 100663494,
-          "canonicalSignature": "(T4\u0026):System.Boolean",
-          "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!3\u0026):System.Boolean",
+          "normalizedSignature": "TryAs4|(!3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3476,11 +3476,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs5(T5\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs5(!4\u0026):System.Boolean",
           "clrName": "TryAs5",
           "metadataToken": 100663495,
-          "canonicalSignature": "(T5\u0026):System.Boolean",
-          "normalizedSignature": "TryAs5|(T5\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!4\u0026):System.Boolean",
+          "normalizedSignature": "TryAs5|(!4\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3502,11 +3502,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs6(T6\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs6(!5\u0026):System.Boolean",
           "clrName": "TryAs6",
           "metadataToken": 100663496,
-          "canonicalSignature": "(T6\u0026):System.Boolean",
-          "normalizedSignature": "TryAs6|(T6\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!5\u0026):System.Boolean",
+          "normalizedSignature": "TryAs6|(!5\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3528,11 +3528,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs7(T7\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::TryAs7(!6\u0026):System.Boolean",
           "clrName": "TryAs7",
           "metadataToken": 100663497,
-          "canonicalSignature": "(T7\u0026):System.Boolean",
-          "normalizedSignature": "TryAs7|(T7\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!6\u0026):System.Boolean",
+          "normalizedSignature": "TryAs7|(!6\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3554,11 +3554,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Match(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Match(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]],System.Func_2[[!5],[!!0]],System.Func_2[[!6],[!!0]]):!!0",
           "clrName": "Match",
           "metadataToken": 100663498,
-          "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
-          "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult|static=false",
+          "canonicalSignature": "(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]],System.Func_2[[!5],[!!0]],System.Func_2[[!6],[!!0]]):!!0",
+          "normalizedSignature": "Match|(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]],System.Func_2[[!5],[!!0]],System.Func_2[[!6],[!!0]]):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -3574,11 +3574,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Match(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00607::Match(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]],System.Action_1[[!5]],System.Action_1[[!6]]):System.Void",
           "clrName": "Match",
           "metadataToken": 100663499,
-          "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
-          "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
+          "canonicalSignature": "(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]],System.Action_1[[!5]],System.Action_1[[!6]]):System.Void",
+          "normalizedSignature": "Match|(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]],System.Action_1[[!5]],System.Action_1[[!6]]):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3686,11 +3686,11 @@
       ],
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From1(T1):Union_8",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From1(!0):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
           "clrName": "From1",
           "metadataToken": 100663511,
-          "canonicalSignature": "(T1):Union_8",
-          "normalizedSignature": "From1|(T1):Union_8|static=true",
+          "canonicalSignature": "(!0):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
+          "normalizedSignature": "From1|(!0):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3706,11 +3706,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From2(T2):Union_8",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From2(!1):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
           "clrName": "From2",
           "metadataToken": 100663512,
-          "canonicalSignature": "(T2):Union_8",
-          "normalizedSignature": "From2|(T2):Union_8|static=true",
+          "canonicalSignature": "(!1):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
+          "normalizedSignature": "From2|(!1):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3726,11 +3726,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From3(T3):Union_8",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From3(!2):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
           "clrName": "From3",
           "metadataToken": 100663513,
-          "canonicalSignature": "(T3):Union_8",
-          "normalizedSignature": "From3|(T3):Union_8|static=true",
+          "canonicalSignature": "(!2):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
+          "normalizedSignature": "From3|(!2):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3746,11 +3746,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From4(T4):Union_8",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From4(!3):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
           "clrName": "From4",
           "metadataToken": 100663514,
-          "canonicalSignature": "(T4):Union_8",
-          "normalizedSignature": "From4|(T4):Union_8|static=true",
+          "canonicalSignature": "(!3):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
+          "normalizedSignature": "From4|(!3):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3766,11 +3766,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From5(T5):Union_8",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From5(!4):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
           "clrName": "From5",
           "metadataToken": 100663515,
-          "canonicalSignature": "(T5):Union_8",
-          "normalizedSignature": "From5|(T5):Union_8|static=true",
+          "canonicalSignature": "(!4):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
+          "normalizedSignature": "From5|(!4):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3786,11 +3786,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From6(T6):Union_8",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From6(!5):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
           "clrName": "From6",
           "metadataToken": 100663516,
-          "canonicalSignature": "(T6):Union_8",
-          "normalizedSignature": "From6|(T6):Union_8|static=true",
+          "canonicalSignature": "(!5):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
+          "normalizedSignature": "From6|(!5):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3806,11 +3806,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From7(T7):Union_8",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From7(!6):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
           "clrName": "From7",
           "metadataToken": 100663517,
-          "canonicalSignature": "(T7):Union_8",
-          "normalizedSignature": "From7|(T7):Union_8|static=true",
+          "canonicalSignature": "(!6):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
+          "normalizedSignature": "From7|(!6):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3826,11 +3826,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From8(T8):Union_8",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::From8(!7):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
           "clrName": "From8",
           "metadataToken": 100663518,
-          "canonicalSignature": "(T8):Union_8",
-          "normalizedSignature": "From8|(T8):Union_8|static=true",
+          "canonicalSignature": "(!7):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]",
+          "normalizedSignature": "From8|(!7):Tsonic.Runtime.Union_8[[!0],[!1],[!2],[!3],[!4],[!5],[!6],[!7]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4006,11 +4006,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As1():T1",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As1():!0",
           "clrName": "As1",
           "metadataToken": 100663527,
-          "canonicalSignature": "():T1",
-          "normalizedSignature": "As1|():T1|static=false",
+          "canonicalSignature": "():!0",
+          "normalizedSignature": "As1|():!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4026,11 +4026,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As2():T2",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As2():!1",
           "clrName": "As2",
           "metadataToken": 100663528,
-          "canonicalSignature": "():T2",
-          "normalizedSignature": "As2|():T2|static=false",
+          "canonicalSignature": "():!1",
+          "normalizedSignature": "As2|():!1|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4046,11 +4046,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As3():T3",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As3():!2",
           "clrName": "As3",
           "metadataToken": 100663529,
-          "canonicalSignature": "():T3",
-          "normalizedSignature": "As3|():T3|static=false",
+          "canonicalSignature": "():!2",
+          "normalizedSignature": "As3|():!2|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4066,11 +4066,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As4():T4",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As4():!3",
           "clrName": "As4",
           "metadataToken": 100663530,
-          "canonicalSignature": "():T4",
-          "normalizedSignature": "As4|():T4|static=false",
+          "canonicalSignature": "():!3",
+          "normalizedSignature": "As4|():!3|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4086,11 +4086,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As5():T5",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As5():!4",
           "clrName": "As5",
           "metadataToken": 100663531,
-          "canonicalSignature": "():T5",
-          "normalizedSignature": "As5|():T5|static=false",
+          "canonicalSignature": "():!4",
+          "normalizedSignature": "As5|():!4|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4106,11 +4106,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As6():T6",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As6():!5",
           "clrName": "As6",
           "metadataToken": 100663532,
-          "canonicalSignature": "():T6",
-          "normalizedSignature": "As6|():T6|static=false",
+          "canonicalSignature": "():!5",
+          "normalizedSignature": "As6|():!5|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4126,11 +4126,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As7():T7",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As7():!6",
           "clrName": "As7",
           "metadataToken": 100663533,
-          "canonicalSignature": "():T7",
-          "normalizedSignature": "As7|():T7|static=false",
+          "canonicalSignature": "():!6",
+          "normalizedSignature": "As7|():!6|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4146,11 +4146,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As8():T8",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::As8():!7",
           "clrName": "As8",
           "metadataToken": 100663534,
-          "canonicalSignature": "():T8",
-          "normalizedSignature": "As8|():T8|static=false",
+          "canonicalSignature": "():!7",
+          "normalizedSignature": "As8|():!7|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4166,11 +4166,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs1(T1\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs1(!0\u0026):System.Boolean",
           "clrName": "TryAs1",
           "metadataToken": 100663535,
-          "canonicalSignature": "(T1\u0026):System.Boolean",
-          "normalizedSignature": "TryAs1|(T1\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!0\u0026):System.Boolean",
+          "normalizedSignature": "TryAs1|(!0\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4192,11 +4192,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs2(T2\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs2(!1\u0026):System.Boolean",
           "clrName": "TryAs2",
           "metadataToken": 100663536,
-          "canonicalSignature": "(T2\u0026):System.Boolean",
-          "normalizedSignature": "TryAs2|(T2\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!1\u0026):System.Boolean",
+          "normalizedSignature": "TryAs2|(!1\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4218,11 +4218,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs3(T3\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs3(!2\u0026):System.Boolean",
           "clrName": "TryAs3",
           "metadataToken": 100663537,
-          "canonicalSignature": "(T3\u0026):System.Boolean",
-          "normalizedSignature": "TryAs3|(T3\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!2\u0026):System.Boolean",
+          "normalizedSignature": "TryAs3|(!2\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4244,11 +4244,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs4(T4\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs4(!3\u0026):System.Boolean",
           "clrName": "TryAs4",
           "metadataToken": 100663538,
-          "canonicalSignature": "(T4\u0026):System.Boolean",
-          "normalizedSignature": "TryAs4|(T4\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!3\u0026):System.Boolean",
+          "normalizedSignature": "TryAs4|(!3\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4270,11 +4270,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs5(T5\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs5(!4\u0026):System.Boolean",
           "clrName": "TryAs5",
           "metadataToken": 100663539,
-          "canonicalSignature": "(T5\u0026):System.Boolean",
-          "normalizedSignature": "TryAs5|(T5\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!4\u0026):System.Boolean",
+          "normalizedSignature": "TryAs5|(!4\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4296,11 +4296,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs6(T6\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs6(!5\u0026):System.Boolean",
           "clrName": "TryAs6",
           "metadataToken": 100663540,
-          "canonicalSignature": "(T6\u0026):System.Boolean",
-          "normalizedSignature": "TryAs6|(T6\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!5\u0026):System.Boolean",
+          "normalizedSignature": "TryAs6|(!5\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4322,11 +4322,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs7(T7\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs7(!6\u0026):System.Boolean",
           "clrName": "TryAs7",
           "metadataToken": 100663541,
-          "canonicalSignature": "(T7\u0026):System.Boolean",
-          "normalizedSignature": "TryAs7|(T7\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!6\u0026):System.Boolean",
+          "normalizedSignature": "TryAs7|(!6\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4348,11 +4348,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs8(T8\u0026):System.Boolean",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::TryAs8(!7\u0026):System.Boolean",
           "clrName": "TryAs8",
           "metadataToken": 100663542,
-          "canonicalSignature": "(T8\u0026):System.Boolean",
-          "normalizedSignature": "TryAs8|(T8\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(!7\u0026):System.Boolean",
+          "normalizedSignature": "TryAs8|(!7\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4374,11 +4374,11 @@
           ]
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Match(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Match(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]],System.Func_2[[!5],[!!0]],System.Func_2[[!6],[!!0]],System.Func_2[[!7],[!!0]]):!!0",
           "clrName": "Match",
           "metadataToken": 100663543,
-          "canonicalSignature": "(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult",
-          "normalizedSignature": "Match|(Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2,Func_2):TResult|static=false",
+          "canonicalSignature": "(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]],System.Func_2[[!5],[!!0]],System.Func_2[[!6],[!!0]],System.Func_2[[!7],[!!0]]):!!0",
+          "normalizedSignature": "Match|(System.Func_2[[!0],[!!0]],System.Func_2[[!1],[!!0]],System.Func_2[[!2],[!!0]],System.Func_2[[!3],[!!0]],System.Func_2[[!4],[!!0]],System.Func_2[[!5],[!!0]],System.Func_2[[!6],[!!0]],System.Func_2[[!7],[!!0]]):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -4394,11 +4394,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Match(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Union\u00608::Match(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]],System.Action_1[[!5]],System.Action_1[[!6]],System.Action_1[[!7]]):System.Void",
           "clrName": "Match",
           "metadataToken": 100663544,
-          "canonicalSignature": "(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void",
-          "normalizedSignature": "Match|(Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1,Action_1):System.Void|static=false",
+          "canonicalSignature": "(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]],System.Action_1[[!5]],System.Action_1[[!6]],System.Action_1[[!7]]):System.Void",
+          "normalizedSignature": "Match|(System.Action_1[[!0]],System.Action_1[[!1]],System.Action_1[[!2]],System.Action_1[[!3]],System.Action_1[[!4]],System.Action_1[[!5]],System.Action_1[[!6]],System.Action_1[[!7]]):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4496,11 +4496,11 @@
       },
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(T[],System.Int32):T[]",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(!!0[],System.Int32):!!0[]",
           "clrName": "Slice",
           "metadataToken": 100663297,
-          "canonicalSignature": "(T[],System.Int32):T[]",
-          "normalizedSignature": "Slice|(T[],System.Int32):T[]|static=true",
+          "canonicalSignature": "(!!0[],System.Int32):!!0[]",
+          "normalizedSignature": "Slice|(!!0[],System.Int32):!!0[]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -4516,11 +4516,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(IList_1,System.Int32):T[]",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(System.Collections.Generic.IList_1[[!!0]],System.Int32):!!0[]",
           "clrName": "Slice",
           "metadataToken": 100663298,
-          "canonicalSignature": "(IList_1,System.Int32):T[]",
-          "normalizedSignature": "Slice|(IList_1,System.Int32):T[]|static=true",
+          "canonicalSignature": "(System.Collections.Generic.IList_1[[!!0]],System.Int32):!!0[]",
+          "normalizedSignature": "Slice|(System.Collections.Generic.IList_1[[!!0]],System.Int32):!!0[]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -4536,11 +4536,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(IEnumerable_1,System.Int32):T[]",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.ArrayHelpers::Slice(System.Collections.Generic.IEnumerable_1[[!!0]],System.Int32):!!0[]",
           "clrName": "Slice",
           "metadataToken": 100663299,
-          "canonicalSignature": "(IEnumerable_1,System.Int32):T[]",
-          "normalizedSignature": "Slice|(IEnumerable_1,System.Int32):T[]|static=true",
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[!!0]],System.Int32):!!0[]",
+          "normalizedSignature": "Slice|(System.Collections.Generic.IEnumerable_1[[!!0]],System.Int32):!!0[]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -4640,11 +4640,11 @@
       },
       "methods": [
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::Clone(System.Object):T",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::Clone(System.Object):!!0",
           "clrName": "Clone",
           "metadataToken": 100663327,
-          "canonicalSignature": "(System.Object):T",
-          "normalizedSignature": "Clone|(System.Object):T|static=true",
+          "canonicalSignature": "(System.Object):!!0",
+          "normalizedSignature": "Clone|(System.Object):!!0|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -4660,11 +4660,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::CloneFromDictionary(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::CloneFromDictionary(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):!!0",
           "clrName": "CloneFromDictionary",
           "metadataToken": 100663328,
-          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
-          "normalizedSignature": "CloneFromDictionary|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=true",
+          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):!!0",
+          "normalizedSignature": "CloneFromDictionary|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):!!0|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -4700,11 +4700,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::CreateDictionaryAdapter(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):DictionaryAdapter_1",
+          "stableId": "Tsonic.Runtime:Tsonic.Runtime.Structural::CreateDictionaryAdapter(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Tsonic.Runtime.DictionaryAdapter_1[[!!0]]",
           "clrName": "CreateDictionaryAdapter",
           "metadataToken": 100663330,
-          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):DictionaryAdapter_1",
-          "normalizedSignature": "CreateDictionaryAdapter|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):DictionaryAdapter_1|static=true",
+          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Tsonic.Runtime.DictionaryAdapter_1[[!!0]]",
+          "normalizedSignature": "CreateDictionaryAdapter|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Tsonic.Runtime.DictionaryAdapter_1[[!!0]]|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
