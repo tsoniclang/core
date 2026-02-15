@@ -407,7 +407,7 @@ export type OverloadedConstructorParameters<C extends AttributeCtor> =
 export interface AttributeDescriptor<C extends AttributeCtor = AttributeCtor> {
   readonly kind: "attribute";
   readonly ctor: C;
-  readonly args: readonly OverloadedConstructorParameters<C>;
+  readonly args: OverloadedConstructorParameters<C>;
 }
 
 /** Extract instance type of a constructor. */
