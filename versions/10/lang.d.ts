@@ -211,6 +211,33 @@ export type Interface<T> = {
 };
 
 /**
+ * Compile-time-only field marker.
+ *
+ * By default, Tsonic emits TypeScript class properties as C# auto-properties.
+ * Use `field<T>` to force emission as a C# field instead.
+ *
+ * This is a type-level marker only and is erased for typing (`field<T> = T`).
+ *
+ * @example
+ * ```ts
+ * import type { field } from "@tsonic/core/lang.js";
+ *
+ * export class User {
+ *   private email: field<string> = "";
+ * }
+ * ```
+ *
+ * Emits:
+ * ```csharp
+ * class User
+ * {
+ *     private string email = "";
+ * }
+ * ```
+ */
+export type field<T> = T;
+
+/**
  * Parameter passing modifiers (call-site markers).
  *
  * These are compile-time-only intrinsics. The compiler must erase them and emit
