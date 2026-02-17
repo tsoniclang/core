@@ -396,6 +396,51 @@ export type Ctor<T = unknown, Args extends readonly any[] = readonly any[]> = ne
 export type AttributeCtor = Ctor<object, readonly any[]>;
 
 /**
+ * C# attribute target specifiers (the `target:` prefix in `[target: Attr]`).
+ *
+ * @example
+ * ```ts
+ * import { attributes as A, AttributeTargets } from "@tsonic/core/lang.js";
+ *
+ * class Native {
+ *   foo(): boolean { return true; }
+ * }
+ *
+ * A.on(Native)
+ *   .method(x => x.foo)
+ *   .target(AttributeTargets.return)
+ *   .add(MarshalAsAttribute, UnmanagedType.Bool);
+ * ```
+ *
+ * Emits C#:
+ * ```csharp
+ * [return: MarshalAs(UnmanagedType.Bool)]
+ * public bool foo() { ... }
+ * ```
+ */
+export interface AttributeTargets {
+  readonly assembly: "assembly";
+  readonly module: "module";
+  readonly type: "type";
+  readonly method: "method";
+  readonly property: "property";
+  readonly field: "field";
+  readonly event: "event";
+  readonly param: "param";
+  readonly return: "return";
+}
+
+/**
+ * Value-level constants for `AttributeTarget`.
+ *
+ * Note: This module is compile-time only; Tsonic erases these references.
+ */
+export declare const AttributeTargets: AttributeTargets;
+
+/** Union of valid attribute target strings. */
+export type AttributeTarget = AttributeTargets[keyof AttributeTargets];
+
+/**
  * Extract constructor parameters across multiple overloads.
  *
  * TypeScript's built-in ConstructorParameters<C> collapses overloads to the
@@ -468,10 +513,10 @@ export type SelectedMethodValue<T> = (...args: any[]) => any;
  */
 export interface OnBuilder<T> {
   /** Attach attributes to the type declaration (C# class/interface). */
-  type: AttributeTargetBuilder;
+  type: AttributeTargetBuilder<"type">;
 
   /** Attach attributes to the constructor. */
-  ctor: AttributeTargetBuilder;
+  ctor: AttributeTargetBuilder<"method">;
 
   /**
    * Select a method to annotate.
@@ -484,7 +529,7 @@ export interface OnBuilder<T> {
    */
   method<K extends MethodKeys<T>>(
     selector: (t: T) => T[K]
-  ): AttributeTargetBuilder;
+  ): AttributeTargetBuilder<"method" | "return">;
 
   /**
    * Select a property to annotate.
@@ -494,7 +539,7 @@ export interface OnBuilder<T> {
    */
   prop<K extends PropertyKeys<T>>(
     selector: (t: T) => T[K]
-  ): AttributeTargetBuilder;
+  ): AttributeTargetBuilder<"property" | "field">;
 }
 
 /**
@@ -503,7 +548,28 @@ export interface OnBuilder<T> {
  *   - add(AttrCtor, ...args)
  *   - add(A.attr(AttrCtor, ...args))
  */
-export interface AttributeTargetBuilder {
+export interface AttributeTargetBuilder<
+  TAllowedTargets extends AttributeTarget = AttributeTarget,
+> {
+  /**
+   * Add a C# attribute target specifier.
+   *
+   * @example
+   * ```ts
+   * A.on(User)
+   *   .prop(x => x.name)
+   *   .target(AttributeTargets.field)
+   *   .add(NonSerializedAttribute);
+   * ```
+   *
+   * Emits C#:
+   * ```csharp
+   * [field: NonSerialized]
+   * public string name { get; set; }
+   * ```
+   */
+  target(target: TAllowedTargets): AttributeTargetBuilder<TAllowedTargets>;
+
   /**
    * Add an attribute by constructor + arguments.
    *
