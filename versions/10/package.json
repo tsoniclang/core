@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/tsoniclang/core#readme",
   "peerDependencies": {
-    "@tsonic/dotnet": "10.0.35"
+    "@tsonic/dotnet": "10.0.37"
   }
 }
