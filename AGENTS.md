@@ -2,6 +2,14 @@
 
 This repo publishes `@tsonic/core` from `versions/<dotnetMajor>/`.
 
+## Branch Hygiene (IMPORTANT)
+
+- Before starting work, and again before creating a new branch, run:
+  - `bash scripts/check-branch-hygiene.sh`
+- Do not proceed if that script reports warnings unless the maintainer explicitly says to ignore them for the current task.
+- Keep this repo on `main` unless it is the one active PR branch.
+- Do not leave local feature/release branches behind after they are merged.
+
 ## Publishing Workflow (no main/npm drift)
 
 - **Do not publish from feature/release branches.** Always publish from `main`.
