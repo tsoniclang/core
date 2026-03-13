@@ -21,3 +21,11 @@ This repo publishes `@tsonic/core` from `versions/<dotnetMajor>/`.
 - If npm already has a version that `main` does not reflect:
   - First bump `main` to the next patch and publish from `main`.
   - Avoid publishing from non-main branches.
+
+## Publish Need Verification (MANDATORY)
+
+- Do not rely on version numbers alone when deciding whether publish is needed.
+- Always verify both:
+  - registry version drift, and
+  - content drift since the last version-bump commit for the publishable package path.
+- Treat `local == registry` plus content drift as a release bug that requires a version bump; do not silently skip publishing.
