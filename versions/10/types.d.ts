@@ -20,6 +20,10 @@
  * ```
  */
 
+// JavaScript value surface
+export type JsPrimitive = string | number | boolean | bigint | symbol;
+export type JsValue = object | JsPrimitive | null;
+
 // Signed integer types
 export type sbyte = number; // System.SByte (-128 to 127)
 export type short = number; // System.Int16 (-32,768 to 32,767)
@@ -49,8 +53,27 @@ export type char = string; // System.Char (single UTF-16 code unit)
 
 // Pointer type
 // Represents C# unsafe pointer types (T*, void*, int*, etc.)
-// Erases to unknown for type safety - requires explicit handling
-export type ptr<T> = unknown;
+// Explicit branded support type - requires explicit handling
+declare const __tsonicPtrBrand: unique symbol;
+export type ptr<T> = {
+  readonly [__tsonicPtrBrand]: T;
+};
+
+// CLR function pointer type
+// Represents delegate* signatures and signature-only runtime callbacks.
+// Explicit branded support type - not callable as a normal JS function.
+declare const __tsonicFnPtrBrand: unique symbol;
+export type fnptr<
+  Args extends readonly JsValue[],
+  Result,
+  CallingConventions extends readonly string[] = readonly []
+> = {
+  readonly [__tsonicFnPtrBrand]: {
+    readonly args: Args;
+    readonly result: Result;
+    readonly callingConventions: CallingConventions;
+  };
+};
 
 // ============================================================================
 // Parameter Passing Modifiers

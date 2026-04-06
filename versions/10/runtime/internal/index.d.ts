@@ -2,16 +2,17 @@
 // Namespace: Tsonic.Runtime
 // Assembly: Tsonic.Runtime
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { Dictionary_2, IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Dictionary_2, IEnumerable_1, IEnumerator_1, IList_1, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
-import type { Action_1, Boolean as ClrBoolean, Func_2, IEquatable_1, Int32, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Action_2, Action_3, Boolean as ClrBoolean, Double, Func_2, Func_3, Func_4, Func_5, IEquatable_1, Int32, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueTuple_2, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IteratorResult_1$instance<T> {
     readonly __tsonic_type_Tsonic_Runtime_IteratorResult_1: never;
@@ -23,7 +24,7 @@ export interface IteratorResult_1$instance<T> {
     readonly value: T;
     Value: T;
     Deconstruct(Value: T, Done: boolean): void;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue): boolean;
     Equals(other: IteratorResult_1<T>): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -41,53 +42,144 @@ export interface DictionaryAdapter_1$instance<T> {
     readonly __tsonic_type_Tsonic_Runtime_DictionaryAdapter_1: never;
 
     readonly Keys: IEnumerable_1<System_Internal.String>;
-    readonly Values: IEnumerable_1<T | undefined>;
+    readonly Values: IEnumerable_1<T | null>;
     ContainsKey(key: string): boolean;
-    GetDictionary(): Dictionary_2<System_Internal.String, unknown | undefined>;
+    GetDictionary(): Dictionary_2<System_Internal.String, JsValue | null>;
 }
 
 
 export const DictionaryAdapter_1: {
-    new<T>(dictionary: Dictionary_2<System_Internal.String, unknown>): DictionaryAdapter_1<T>;
+    new<T>(dictionary: Dictionary_2<System_Internal.String, JsValue | null>): DictionaryAdapter_1<T>;
 };
 
 
-export type DictionaryAdapter_1<T> = DictionaryAdapter_1$instance<T> & { [key: string]: T | undefined; };
+export type DictionaryAdapter_1<T> = DictionaryAdapter_1$instance<T> & { [key: string]: T | null; };
 
 export interface DynamicObject$instance {
     readonly __tsonic_type_Tsonic_Runtime_DynamicObject: never;
 
     GetKeys(): string[];
-    GetProperty<T>(key: string): T | undefined;
-    GetValues(): (unknown | undefined)[];
+    GetProperty<T>(key: string): T | null;
+    GetValues(): (JsValue | null)[];
     HasProperty(key: string): boolean;
-    SetProperty(key: string, value: unknown): void;
-    ToDictionary(): Dictionary_2<System_Internal.String, unknown | undefined>;
+    SetProperty(key: string, value: JsValue | null): void;
+    ToDictionary(): Dictionary_2<System_Internal.String, JsValue | null>;
 }
 
 
 export const DynamicObject: {
     new(): DynamicObject;
-    FromDictionary(properties: Dictionary_2<System_Internal.String, unknown>): DynamicObject;
+    FromDictionary(properties: Dictionary_2<System_Internal.String, JsValue | null>): DynamicObject;
 };
 
 
-export type DynamicObject = DynamicObject$instance & { [key: string]: unknown | undefined; };
+export type DynamicObject = DynamicObject$instance & { [key: string]: JsValue | null; };
+
+export interface JSArray_1$instance<T> {
+    readonly __tsonic_type_Tsonic_Runtime_JSArray_1: never;
+
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
+    readonly length: int;
+    at(index: int): T;
+    concat(...items: JsValue[]): JSArray_1<T>;
+    copyWithin(target: int, start?: int, end?: Nullable_1<System_Internal.Int32>): JSArray_1<T>;
+    entries(): IEnumerable_1<ValueTuple_2<System_Internal.Int32, T>>;
+    every(callback: Func_2<T, System_Internal.Boolean>): boolean;
+    every(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, System_Internal.Boolean>): boolean;
+    fill(value: T, start?: int, end?: Nullable_1<System_Internal.Int32>): JSArray_1<T>;
+    filter(callback: Func_2<T, System_Internal.Boolean>): JSArray_1<T>;
+    filter(callback: Func_3<T, System_Internal.Int32, System_Internal.Boolean>): JSArray_1<T>;
+    filter(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, System_Internal.Boolean>): JSArray_1<T>;
+    find(callback: Func_2<T, System_Internal.Boolean>): T;
+    find(callback: Func_3<T, System_Internal.Int32, System_Internal.Boolean>): T;
+    find(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, System_Internal.Boolean>): T;
+    findIndex(callback: Func_2<T, System_Internal.Boolean>): int;
+    findIndex(callback: Func_3<T, System_Internal.Int32, System_Internal.Boolean>): int;
+    findIndex(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, System_Internal.Boolean>): int;
+    findLast(callback: Func_2<T, System_Internal.Boolean>): T;
+    findLast(callback: Func_3<T, System_Internal.Int32, System_Internal.Boolean>): T;
+    findLast(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, System_Internal.Boolean>): T;
+    findLastIndex(callback: Func_2<T, System_Internal.Boolean>): int;
+    findLastIndex(callback: Func_3<T, System_Internal.Int32, System_Internal.Boolean>): int;
+    findLastIndex(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, System_Internal.Boolean>): int;
+    flat(depth?: int): JSArray_1<JsValue>;
+    flatMap<TResult>(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, JsValue>): JSArray_1<TResult>;
+    forEach(callback: Action_1<T>): void;
+    forEach(callback: Action_2<T, System_Internal.Int32>): void;
+    forEach(callback: Action_3<T, System_Internal.Int32, JSArray_1<T>>): void;
+    GetEnumerator(): IEnumerator_1<T>;
+    includes(searchElement: T): boolean;
+    indexOf(searchElement: T, fromIndex?: int): int;
+    join(separator?: string): string;
+    keys(): IEnumerable_1<System_Internal.Int32>;
+    lastIndexOf(searchElement: T, fromIndex?: Nullable_1<System_Internal.Int32>): int;
+    map<TResult>(callback: Func_2<T, TResult>): JSArray_1<TResult>;
+    map<TResult>(callback: Func_3<T, System_Internal.Int32, TResult>): JSArray_1<TResult>;
+    map<TResult>(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, TResult>): JSArray_1<TResult>;
+    pop(): T;
+    push(item: T): int;
+    push(...items: T[]): int;
+    reduce<TResult>(callback: Func_3<TResult, T, TResult>, initialValue: TResult): TResult;
+    reduce<TResult>(callback: Func_4<TResult, T, System_Internal.Int32, TResult>, initialValue: TResult): TResult;
+    reduce<TResult>(callback: Func_5<TResult, T, System_Internal.Int32, JSArray_1<T>, TResult>, initialValue: TResult): TResult;
+    reduce(callback: Func_3<T, T, T>): T;
+    reduceRight<TResult>(callback: Func_3<TResult, T, TResult>, initialValue: TResult): TResult;
+    reduceRight<TResult>(callback: Func_4<TResult, T, System_Internal.Int32, TResult>, initialValue: TResult): TResult;
+    reduceRight<TResult>(callback: Func_5<TResult, T, System_Internal.Int32, JSArray_1<T>, TResult>, initialValue: TResult): TResult;
+    reverse(): JSArray_1<T>;
+    setLength(newLength: int): void;
+    shift(): T;
+    slice(start?: int, end?: Nullable_1<System_Internal.Int32>): JSArray_1<T>;
+    some(callback: Func_2<T, System_Internal.Boolean>): boolean;
+    some(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, System_Internal.Boolean>): boolean;
+    sort(compareFunc?: Func_3<T, T, System_Internal.Double> | null): JSArray_1<T>;
+    splice(start: int, deleteCount?: Nullable_1<System_Internal.Int32>, ...items: T[]): JSArray_1<T>;
+    toArray(): T[];
+    toList(): List_1<T>;
+    toLocaleString(): string;
+    toReversed(): JSArray_1<T>;
+    toSorted(compareFunc?: Func_3<T, T, System_Internal.Double> | null): JSArray_1<T>;
+    toSpliced(start: int, deleteCount?: Nullable_1<System_Internal.Int32>, ...items: T[]): JSArray_1<T>;
+    ToString(): string;
+    unshift(item: T): int;
+    unshift(...items: T[]): int;
+    values(): IEnumerable_1<T>;
+    with(index: int, value: T): JSArray_1<T>;
+}
+
+
+export const JSArray_1: {
+    new<T>(): JSArray_1<T>;
+    new<T>(capacity: int): JSArray_1<T>;
+    new<T>(source: T[]): JSArray_1<T>;
+    new<T>(source: List_1<T>): JSArray_1<T>;
+    new<T>(source: IEnumerable_1<T>): JSArray_1<T>;
+    from<T, TSource, TResult>(iterable: IEnumerable_1<TSource>, mapFunc: Func_2<TSource, TResult>): JSArray_1<TResult>;
+    from<T, TSource, TResult>(iterable: IEnumerable_1<TSource>, mapFunc: Func_3<TSource, System_Internal.Int32, TResult>): JSArray_1<TResult>;
+    from<T>(iterable: IEnumerable_1<T>): JSArray_1<T>;
+    isArray<T>(value: JsValue | null): boolean;
+    of<T>(...items: T[]): JSArray_1<T>;
+};
+
+
+export type JSArray_1<T> = JSArray_1$instance<T> & { [index: number]: T; };
 
 export interface Union_2$instance<T1, T2> {
     readonly __tsonic_type_Tsonic_Runtime_Union_2: never;
 
     As1(): T1;
     As2(): T2;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
     Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>): void;
-    ToString(): string | undefined;
-    TryAs1(value: T1): boolean;
-    TryAs2(value: T2): boolean;
+    ToString(): string | null;
+    TryAs1(value: T1 | null): boolean;
+    TryAs2(value: T2 | null): boolean;
 }
 
 
@@ -105,17 +197,17 @@ export interface Union_3$instance<T1, T2, T3> {
     As1(): T1;
     As2(): T2;
     As3(): T3;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
     Is3(): boolean;
     Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>): void;
-    ToString(): string | undefined;
-    TryAs1(value: T1): boolean;
-    TryAs2(value: T2): boolean;
-    TryAs3(value: T3): boolean;
+    ToString(): string | null;
+    TryAs1(value: T1 | null): boolean;
+    TryAs2(value: T2 | null): boolean;
+    TryAs3(value: T3 | null): boolean;
 }
 
 
@@ -135,7 +227,7 @@ export interface Union_4$instance<T1, T2, T3, T4> {
     As2(): T2;
     As3(): T3;
     As4(): T4;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
@@ -143,11 +235,11 @@ export interface Union_4$instance<T1, T2, T3, T4> {
     Is4(): boolean;
     Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>): void;
-    ToString(): string | undefined;
-    TryAs1(value: T1): boolean;
-    TryAs2(value: T2): boolean;
-    TryAs3(value: T3): boolean;
-    TryAs4(value: T4): boolean;
+    ToString(): string | null;
+    TryAs1(value: T1 | null): boolean;
+    TryAs2(value: T2 | null): boolean;
+    TryAs3(value: T3 | null): boolean;
+    TryAs4(value: T4 | null): boolean;
 }
 
 
@@ -169,7 +261,7 @@ export interface Union_5$instance<T1, T2, T3, T4, T5> {
     As3(): T3;
     As4(): T4;
     As5(): T5;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
@@ -178,12 +270,12 @@ export interface Union_5$instance<T1, T2, T3, T4, T5> {
     Is5(): boolean;
     Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>, onT5: Action_1<T5>): void;
-    ToString(): string | undefined;
-    TryAs1(value: T1): boolean;
-    TryAs2(value: T2): boolean;
-    TryAs3(value: T3): boolean;
-    TryAs4(value: T4): boolean;
-    TryAs5(value: T5): boolean;
+    ToString(): string | null;
+    TryAs1(value: T1 | null): boolean;
+    TryAs2(value: T2 | null): boolean;
+    TryAs3(value: T3 | null): boolean;
+    TryAs4(value: T4 | null): boolean;
+    TryAs5(value: T5 | null): boolean;
 }
 
 
@@ -207,7 +299,7 @@ export interface Union_6$instance<T1, T2, T3, T4, T5, T6> {
     As4(): T4;
     As5(): T5;
     As6(): T6;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
@@ -217,13 +309,13 @@ export interface Union_6$instance<T1, T2, T3, T4, T5, T6> {
     Is6(): boolean;
     Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>, onT6: Func_2<T6, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>, onT5: Action_1<T5>, onT6: Action_1<T6>): void;
-    ToString(): string | undefined;
-    TryAs1(value: T1): boolean;
-    TryAs2(value: T2): boolean;
-    TryAs3(value: T3): boolean;
-    TryAs4(value: T4): boolean;
-    TryAs5(value: T5): boolean;
-    TryAs6(value: T6): boolean;
+    ToString(): string | null;
+    TryAs1(value: T1 | null): boolean;
+    TryAs2(value: T2 | null): boolean;
+    TryAs3(value: T3 | null): boolean;
+    TryAs4(value: T4 | null): boolean;
+    TryAs5(value: T5 | null): boolean;
+    TryAs6(value: T6 | null): boolean;
 }
 
 
@@ -249,7 +341,7 @@ export interface Union_7$instance<T1, T2, T3, T4, T5, T6, T7> {
     As5(): T5;
     As6(): T6;
     As7(): T7;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
@@ -260,14 +352,14 @@ export interface Union_7$instance<T1, T2, T3, T4, T5, T6, T7> {
     Is7(): boolean;
     Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>, onT6: Func_2<T6, TResult>, onT7: Func_2<T7, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>, onT5: Action_1<T5>, onT6: Action_1<T6>, onT7: Action_1<T7>): void;
-    ToString(): string | undefined;
-    TryAs1(value: T1): boolean;
-    TryAs2(value: T2): boolean;
-    TryAs3(value: T3): boolean;
-    TryAs4(value: T4): boolean;
-    TryAs5(value: T5): boolean;
-    TryAs6(value: T6): boolean;
-    TryAs7(value: T7): boolean;
+    ToString(): string | null;
+    TryAs1(value: T1 | null): boolean;
+    TryAs2(value: T2 | null): boolean;
+    TryAs3(value: T3 | null): boolean;
+    TryAs4(value: T4 | null): boolean;
+    TryAs5(value: T5 | null): boolean;
+    TryAs6(value: T6 | null): boolean;
+    TryAs7(value: T7 | null): boolean;
 }
 
 
@@ -295,7 +387,7 @@ export interface Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8> {
     As6(): T6;
     As7(): T7;
     As8(): T8;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
@@ -307,15 +399,15 @@ export interface Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8> {
     Is8(): boolean;
     Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>, onT6: Func_2<T6, TResult>, onT7: Func_2<T7, TResult>, onT8: Func_2<T8, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>, onT5: Action_1<T5>, onT6: Action_1<T6>, onT7: Action_1<T7>, onT8: Action_1<T8>): void;
-    ToString(): string | undefined;
-    TryAs1(value: T1): boolean;
-    TryAs2(value: T2): boolean;
-    TryAs3(value: T3): boolean;
-    TryAs4(value: T4): boolean;
-    TryAs5(value: T5): boolean;
-    TryAs6(value: T6): boolean;
-    TryAs7(value: T7): boolean;
-    TryAs8(value: T8): boolean;
+    ToString(): string | null;
+    TryAs1(value: T1 | null): boolean;
+    TryAs2(value: T2 | null): boolean;
+    TryAs3(value: T3 | null): boolean;
+    TryAs4(value: T4 | null): boolean;
+    TryAs5(value: T5 | null): boolean;
+    TryAs6(value: T6 | null): boolean;
+    TryAs7(value: T7 | null): boolean;
+    TryAs8(value: T8 | null): boolean;
 }
 
 
@@ -342,19 +434,48 @@ export abstract class ArrayHelpers$instance {
 
 export type ArrayHelpers = ArrayHelpers$instance;
 
+export abstract class JSArrayStatics$instance {
+    static from<TSource, TResult>(iterable: IEnumerable_1<TSource>, mapFunc: Func_2<TSource, TResult>): TResult[];
+    static from<TSource, TResult>(iterable: IEnumerable_1<TSource>, mapFunc: Func_3<TSource, System_Internal.Int32, TResult>): TResult[];
+    static from<T>(iterable: IEnumerable_1<T>): T[];
+    static from<TResult>(source: string, mapFunc: Func_2<System_Internal.String, TResult>): TResult[];
+    static from<TResult>(source: string, mapFunc: Func_3<System_Internal.String, System_Internal.Int32, TResult>): TResult[];
+    static from(source: string): string[];
+    static isArray(value: JsValue | null): boolean;
+    static of<T>(...items: T[]): T[];
+}
+
+
+export type JSArrayStatics = JSArrayStatics$instance;
+
+export abstract class JSON$instance {
+    static parse<T>(text: string): T;
+    static stringify(value: JsValue | null): string;
+}
+
+
+export type JSON = JSON$instance;
+
+export abstract class JsValue$instance {
+    static Stringify(value: JsValue | null): string;
+}
+
+
+export type JsValue = JsValue$instance;
+
 export abstract class Operators$instance {
-    static instanceof(obj: unknown, type: Type): boolean;
-    static typeof(value: unknown): string;
+    static instanceof(obj: JsValue | null, type: Type): boolean;
+    static typeof(value: JsValue | null): string;
 }
 
 
 export type Operators = Operators$instance;
 
 export abstract class Structural$instance {
-    static Clone<T>(source: unknown): T | undefined;
-    static CloneFromDictionary<T>(source: Dictionary_2<System_Internal.String, unknown>): T | undefined;
-    static CreateDictionaryAdapter<T>(source: Dictionary_2<System_Internal.String, unknown>): DictionaryAdapter_1<T>;
-    static ToDictionary(source: unknown): Dictionary_2<System_Internal.String, unknown | undefined>;
+    static Clone<T>(source: JsValue | null): T | null;
+    static CloneFromDictionary<T>(source: Dictionary_2<System_Internal.String, JsValue | null>): T | null;
+    static CreateDictionaryAdapter<T>(source: Dictionary_2<System_Internal.String, JsValue | null>): DictionaryAdapter_1<T>;
+    static ToDictionary(source: JsValue | null): Dictionary_2<System_Internal.String, JsValue | null>;
 }
 
 

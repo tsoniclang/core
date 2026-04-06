@@ -19,7 +19,7 @@
  * ```
  */
 
-import { int } from "./types.js";
+import { int, type JsValue } from "./types.js";
 
 // ============================================================================
 // Memory Intrinsics
@@ -134,7 +134,7 @@ export declare function defaultof<T>(): T;
  * string prop = nameof(person.name); // "name"
  * ```
  */
-export declare function nameof(expression: unknown): string;
+export declare function nameof(expression: JsValue): string;
 
 // ============================================================================
 // Cast Intrinsics
@@ -167,7 +167,7 @@ export declare function nameof(expression: unknown): string;
  * }
  * ```
  */
-export declare function trycast<T>(value: unknown): T | null;
+export declare function trycast<T>(value: JsValue): T | null;
 
 /**
  * Compile-time-only interface view.
@@ -186,7 +186,7 @@ export declare function trycast<T>(value: unknown): T | null;
  * // q is typed as IQueryable<User> in TS, but emits without a cast in C#.
  * ```
  */
-export declare function asinterface<T>(value: unknown): T;
+export declare function asinterface<T>(value: JsValue): T;
 
 /**
  * Makes a CLR interface type implementable in TypeScript without requiring
@@ -280,21 +280,21 @@ export declare function inref<T>(value: T): T;
  * @example
  * ```ts
  * import { istype } from "@tsonic/core/lang.js";
- * import type { int } from "@tsonic/core/types.js";
+ * import type { int, JsValue } from "@tsonic/core/types.js";
  *
  * // Overload signatures
  * Foo(x: int): int;
  * Foo(x: string): int;
  *
  * // Single implementation (compile-time specialized)
- * Foo(p0: unknown): unknown {
+ * Foo(p0: JsValue): int {
  *   if (istype<int>(p0)) return p0 + 1;
  *   if (istype<string>(p0)) return p0.length;
  *   throw new Error("unreachable");
  * }
  * ```
  */
-export declare function istype<T>(value: unknown): value is T;
+export declare function istype<T extends JsValue>(value: JsValue): value is T;
 
 // ============================================================================
 // Extension Method Intrinsics
@@ -326,15 +326,15 @@ export type thisarg<T> = T;
 // ============================================================================
 
 type __TsonicUnionToIntersection<T> =
-  (T extends unknown ? (k: T) => void : never) extends (k: infer I) => void ? I : never;
+  (T extends T ? (k: T) => void : never) extends (k: infer I) => void ? I : never;
 
 type __TsonicExtMapOf<T> = T extends { __tsonic_ext?: infer M } ? M : {};
 
 type __TsonicExtApplierUnion<T> = __TsonicExtMapOf<T>[keyof __TsonicExtMapOf<T>];
 
 type __TsonicApplyApplier<TApplier, TShape> =
-  TApplier extends { __tsonic_type: unknown }
-    ? (TApplier & { __tsonic_shape: TShape })["__tsonic_type"]
+  TApplier extends { __tsonic_type: infer TResult }
+    ? TResult
     : never;
 
 type __TsonicApplyAllAppliers<TReceiver, TShape> =
@@ -342,7 +342,7 @@ type __TsonicApplyAllAppliers<TReceiver, TShape> =
     ? {}
     : __TsonicUnionToIntersection<
       __TsonicExtApplierUnion<TReceiver> extends infer A
-        ? A extends unknown
+        ? A extends A
           ? __TsonicApplyApplier<A, TShape>
           : never
         : never
@@ -370,8 +370,6 @@ export type Rewrap<TReceiver, TNewShape> =
 // Attribute Intrinsics
 // ============================================================================
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 /**
  * Compiler-only attribute API for Tsonic.
  *
@@ -388,12 +386,15 @@ export type Rewrap<TReceiver, TNewShape> =
  */
 
 /** A class constructor type. */
-export type Ctor<T = unknown, Args extends readonly any[] = readonly any[]> = new (
+export type Ctor<T = object, Args extends readonly JsValue[] = readonly JsValue[]> = new (
   ...args: Args
 ) => T;
 
+/** Any class constructor, preserving the concrete constructor signature via generics. */
+export type AnyCtor<T = object> = new (...args: never[]) => T;
+
 /** Any attribute class constructor. */
-export type AttributeCtor = Ctor<object, readonly any[]>;
+export type AttributeCtor = AnyCtor<object>;
 
 /**
  * C# attribute target specifiers (the `target:` prefix in `[target: Attr]`).
@@ -406,7 +407,7 @@ export type AttributeCtor = Ctor<object, readonly any[]>;
  *   foo(): boolean { return true; }
  * }
  *
- * A.on(Native)
+ * A<Native>()
  *   .method(x => x.foo)
  *   .target(AttributeTargets.return)
  *   .add(MarshalAsAttribute, UnmanagedType.Bool);
@@ -449,29 +450,32 @@ export type AttributeTarget = AttributeTargets[keyof AttributeTargets];
  */
 export type OverloadedConstructorParameters<C extends AttributeCtor> =
   C extends {
-    new (...args: infer A1): any;
-    new (...args: infer A2): any;
-    new (...args: infer A3): any;
-    new (...args: infer A4): any;
-    new (...args: infer A5): any;
+    new (...args: infer A1): object;
+    new (...args: infer A2): object;
+    new (...args: infer A3): object;
+    new (...args: infer A4): object;
+    new (...args: infer A5): object;
   }
     ? A1 | A2 | A3 | A4 | A5
     : C extends {
-          new (...args: infer A1): any;
-          new (...args: infer A2): any;
-          new (...args: infer A3): any;
-          new (...args: infer A4): any;
+          new (...args: infer A1): object;
+          new (...args: infer A2): object;
+          new (...args: infer A3): object;
+          new (...args: infer A4): object;
         }
       ? A1 | A2 | A3 | A4
       : C extends {
-            new (...args: infer A1): any;
-            new (...args: infer A2): any;
-            new (...args: infer A3): any;
+            new (...args: infer A1): object;
+            new (...args: infer A2): object;
+            new (...args: infer A3): object;
           }
         ? A1 | A2 | A3
-        : C extends { new (...args: infer A1): any; new (...args: infer A2): any }
+        : C extends {
+              new (...args: infer A1): object;
+              new (...args: infer A2): object;
+            }
           ? A1 | A2
-          : C extends { new (...args: infer A): any }
+          : C extends { new (...args: infer A): object }
             ? A
             : never;
 
@@ -483,49 +487,42 @@ export interface AttributeDescriptor<C extends AttributeCtor = AttributeCtor> {
 }
 
 /** Extract instance type of a constructor. */
-export type InstanceOf<C extends Ctor<any, any>> = C extends Ctor<infer I, any>
+export type InstanceOf<C extends AnyCtor<object>> =
+  C extends AnyCtor<infer I>
   ? I
   : never;
 
 /** Keys of T whose values are callable. */
 export type MethodKeys<T> = {
-  [K in keyof T]-?: T[K] extends (...args: any[]) => any ? K : never;
+  [K in keyof T]-?: T[K] extends (...args: infer _Args) => infer _Result
+    ? K
+    : never;
 }[keyof T];
 
 /** Keys of T whose values are NOT callable (i.e., "properties"). */
 export type PropertyKeys<T> = {
-  [K in keyof T]-?: T[K] extends (...args: any[]) => any ? never : K;
+  [K in keyof T]-?: T[K] extends (...args: infer _Args) => infer _Result
+    ? never
+    : K;
 }[keyof T];
 
 /**
  * Inferred "method value type" from a method selector.
  * The selector must resolve to a function-valued member on T.
  */
-export type SelectedMethodValue<T> = (...args: any[]) => any;
+export type SelectedMethodValue<T> = Extract<T[keyof T], Function>;
 
-/**
- * Fluent builder returned from A.on(Foo).
- * Allows attaching attributes to:
- * - the type itself
- * - the constructor
- * - a method
- * - a property
- */
-export interface OnBuilder<T> {
-  /** Attach attributes to the type declaration (C# class/interface). */
-  type: AttributeTargetBuilder<"type">;
-
+export interface TypeAttributeBuilder<T>
+  extends AttributeTargetBuilder<"type"> {
   /** Attach attributes to the constructor. */
-  ctor: AttributeTargetBuilder<"method">;
+  readonly ctor: AttributeTargetBuilder<"method">;
 
   /**
    * Select a method to annotate.
    *
-   * The selector must be a simple member access in practice (enforced by compiler),
-   * but is typed here as: (t: T) => T[K] where K is a method key.
-   *
    * Example:
-   *   A.on(User).method(u => u.save).add(TransactionAttribute);
+   *   A<User>().method(u => u.save).add(TransactionAttribute);
+   *   A<IUser>().method(u => u.Save).add(TransactionAttribute);
    */
   method<K extends MethodKeys<T>>(
     selector: (t: T) => T[K]
@@ -535,11 +532,20 @@ export interface OnBuilder<T> {
    * Select a property to annotate.
    *
    * Example:
-   *   A.on(User).prop(u => u.name).add(JsonPropertyNameAttribute, "name");
+   *   A<User>().prop(u => u.name).add(JsonPropertyNameAttribute, "name");
+   *   A<IUser>().prop(u => u.Name).add(JsonPropertyNameAttribute, "name");
    */
   prop<K extends PropertyKeys<T>>(
     selector: (t: T) => T[K]
   ): AttributeTargetBuilder<"property" | "field">;
+}
+
+export interface FunctionAttributeBuilder {
+  add<C extends AttributeCtor>(
+    ctor: C,
+    ...args: OverloadedConstructorParameters<C>
+  ): void;
+  add<C extends AttributeCtor>(descriptor: AttributeDescriptor<C>): void;
 }
 
 /**
@@ -556,7 +562,7 @@ export interface AttributeTargetBuilder<
    *
    * @example
    * ```ts
-   * A.on(User)
+ * A<User>()
    *   .prop(x => x.name)
    *   .target(AttributeTargets.field)
    *   .add(NonSerializedAttribute);
@@ -574,7 +580,7 @@ export interface AttributeTargetBuilder<
    * Add an attribute by constructor + arguments.
    *
    * Example:
-   *   A.on(Config).type.add(ObsoleteAttribute, "Will be removed in v2");
+   *   A<Config>().add(ObsoleteAttribute, "Will be removed in v2");
    */
   add<C extends AttributeCtor>(
     ctor: C,
@@ -585,7 +591,7 @@ export interface AttributeTargetBuilder<
    * Add an attribute descriptor produced by A.attr(...).
    *
    * Example:
-   *   A.on(Config).type.add(A.attr(ObsoleteAttribute, "Will be removed in v2"));
+   *   A<Config>().add(A.attr(ObsoleteAttribute, "Will be removed in v2"));
    */
   add<C extends AttributeCtor>(descriptor: AttributeDescriptor<C>): void;
 }
@@ -597,8 +603,8 @@ export interface AttributeTargetBuilder<
  *   import { attributes as A } from "@tsonic/core/lang.js";
  *
  *   class Config {}
- *   A.on(Config).type.add(SerializableAttribute);
- *   A.on(Config).type.add(ObsoleteAttribute, "Will be removed in v2");
+ *   A<Config>().add(SerializableAttribute);
+ *   A<Config>().add(ObsoleteAttribute, "Will be removed in v2");
  *
  * Emits:
  *   [System.SerializableAttribute]
@@ -606,15 +612,20 @@ export interface AttributeTargetBuilder<
  */
 export interface AttributesApi {
   /**
-   * Begin targeting a type by passing its constructor.
+   * Begin targeting a class or interface declaration by type.
    */
-  on<C extends Ctor<any, any>>(ctor: C): OnBuilder<InstanceOf<C>>;
+  <T>(): TypeAttributeBuilder<T>;
+
+  /**
+   * Begin targeting a top-level function declaration by value.
+   */
+  <F extends Function>(fn: F): FunctionAttributeBuilder;
 
   /**
    * Build an attribute descriptor (compiler-known "attribute instance").
    *
    * Example:
-   *   A.on(Config).type.add(A.attr(ObsoleteAttribute, "Will be removed in v2"));
+   *   A<Config>().add(A.attr(ObsoleteAttribute, "Will be removed in v2"));
    */
   attr<C extends AttributeCtor>(
     ctor: C,
@@ -626,6 +637,37 @@ export interface AttributesApi {
  * Named export used by consumers.
  */
 export declare const attributes: AttributesApi;
+
+/**
+ * Overload-family marker API.
+ *
+ * Use real TS overload declarations for the public stub surface, then bind
+ * emitted CLR bodies from distinct real implementations.
+ *
+ * Examples:
+ *   O<Parser>().method(x => x.parse_string).family(x => x.Parse);
+ *   O(parse_bytes).family(parse);
+ */
+export interface OverloadMethodFamilyBuilder<T> {
+  family<K extends MethodKeys<T>>(selector: (t: T) => T[K]): void;
+}
+
+export interface OverloadTypeBuilder<T> {
+  method<K extends MethodKeys<T>>(
+    selector: (t: T) => T[K]
+  ): OverloadMethodFamilyBuilder<T>;
+}
+
+export interface OverloadFunctionFamilyBuilder {
+  family<F extends Function>(fn: F): void;
+}
+
+export interface OverloadsApi {
+  <T>(): OverloadTypeBuilder<T>;
+  <F extends Function>(fn: F): OverloadFunctionFamilyBuilder;
+}
+
+export declare const overloads: OverloadsApi;
 
 // ============================================================================
 // Span type (for stackalloc return type)

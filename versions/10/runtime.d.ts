@@ -6,13 +6,18 @@
 import * as Internal from './runtime/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { Dictionary, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Action, Boolean as ClrBoolean, Func, IEquatable, Int32, Object as ClrObject, String as ClrString, Type, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { Dictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, List } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
+import type { Action, Boolean as ClrBoolean, Double, Func, IEquatable, Int32, Nullable, Object as ClrObject, String as ClrString, Type, ValueTuple, ValueType, Void } from '@tsonic/dotnet/System.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { ArrayHelpers$instance as ArrayHelpers } from './runtime/internal/index.js';
 export { DynamicObject as DynamicObject } from './runtime/internal/index.js';
 export { IteratorResult_1 as IteratorResult } from './runtime/internal/index.js';
+export { JSArray_1 as JSArray } from './runtime/internal/index.js';
+export { JSArrayStatics$instance as JSArrayStatics } from './runtime/internal/index.js';
+export { JSON$instance as JSON } from './runtime/internal/index.js';
+export { JsValue$instance as JsValue } from './runtime/internal/index.js';
 export { Operators$instance as Operators } from './runtime/internal/index.js';
 export { Structural$instance as Structural } from './runtime/internal/index.js';
 export { DictionaryAdapter_1 as DictionaryAdapter } from './runtime/internal/index.js';
