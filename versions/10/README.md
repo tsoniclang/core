@@ -1,32 +1,57 @@
 # @tsonic/core
 
-Core type definitions for Tsonic - a TypeScript to native compiler.
+Core language-facing declarations and intrinsics for Tsonic.
 
-## Versioning
+`@tsonic/core` is not an ambient surface by itself. It provides the shared
+modules that source packages and CLR binding packages use for primitive intent,
+language intrinsics, and compiler-recognized runtime helpers.
 
-This repo is versioned by **.NET major**:
-
-- **.NET 10** → `versions/10/` → npm: `@tsonic/core@10.x`
-
-When publishing, run: `npm publish versions/10 --access public`
-
-## Installation
+## Install
 
 ```bash
 npm install @tsonic/core
 ```
 
-## Usage
+## Modules
+
+### `@tsonic/core/types.js`
+
+CLR primitive intent aliases:
 
 ```typescript
-import { int, float, bool } from "@tsonic/core/types.js";
+import type { int, long, double, bool, char } from "@tsonic/core/types.js";
 
 const age: int = 42 as int;
-const temp: float = 98.6 as float;
+const total: long = 123 as long;
+const ratio: double = 0.5;
 const isActive: bool = true;
+const initial: char = "T" as char;
 ```
 
-## Type Aliases
+### `@tsonic/core/lang.js`
+
+Compiler-recognized language intrinsics:
+
+```typescript
+import { asinterface, defaultof, nameof, out, sizeof, stackalloc } from "@tsonic/core/lang.js";
+import type { int } from "@tsonic/core/types.js";
+
+const zero = defaultof<int>();
+const name = nameof("customerId");
+const bytes = stackalloc<int>(16);
+void asinterface;
+void out;
+void sizeof;
+void zero;
+void name;
+void bytes;
+```
+
+### `@tsonic/core/runtime.js`
+
+Runtime-facing helpers used by generated code and first-party source packages.
+
+## Primitive aliases
 
 ### Signed Integer Types
 - `sbyte` - System.SByte (-128 to 127)
@@ -55,11 +80,28 @@ const isActive: bool = true;
 - `char` - System.Char (single UTF-16 code unit)
 - `ptr<T>` - C# unsafe pointer types
 
-## Important Notes
+## TypeScript versus Tsonic
 
-These are simple type aliases with NO runtime enforcement. TypeScript treats all numeric types as `number`, `bool` as `boolean`, etc.
+The TypeScript checker sees most numeric aliases as `number`. Tsonic carries the
+semantic primitive identity through its own compiler pipeline and enforces the
+CLR-facing rules during compilation.
 
-**Tsonic enforces semantic correctness at compile time via its proof system.** TypeScript alone will NOT catch type errors between int/byte/long etc.
+Use these aliases to express intent at source level; do not expect plain
+TypeScript to enforce every CLR primitive distinction by itself.
+
+## Versioning
+
+This repo is versioned by .NET major:
+
+- .NET 10 declarations live under `versions/10/`.
+- The npm package is published as `@tsonic/core@10.x`.
+
+## Development
+
+```bash
+npm install
+npm run generate:10
+```
 
 ## License
 
