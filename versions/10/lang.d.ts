@@ -486,12 +486,6 @@ export interface AttributeDescriptor<C extends AttributeCtor = AttributeCtor> {
   readonly args: OverloadedConstructorParameters<C>;
 }
 
-/** Extract instance type of a constructor. */
-export type InstanceOf<C extends AnyCtor<object>> =
-  C extends AnyCtor<infer I>
-  ? I
-  : never;
-
 /** Keys of T whose values are callable. */
 export type MethodKeys<T> = {
   [K in keyof T]-?: T[K] extends (...args: infer _Args) => infer _Result
