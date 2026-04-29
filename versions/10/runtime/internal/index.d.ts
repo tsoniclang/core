@@ -75,7 +75,14 @@ export const DynamicObject: {
 
 export type DynamicObject = DynamicObject$instance & { [key: string]: JsValue | null; };
 
-export interface JSArray_1$instance<T> {
+export interface IJSArray$instance {
+    readonly __tsonic_type_Tsonic_Runtime_IJSArray: never;
+}
+
+
+export type IJSArray = IJSArray$instance;
+
+export interface JSArray_1$instance<T> extends IJSArray {
     readonly __tsonic_type_Tsonic_Runtime_JSArray_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -166,7 +173,16 @@ export const JSArray_1: {
 
 export type JSArray_1<T> = JSArray_1$instance<T> & { [index: number]: T; };
 
-export interface Union_2$instance<T1, T2> {
+export interface IUnionValue$instance {
+    readonly __tsonic_type_Tsonic_Runtime_IUnionValue: never;
+
+    readonly Value: JsValue | null;
+}
+
+
+export type IUnionValue = IUnionValue$instance;
+
+export interface Union_2$instance<T1, T2> extends IUnionValue {
     readonly __tsonic_type_Tsonic_Runtime_Union_2: never;
 
     As1(): T1;
@@ -191,7 +207,7 @@ export const Union_2: {
 
 export type Union_2<T1, T2> = Union_2$instance<T1, T2>;
 
-export interface Union_3$instance<T1, T2, T3> {
+export interface Union_3$instance<T1, T2, T3> extends IUnionValue {
     readonly __tsonic_type_Tsonic_Runtime_Union_3: never;
 
     As1(): T1;
@@ -220,7 +236,7 @@ export const Union_3: {
 
 export type Union_3<T1, T2, T3> = Union_3$instance<T1, T2, T3>;
 
-export interface Union_4$instance<T1, T2, T3, T4> {
+export interface Union_4$instance<T1, T2, T3, T4> extends IUnionValue {
     readonly __tsonic_type_Tsonic_Runtime_Union_4: never;
 
     As1(): T1;
@@ -253,7 +269,7 @@ export const Union_4: {
 
 export type Union_4<T1, T2, T3, T4> = Union_4$instance<T1, T2, T3, T4>;
 
-export interface Union_5$instance<T1, T2, T3, T4, T5> {
+export interface Union_5$instance<T1, T2, T3, T4, T5> extends IUnionValue {
     readonly __tsonic_type_Tsonic_Runtime_Union_5: never;
 
     As1(): T1;
@@ -290,7 +306,7 @@ export const Union_5: {
 
 export type Union_5<T1, T2, T3, T4, T5> = Union_5$instance<T1, T2, T3, T4, T5>;
 
-export interface Union_6$instance<T1, T2, T3, T4, T5, T6> {
+export interface Union_6$instance<T1, T2, T3, T4, T5, T6> extends IUnionValue {
     readonly __tsonic_type_Tsonic_Runtime_Union_6: never;
 
     As1(): T1;
@@ -331,7 +347,7 @@ export const Union_6: {
 
 export type Union_6<T1, T2, T3, T4, T5, T6> = Union_6$instance<T1, T2, T3, T4, T5, T6>;
 
-export interface Union_7$instance<T1, T2, T3, T4, T5, T6, T7> {
+export interface Union_7$instance<T1, T2, T3, T4, T5, T6, T7> extends IUnionValue {
     readonly __tsonic_type_Tsonic_Runtime_Union_7: never;
 
     As1(): T1;
@@ -376,7 +392,7 @@ export const Union_7: {
 
 export type Union_7<T1, T2, T3, T4, T5, T6, T7> = Union_7$instance<T1, T2, T3, T4, T5, T6, T7>;
 
-export interface Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8> {
+export interface Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8> extends IUnionValue {
     readonly __tsonic_type_Tsonic_Runtime_Union_8: never;
 
     As1(): T1;
@@ -464,7 +480,6 @@ export abstract class JsValue$instance {
 export type JsValue = JsValue$instance;
 
 export abstract class Operators$instance {
-    static instanceof(obj: JsValue | null, type: Type): boolean;
     static typeof(value: JsValue | null): string;
 }
 
@@ -472,12 +487,11 @@ export abstract class Operators$instance {
 export type Operators = Operators$instance;
 
 export abstract class Structural$instance {
-    static Clone<T>(source: JsValue | null): T | null;
-    static CloneFromDictionary<T>(source: Dictionary_2<System_Internal.String, JsValue | null>): T | null;
     static CreateDictionaryAdapter<T>(source: Dictionary_2<System_Internal.String, JsValue | null>): DictionaryAdapter_1<T>;
+    static GetProperty(source: JsValue | null, key: string): JsValue | null;
+    static HasProperty(source: JsValue | null, key: string): boolean;
     static ToDictionary(source: JsValue | null): Dictionary_2<System_Internal.String, JsValue | null>;
 }
 
 
 export type Structural = Structural$instance;
-

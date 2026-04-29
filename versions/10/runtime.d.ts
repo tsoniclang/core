@@ -13,6 +13,8 @@ import type { Action, Boolean as ClrBoolean, Double, Func, IEquatable, Int32, Nu
 // Public API exports (curated - no internal $instance/$views leakage)
 export { ArrayHelpers$instance as ArrayHelpers } from './runtime/internal/index.js';
 export { DynamicObject as DynamicObject } from './runtime/internal/index.js';
+export { IJSArray as IJSArray } from './runtime/internal/index.js';
+export { IUnionValue as IUnionValue } from './runtime/internal/index.js';
 export { IteratorResult_1 as IteratorResult } from './runtime/internal/index.js';
 export { JSArray_1 as JSArray } from './runtime/internal/index.js';
 export { JSArrayStatics$instance as JSArrayStatics } from './runtime/internal/index.js';
@@ -45,4 +47,3 @@ export type Union<
   [T7] extends [__] ? Internal.Union_6<T1, T2, T3, T4, T5, T6> :
   [T8] extends [__] ? Internal.Union_7<T1, T2, T3, T4, T5, T6, T7> :
   Internal.Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
-
