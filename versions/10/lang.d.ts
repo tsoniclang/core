@@ -19,7 +19,7 @@
  * ```
  */
 
-import { int, type JsValue } from "./types.js";
+import { int } from "./types.js";
 
 // ============================================================================
 // Memory Intrinsics
@@ -134,7 +134,7 @@ export declare function defaultof<T>(): T;
  * string prop = nameof(person.name); // "name"
  * ```
  */
-export declare function nameof(expression: JsValue): string;
+export declare function nameof(expression: unknown): string;
 
 // ============================================================================
 // Cast Intrinsics
@@ -167,7 +167,7 @@ export declare function nameof(expression: JsValue): string;
  * }
  * ```
  */
-export declare function trycast<T>(value: JsValue): T | null;
+export declare function trycast<T>(value: unknown): T | null;
 
 /**
  * Compile-time-only interface view.
@@ -186,7 +186,7 @@ export declare function trycast<T>(value: JsValue): T | null;
  * // q is typed as IQueryable<User> in TS, but emits without a cast in C#.
  * ```
  */
-export declare function asinterface<T>(value: JsValue): T;
+export declare function asinterface<T>(value: unknown): T;
 
 /**
  * Makes a CLR interface type implementable in TypeScript without requiring
@@ -280,21 +280,21 @@ export declare function inref<T>(value: T): T;
  * @example
  * ```ts
  * import { istype } from "@tsonic/core/lang.js";
- * import type { int, JsValue } from "@tsonic/core/types.js";
+ * import type { int } from "@tsonic/core/types.js";
  *
  * // Overload signatures
  * Foo(x: int): int;
  * Foo(x: string): int;
  *
  * // Single implementation (compile-time specialized)
- * Foo(p0: JsValue): int {
+ * Foo(p0: unknown): int {
  *   if (istype<int>(p0)) return p0 + 1;
  *   if (istype<string>(p0)) return p0.length;
  *   throw new Error("unreachable");
  * }
  * ```
  */
-export declare function istype<T extends JsValue>(value: JsValue): value is T;
+export declare function istype<T extends unknown>(value: unknown): value is T;
 
 // ============================================================================
 // Extension Method Intrinsics
@@ -386,7 +386,7 @@ export type Rewrap<TReceiver, TNewShape> =
  */
 
 /** A class constructor type. */
-export type Ctor<T = object, Args extends readonly JsValue[] = readonly JsValue[]> = new (
+export type Ctor<T = object, Args extends readonly unknown[] = readonly unknown[]> = new (
   ...args: Args
 ) => T;
 
