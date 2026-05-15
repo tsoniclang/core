@@ -64,7 +64,7 @@ export type ptr<T> = {
 // Explicit branded support type - not callable as a normal JS function.
 declare const __tsonicFnPtrBrand: unique symbol;
 export type fnptr<
-  Args extends readonly JsValue[],
+  Args extends readonly unknown[],
   Result,
   CallingConventions extends readonly string[] = readonly []
 > = {

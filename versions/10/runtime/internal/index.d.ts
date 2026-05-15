@@ -3,7 +3,7 @@
 // Assembly: Tsonic.Runtime
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -14,7 +14,7 @@ import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/ind
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Action_2, Action_3, Boolean as ClrBoolean, Double, Func_2, Func_3, Func_4, Func_5, IEquatable_1, Int32, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueTuple_2, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IteratorResult_1$instance<T> {
+export interface IteratorResult_1$instance<T extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_IteratorResult_1: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -24,7 +24,7 @@ export interface IteratorResult_1$instance<T> {
     readonly value: T;
     Value: T;
     Deconstruct(Value: T, Done: boolean): void;
-    Equals(obj: JsValue): boolean;
+    Equals(obj: unknown): boolean;
     Equals(other: IteratorResult_1<T>): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -32,50 +32,50 @@ export interface IteratorResult_1$instance<T> {
 
 
 export const IteratorResult_1: {
-    new<T>(Value: T, Done: boolean): IteratorResult_1<T>;
+    new<T extends unknown>(Value: T, Done: boolean): IteratorResult_1<T>;
 };
 
 
-export type IteratorResult_1<T> = IteratorResult_1$instance<T>;
+export type IteratorResult_1<T extends unknown> = IteratorResult_1$instance<T>;
 
-export interface DictionaryAdapter_1$instance<T> {
+export interface DictionaryAdapter_1$instance<T extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_DictionaryAdapter_1: never;
 
     readonly Keys: IEnumerable_1<System_Internal.String>;
     readonly Values: IEnumerable_1<T | null>;
     ContainsKey(key: string): boolean;
-    GetDictionary(): Dictionary_2<System_Internal.String, JsValue | null>;
+    GetDictionary(): Dictionary_2<System_Internal.String, unknown | null>;
 }
 
 
 export const DictionaryAdapter_1: {
-    new<T>(dictionary: Dictionary_2<System_Internal.String, JsValue | null>): DictionaryAdapter_1<T>;
+    new<T extends unknown>(dictionary: Dictionary_2<System_Internal.String, unknown | null>): DictionaryAdapter_1<T>;
 };
 
 
-export type DictionaryAdapter_1<T> = DictionaryAdapter_1$instance<T> & { [key: string]: T | null; };
+export type DictionaryAdapter_1<T extends unknown> = DictionaryAdapter_1$instance<T> & { [key: string]: T | null; };
 
 export interface DynamicObject$instance {
     readonly __tsonic_type_Tsonic_Runtime_DynamicObject: never;
 
     GetKeys(): string[];
-    GetProperty<T>(key: string): T | null;
-    GetValues(): (JsValue | null)[];
+    GetProperty<T extends unknown>(key: string): T | null;
+    GetValues(): (unknown | null)[];
     HasProperty(key: string): boolean;
-    SetProperty(key: string, value: JsValue | null): void;
-    ToDictionary(): Dictionary_2<System_Internal.String, JsValue | null>;
+    SetProperty(key: string, value: unknown | null): void;
+    ToDictionary(): Dictionary_2<System_Internal.String, unknown | null>;
 }
 
 
 export const DynamicObject: {
     new(): DynamicObject;
-    FromDictionary(properties: Dictionary_2<System_Internal.String, JsValue | null>): DynamicObject;
+    FromDictionary(properties: Dictionary_2<System_Internal.String, unknown | null>): DynamicObject;
 };
 
 
-export type DynamicObject = DynamicObject$instance & { [key: string]: JsValue | null; };
+export type DynamicObject = DynamicObject$instance & { [key: string]: unknown | null; };
 
-export interface JSArray_1$instance<T> {
+export interface JSArray_1$instance<T extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_JSArray_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -83,7 +83,7 @@ export interface JSArray_1$instance<T> {
 
     readonly length: int;
     at(index: int): T;
-    concat(...items: JsValue[]): JSArray_1<T>;
+    concat(...items: unknown[]): JSArray_1<T>;
     copyWithin(target: int, start?: int, end?: Nullable_1<System_Internal.Int32>): JSArray_1<T>;
     entries(): IEnumerable_1<ValueTuple_2<System_Internal.Int32, T>>;
     every(callback: Func_2<T, System_Internal.Boolean>): boolean;
@@ -104,8 +104,8 @@ export interface JSArray_1$instance<T> {
     findLastIndex(callback: Func_2<T, System_Internal.Boolean>): int;
     findLastIndex(callback: Func_3<T, System_Internal.Int32, System_Internal.Boolean>): int;
     findLastIndex(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, System_Internal.Boolean>): int;
-    flat(depth?: int): JSArray_1<JsValue>;
-    flatMap<TResult>(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, JsValue>): JSArray_1<TResult>;
+    flat(depth?: int): JSArray_1<unknown>;
+    flatMap<TResult extends unknown>(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, unknown>): JSArray_1<TResult>;
     forEach(callback: Action_1<T>): void;
     forEach(callback: Action_2<T, System_Internal.Int32>): void;
     forEach(callback: Action_3<T, System_Internal.Int32, JSArray_1<T>>): void;
@@ -115,19 +115,19 @@ export interface JSArray_1$instance<T> {
     join(separator?: string): string;
     keys(): IEnumerable_1<System_Internal.Int32>;
     lastIndexOf(searchElement: T, fromIndex?: Nullable_1<System_Internal.Int32>): int;
-    map<TResult>(callback: Func_2<T, TResult>): JSArray_1<TResult>;
-    map<TResult>(callback: Func_3<T, System_Internal.Int32, TResult>): JSArray_1<TResult>;
-    map<TResult>(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, TResult>): JSArray_1<TResult>;
+    map<TResult extends unknown>(callback: Func_2<T, TResult>): JSArray_1<TResult>;
+    map<TResult extends unknown>(callback: Func_3<T, System_Internal.Int32, TResult>): JSArray_1<TResult>;
+    map<TResult extends unknown>(callback: Func_4<T, System_Internal.Int32, JSArray_1<T>, TResult>): JSArray_1<TResult>;
     pop(): T;
     push(item: T): int;
     push(...items: T[]): int;
-    reduce<TResult>(callback: Func_3<TResult, T, TResult>, initialValue: TResult): TResult;
-    reduce<TResult>(callback: Func_4<TResult, T, System_Internal.Int32, TResult>, initialValue: TResult): TResult;
-    reduce<TResult>(callback: Func_5<TResult, T, System_Internal.Int32, JSArray_1<T>, TResult>, initialValue: TResult): TResult;
+    reduce<TResult extends unknown>(callback: Func_3<TResult, T, TResult>, initialValue: TResult): TResult;
+    reduce<TResult extends unknown>(callback: Func_4<TResult, T, System_Internal.Int32, TResult>, initialValue: TResult): TResult;
+    reduce<TResult extends unknown>(callback: Func_5<TResult, T, System_Internal.Int32, JSArray_1<T>, TResult>, initialValue: TResult): TResult;
     reduce(callback: Func_3<T, T, T>): T;
-    reduceRight<TResult>(callback: Func_3<TResult, T, TResult>, initialValue: TResult): TResult;
-    reduceRight<TResult>(callback: Func_4<TResult, T, System_Internal.Int32, TResult>, initialValue: TResult): TResult;
-    reduceRight<TResult>(callback: Func_5<TResult, T, System_Internal.Int32, JSArray_1<T>, TResult>, initialValue: TResult): TResult;
+    reduceRight<TResult extends unknown>(callback: Func_3<TResult, T, TResult>, initialValue: TResult): TResult;
+    reduceRight<TResult extends unknown>(callback: Func_4<TResult, T, System_Internal.Int32, TResult>, initialValue: TResult): TResult;
+    reduceRight<TResult extends unknown>(callback: Func_5<TResult, T, System_Internal.Int32, JSArray_1<T>, TResult>, initialValue: TResult): TResult;
     reverse(): JSArray_1<T>;
     setLength(newLength: int): void;
     shift(): T;
@@ -151,31 +151,31 @@ export interface JSArray_1$instance<T> {
 
 
 export const JSArray_1: {
-    new<T>(): JSArray_1<T>;
-    new<T>(capacity: int): JSArray_1<T>;
-    new<T>(source: T[]): JSArray_1<T>;
-    new<T>(source: List_1<T>): JSArray_1<T>;
-    new<T>(source: IEnumerable_1<T>): JSArray_1<T>;
-    from<T, TSource, TResult>(iterable: IEnumerable_1<TSource>, mapFunc: Func_2<TSource, TResult>): JSArray_1<TResult>;
-    from<T, TSource, TResult>(iterable: IEnumerable_1<TSource>, mapFunc: Func_3<TSource, System_Internal.Int32, TResult>): JSArray_1<TResult>;
-    from<T>(iterable: IEnumerable_1<T>): JSArray_1<T>;
-    isArray<T>(value: JsValue | null): boolean;
-    of<T>(...items: T[]): JSArray_1<T>;
+    new<T extends unknown>(): JSArray_1<T>;
+    new<T extends unknown>(capacity: int): JSArray_1<T>;
+    new<T extends unknown>(source: T[]): JSArray_1<T>;
+    new<T extends unknown>(source: List_1<T>): JSArray_1<T>;
+    new<T extends unknown>(source: IEnumerable_1<T>): JSArray_1<T>;
+    from<T extends unknown, TSource extends unknown, TResult extends unknown>(iterable: IEnumerable_1<TSource>, mapFunc: Func_2<TSource, TResult>): JSArray_1<TResult>;
+    from<T extends unknown, TSource extends unknown, TResult extends unknown>(iterable: IEnumerable_1<TSource>, mapFunc: Func_3<TSource, System_Internal.Int32, TResult>): JSArray_1<TResult>;
+    from<T extends unknown>(iterable: IEnumerable_1<T>): JSArray_1<T>;
+    isArray<T extends unknown>(value: unknown | null): boolean;
+    of<T extends unknown>(...items: T[]): JSArray_1<T>;
 };
 
 
-export type JSArray_1<T> = JSArray_1$instance<T> & { [index: number]: T; };
+export type JSArray_1<T extends unknown> = JSArray_1$instance<T> & { [index: number]: T; };
 
-export interface Union_2$instance<T1, T2> {
+export interface Union_2$instance<T1 extends unknown, T2 extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_Union_2: never;
 
     As1(): T1;
     As2(): T2;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
-    Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>): TResult;
+    Match<TResult extends unknown>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>): void;
     ToString(): string | null;
     TryAs1(value: T1 | null): boolean;
@@ -184,25 +184,25 @@ export interface Union_2$instance<T1, T2> {
 
 
 export const Union_2: {
-    From1<T1, T2>(value: T1): Union_2<T1, T2>;
-    From2<T1, T2>(value: T2): Union_2<T1, T2>;
+    From1<T1 extends unknown, T2 extends unknown>(value: T1): Union_2<T1, T2>;
+    From2<T1 extends unknown, T2 extends unknown>(value: T2): Union_2<T1, T2>;
 };
 
 
-export type Union_2<T1, T2> = Union_2$instance<T1, T2>;
+export type Union_2<T1 extends unknown, T2 extends unknown> = Union_2$instance<T1, T2>;
 
-export interface Union_3$instance<T1, T2, T3> {
+export interface Union_3$instance<T1 extends unknown, T2 extends unknown, T3 extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_Union_3: never;
 
     As1(): T1;
     As2(): T2;
     As3(): T3;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
     Is3(): boolean;
-    Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>): TResult;
+    Match<TResult extends unknown>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>): void;
     ToString(): string | null;
     TryAs1(value: T1 | null): boolean;
@@ -212,28 +212,28 @@ export interface Union_3$instance<T1, T2, T3> {
 
 
 export const Union_3: {
-    From1<T1, T2, T3>(value: T1): Union_3<T1, T2, T3>;
-    From2<T1, T2, T3>(value: T2): Union_3<T1, T2, T3>;
-    From3<T1, T2, T3>(value: T3): Union_3<T1, T2, T3>;
+    From1<T1 extends unknown, T2 extends unknown, T3 extends unknown>(value: T1): Union_3<T1, T2, T3>;
+    From2<T1 extends unknown, T2 extends unknown, T3 extends unknown>(value: T2): Union_3<T1, T2, T3>;
+    From3<T1 extends unknown, T2 extends unknown, T3 extends unknown>(value: T3): Union_3<T1, T2, T3>;
 };
 
 
-export type Union_3<T1, T2, T3> = Union_3$instance<T1, T2, T3>;
+export type Union_3<T1 extends unknown, T2 extends unknown, T3 extends unknown> = Union_3$instance<T1, T2, T3>;
 
-export interface Union_4$instance<T1, T2, T3, T4> {
+export interface Union_4$instance<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_Union_4: never;
 
     As1(): T1;
     As2(): T2;
     As3(): T3;
     As4(): T4;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
     Is3(): boolean;
     Is4(): boolean;
-    Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>): TResult;
+    Match<TResult extends unknown>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>): void;
     ToString(): string | null;
     TryAs1(value: T1 | null): boolean;
@@ -244,16 +244,16 @@ export interface Union_4$instance<T1, T2, T3, T4> {
 
 
 export const Union_4: {
-    From1<T1, T2, T3, T4>(value: T1): Union_4<T1, T2, T3, T4>;
-    From2<T1, T2, T3, T4>(value: T2): Union_4<T1, T2, T3, T4>;
-    From3<T1, T2, T3, T4>(value: T3): Union_4<T1, T2, T3, T4>;
-    From4<T1, T2, T3, T4>(value: T4): Union_4<T1, T2, T3, T4>;
+    From1<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown>(value: T1): Union_4<T1, T2, T3, T4>;
+    From2<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown>(value: T2): Union_4<T1, T2, T3, T4>;
+    From3<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown>(value: T3): Union_4<T1, T2, T3, T4>;
+    From4<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown>(value: T4): Union_4<T1, T2, T3, T4>;
 };
 
 
-export type Union_4<T1, T2, T3, T4> = Union_4$instance<T1, T2, T3, T4>;
+export type Union_4<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown> = Union_4$instance<T1, T2, T3, T4>;
 
-export interface Union_5$instance<T1, T2, T3, T4, T5> {
+export interface Union_5$instance<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_Union_5: never;
 
     As1(): T1;
@@ -261,14 +261,14 @@ export interface Union_5$instance<T1, T2, T3, T4, T5> {
     As3(): T3;
     As4(): T4;
     As5(): T5;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
     Is3(): boolean;
     Is4(): boolean;
     Is5(): boolean;
-    Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>): TResult;
+    Match<TResult extends unknown>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>, onT5: Action_1<T5>): void;
     ToString(): string | null;
     TryAs1(value: T1 | null): boolean;
@@ -280,17 +280,17 @@ export interface Union_5$instance<T1, T2, T3, T4, T5> {
 
 
 export const Union_5: {
-    From1<T1, T2, T3, T4, T5>(value: T1): Union_5<T1, T2, T3, T4, T5>;
-    From2<T1, T2, T3, T4, T5>(value: T2): Union_5<T1, T2, T3, T4, T5>;
-    From3<T1, T2, T3, T4, T5>(value: T3): Union_5<T1, T2, T3, T4, T5>;
-    From4<T1, T2, T3, T4, T5>(value: T4): Union_5<T1, T2, T3, T4, T5>;
-    From5<T1, T2, T3, T4, T5>(value: T5): Union_5<T1, T2, T3, T4, T5>;
+    From1<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown>(value: T1): Union_5<T1, T2, T3, T4, T5>;
+    From2<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown>(value: T2): Union_5<T1, T2, T3, T4, T5>;
+    From3<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown>(value: T3): Union_5<T1, T2, T3, T4, T5>;
+    From4<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown>(value: T4): Union_5<T1, T2, T3, T4, T5>;
+    From5<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown>(value: T5): Union_5<T1, T2, T3, T4, T5>;
 };
 
 
-export type Union_5<T1, T2, T3, T4, T5> = Union_5$instance<T1, T2, T3, T4, T5>;
+export type Union_5<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown> = Union_5$instance<T1, T2, T3, T4, T5>;
 
-export interface Union_6$instance<T1, T2, T3, T4, T5, T6> {
+export interface Union_6$instance<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_Union_6: never;
 
     As1(): T1;
@@ -299,7 +299,7 @@ export interface Union_6$instance<T1, T2, T3, T4, T5, T6> {
     As4(): T4;
     As5(): T5;
     As6(): T6;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
@@ -307,7 +307,7 @@ export interface Union_6$instance<T1, T2, T3, T4, T5, T6> {
     Is4(): boolean;
     Is5(): boolean;
     Is6(): boolean;
-    Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>, onT6: Func_2<T6, TResult>): TResult;
+    Match<TResult extends unknown>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>, onT6: Func_2<T6, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>, onT5: Action_1<T5>, onT6: Action_1<T6>): void;
     ToString(): string | null;
     TryAs1(value: T1 | null): boolean;
@@ -320,18 +320,18 @@ export interface Union_6$instance<T1, T2, T3, T4, T5, T6> {
 
 
 export const Union_6: {
-    From1<T1, T2, T3, T4, T5, T6>(value: T1): Union_6<T1, T2, T3, T4, T5, T6>;
-    From2<T1, T2, T3, T4, T5, T6>(value: T2): Union_6<T1, T2, T3, T4, T5, T6>;
-    From3<T1, T2, T3, T4, T5, T6>(value: T3): Union_6<T1, T2, T3, T4, T5, T6>;
-    From4<T1, T2, T3, T4, T5, T6>(value: T4): Union_6<T1, T2, T3, T4, T5, T6>;
-    From5<T1, T2, T3, T4, T5, T6>(value: T5): Union_6<T1, T2, T3, T4, T5, T6>;
-    From6<T1, T2, T3, T4, T5, T6>(value: T6): Union_6<T1, T2, T3, T4, T5, T6>;
+    From1<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown>(value: T1): Union_6<T1, T2, T3, T4, T5, T6>;
+    From2<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown>(value: T2): Union_6<T1, T2, T3, T4, T5, T6>;
+    From3<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown>(value: T3): Union_6<T1, T2, T3, T4, T5, T6>;
+    From4<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown>(value: T4): Union_6<T1, T2, T3, T4, T5, T6>;
+    From5<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown>(value: T5): Union_6<T1, T2, T3, T4, T5, T6>;
+    From6<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown>(value: T6): Union_6<T1, T2, T3, T4, T5, T6>;
 };
 
 
-export type Union_6<T1, T2, T3, T4, T5, T6> = Union_6$instance<T1, T2, T3, T4, T5, T6>;
+export type Union_6<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown> = Union_6$instance<T1, T2, T3, T4, T5, T6>;
 
-export interface Union_7$instance<T1, T2, T3, T4, T5, T6, T7> {
+export interface Union_7$instance<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_Union_7: never;
 
     As1(): T1;
@@ -341,7 +341,7 @@ export interface Union_7$instance<T1, T2, T3, T4, T5, T6, T7> {
     As5(): T5;
     As6(): T6;
     As7(): T7;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
@@ -350,7 +350,7 @@ export interface Union_7$instance<T1, T2, T3, T4, T5, T6, T7> {
     Is5(): boolean;
     Is6(): boolean;
     Is7(): boolean;
-    Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>, onT6: Func_2<T6, TResult>, onT7: Func_2<T7, TResult>): TResult;
+    Match<TResult extends unknown>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>, onT6: Func_2<T6, TResult>, onT7: Func_2<T7, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>, onT5: Action_1<T5>, onT6: Action_1<T6>, onT7: Action_1<T7>): void;
     ToString(): string | null;
     TryAs1(value: T1 | null): boolean;
@@ -364,19 +364,19 @@ export interface Union_7$instance<T1, T2, T3, T4, T5, T6, T7> {
 
 
 export const Union_7: {
-    From1<T1, T2, T3, T4, T5, T6, T7>(value: T1): Union_7<T1, T2, T3, T4, T5, T6, T7>;
-    From2<T1, T2, T3, T4, T5, T6, T7>(value: T2): Union_7<T1, T2, T3, T4, T5, T6, T7>;
-    From3<T1, T2, T3, T4, T5, T6, T7>(value: T3): Union_7<T1, T2, T3, T4, T5, T6, T7>;
-    From4<T1, T2, T3, T4, T5, T6, T7>(value: T4): Union_7<T1, T2, T3, T4, T5, T6, T7>;
-    From5<T1, T2, T3, T4, T5, T6, T7>(value: T5): Union_7<T1, T2, T3, T4, T5, T6, T7>;
-    From6<T1, T2, T3, T4, T5, T6, T7>(value: T6): Union_7<T1, T2, T3, T4, T5, T6, T7>;
-    From7<T1, T2, T3, T4, T5, T6, T7>(value: T7): Union_7<T1, T2, T3, T4, T5, T6, T7>;
+    From1<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown>(value: T1): Union_7<T1, T2, T3, T4, T5, T6, T7>;
+    From2<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown>(value: T2): Union_7<T1, T2, T3, T4, T5, T6, T7>;
+    From3<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown>(value: T3): Union_7<T1, T2, T3, T4, T5, T6, T7>;
+    From4<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown>(value: T4): Union_7<T1, T2, T3, T4, T5, T6, T7>;
+    From5<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown>(value: T5): Union_7<T1, T2, T3, T4, T5, T6, T7>;
+    From6<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown>(value: T6): Union_7<T1, T2, T3, T4, T5, T6, T7>;
+    From7<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown>(value: T7): Union_7<T1, T2, T3, T4, T5, T6, T7>;
 };
 
 
-export type Union_7<T1, T2, T3, T4, T5, T6, T7> = Union_7$instance<T1, T2, T3, T4, T5, T6, T7>;
+export type Union_7<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown> = Union_7$instance<T1, T2, T3, T4, T5, T6, T7>;
 
-export interface Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8> {
+export interface Union_8$instance<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown> {
     readonly __tsonic_type_Tsonic_Runtime_Union_8: never;
 
     As1(): T1;
@@ -387,7 +387,7 @@ export interface Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8> {
     As6(): T6;
     As7(): T7;
     As8(): T8;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Is1(): boolean;
     Is2(): boolean;
@@ -397,7 +397,7 @@ export interface Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8> {
     Is6(): boolean;
     Is7(): boolean;
     Is8(): boolean;
-    Match<TResult>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>, onT6: Func_2<T6, TResult>, onT7: Func_2<T7, TResult>, onT8: Func_2<T8, TResult>): TResult;
+    Match<TResult extends unknown>(onT1: Func_2<T1, TResult>, onT2: Func_2<T2, TResult>, onT3: Func_2<T3, TResult>, onT4: Func_2<T4, TResult>, onT5: Func_2<T5, TResult>, onT6: Func_2<T6, TResult>, onT7: Func_2<T7, TResult>, onT8: Func_2<T8, TResult>): TResult;
     Match(onT1: Action_1<T1>, onT2: Action_1<T2>, onT3: Action_1<T3>, onT4: Action_1<T4>, onT5: Action_1<T5>, onT6: Action_1<T6>, onT7: Action_1<T7>, onT8: Action_1<T8>): void;
     ToString(): string | null;
     TryAs1(value: T1 | null): boolean;
@@ -412,72 +412,78 @@ export interface Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8> {
 
 
 export const Union_8: {
-    From1<T1, T2, T3, T4, T5, T6, T7, T8>(value: T1): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
-    From2<T1, T2, T3, T4, T5, T6, T7, T8>(value: T2): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
-    From3<T1, T2, T3, T4, T5, T6, T7, T8>(value: T3): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
-    From4<T1, T2, T3, T4, T5, T6, T7, T8>(value: T4): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
-    From5<T1, T2, T3, T4, T5, T6, T7, T8>(value: T5): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
-    From6<T1, T2, T3, T4, T5, T6, T7, T8>(value: T6): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
-    From7<T1, T2, T3, T4, T5, T6, T7, T8>(value: T7): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
-    From8<T1, T2, T3, T4, T5, T6, T7, T8>(value: T8): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
+    From1<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(value: T1): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
+    From2<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(value: T2): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
+    From3<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(value: T3): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
+    From4<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(value: T4): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
+    From5<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(value: T5): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
+    From6<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(value: T6): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
+    From7<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(value: T7): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
+    From8<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown>(value: T8): Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
 };
 
 
-export type Union_8<T1, T2, T3, T4, T5, T6, T7, T8> = Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8>;
+export type Union_8<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown> = Union_8$instance<T1, T2, T3, T4, T5, T6, T7, T8>;
 
 export abstract class ArrayHelpers$instance {
-    static Slice<T>(source: IEnumerable_1<T>, startIndex: int): T[];
-    static Slice<T>(source: IList_1<T>, startIndex: int): T[];
-    static Slice<T>(source: T[], startIndex: int): T[];
+    static Slice<T extends unknown>(source: IEnumerable_1<T>, startIndex: int): T[];
+    static Slice<T extends unknown>(source: IList_1<T>, startIndex: int): T[];
+    static Slice<T extends unknown>(source: T[], startIndex: int): T[];
 }
 
 
 export type ArrayHelpers = ArrayHelpers$instance;
 
 export abstract class JSArrayStatics$instance {
-    static from<TSource, TResult>(iterable: IEnumerable_1<TSource>, mapFunc: Func_2<TSource, TResult>): TResult[];
-    static from<TSource, TResult>(iterable: IEnumerable_1<TSource>, mapFunc: Func_3<TSource, System_Internal.Int32, TResult>): TResult[];
-    static from<T>(iterable: IEnumerable_1<T>): T[];
-    static from<TResult>(source: string, mapFunc: Func_2<System_Internal.String, TResult>): TResult[];
-    static from<TResult>(source: string, mapFunc: Func_3<System_Internal.String, System_Internal.Int32, TResult>): TResult[];
+    static from<TSource extends unknown, TResult extends unknown>(iterable: IEnumerable_1<TSource>, mapFunc: Func_2<TSource, TResult>): TResult[];
+    static from<TSource extends unknown, TResult extends unknown>(iterable: IEnumerable_1<TSource>, mapFunc: Func_3<TSource, System_Internal.Int32, TResult>): TResult[];
+    static from<T extends unknown>(iterable: IEnumerable_1<T>): T[];
+    static from<TResult extends unknown>(source: string, mapFunc: Func_2<System_Internal.String, TResult>): TResult[];
+    static from<TResult extends unknown>(source: string, mapFunc: Func_3<System_Internal.String, System_Internal.Int32, TResult>): TResult[];
     static from(source: string): string[];
-    static isArray(value: JsValue | null): boolean;
-    static of<T>(...items: T[]): T[];
+    static isArray(value: unknown | null): boolean;
+    static of<T extends unknown>(...items: T[]): T[];
 }
 
 
 export type JSArrayStatics = JSArrayStatics$instance;
 
 export abstract class JSON$instance {
-    static parse<T>(text: string): T;
-    static stringify(value: JsValue | null): string;
+    static parse<T extends unknown>(text: string): T;
+    static stringify(value: unknown | null): string;
 }
 
 
 export type JSON = JSON$instance;
 
 export abstract class JsValue$instance {
-    static Stringify(value: JsValue | null): string;
+    static Stringify(value: unknown | null): string;
 }
 
 
 export type JsValue = JsValue$instance;
 
 export abstract class Operators$instance {
-    static instanceof(obj: JsValue | null, type: Type): boolean;
-    static typeof(value: JsValue | null): string;
+    static instanceof(obj: unknown | null, type: Type): boolean;
+    static typeof(value: unknown | null): string;
 }
 
 
 export type Operators = Operators$instance;
 
 export abstract class Structural$instance {
-    static Clone<T>(source: JsValue | null): T | null;
-    static CloneFromDictionary<T>(source: Dictionary_2<System_Internal.String, JsValue | null>): T | null;
-    static CreateDictionaryAdapter<T>(source: Dictionary_2<System_Internal.String, JsValue | null>): DictionaryAdapter_1<T>;
-    static ToDictionary(source: JsValue | null): Dictionary_2<System_Internal.String, JsValue | null>;
+    static Clone<T extends unknown>(source: unknown | null): T | null;
+    static CloneFromDictionary<T extends unknown>(source: Dictionary_2<System_Internal.String, unknown | null>): T | null;
+    static CreateDictionaryAdapter<T extends unknown>(source: Dictionary_2<System_Internal.String, unknown | null>): DictionaryAdapter_1<T>;
+    static ToDictionary(source: unknown | null): Dictionary_2<System_Internal.String, unknown | null>;
 }
 
 
 export type Structural = Structural$instance;
 
+export abstract class Symbol$instance {
+    static Create(description?: unknown | null): unknown;
+}
+
+
+export type Symbol = Symbol$instance;

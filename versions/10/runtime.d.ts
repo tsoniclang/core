@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './runtime/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { Dictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, List } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
@@ -21,6 +25,7 @@ export { JsValue$instance as JsValue } from './runtime/internal/index.js';
 export { Operators$instance as Operators } from './runtime/internal/index.js';
 export { Structural$instance as Structural } from './runtime/internal/index.js';
 export { DictionaryAdapter_1 as DictionaryAdapter } from './runtime/internal/index.js';
+export { Symbol$instance as Symbol } from './runtime/internal/index.js';
 
 // Multi-arity family value exports (arity-0 constructors/static namespaces)
 
@@ -29,20 +34,19 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type Union<
-  T1 = __,
-  T2 = __,
-  T3 = __,
-  T4 = __,
-  T5 = __,
-  T6 = __,
-  T7 = __,
-  T8 = __,
+  T1 extends unknown | __ = __,
+  T2 extends unknown | __ = __,
+  T3 extends unknown | __ = __,
+  T4 extends unknown | __ = __,
+  T5 extends unknown | __ = __,
+  T6 extends unknown | __ = __,
+  T7 extends unknown | __ = __,
+  T8 extends unknown | __ = __,
 > =
-  [T3] extends [__] ? Internal.Union_2<T1, T2> :
-  [T4] extends [__] ? Internal.Union_3<T1, T2, T3> :
-  [T5] extends [__] ? Internal.Union_4<T1, T2, T3, T4> :
-  [T6] extends [__] ? Internal.Union_5<T1, T2, T3, T4, T5> :
-  [T7] extends [__] ? Internal.Union_6<T1, T2, T3, T4, T5, T6> :
-  [T8] extends [__] ? Internal.Union_7<T1, T2, T3, T4, T5, T6, T7> :
-  Internal.Union_8<T1, T2, T3, T4, T5, T6, T7, T8>;
-
+  [T3] extends [__] ? [T1] extends [unknown] ? [T2] extends [unknown] ? Internal.Union_2<T1, T2> : never : never :
+  [T4] extends [__] ? [T1] extends [unknown] ? [T2] extends [unknown] ? [T3] extends [unknown] ? Internal.Union_3<T1, T2, T3> : never : never : never :
+  [T5] extends [__] ? [T1] extends [unknown] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? Internal.Union_4<T1, T2, T3, T4> : never : never : never : never :
+  [T6] extends [__] ? [T1] extends [unknown] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? [T5] extends [unknown] ? Internal.Union_5<T1, T2, T3, T4, T5> : never : never : never : never : never :
+  [T7] extends [__] ? [T1] extends [unknown] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? [T5] extends [unknown] ? [T6] extends [unknown] ? Internal.Union_6<T1, T2, T3, T4, T5, T6> : never : never : never : never : never : never :
+  [T8] extends [__] ? [T1] extends [unknown] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? [T5] extends [unknown] ? [T6] extends [unknown] ? [T7] extends [unknown] ? Internal.Union_7<T1, T2, T3, T4, T5, T6, T7> : never : never : never : never : never : never : never :
+  [T1] extends [unknown] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? [T5] extends [unknown] ? [T6] extends [unknown] ? [T7] extends [unknown] ? [T8] extends [unknown] ? Internal.Union_8<T1, T2, T3, T4, T5, T6, T7, T8> : never : never : never : never : never : never : never : never;
