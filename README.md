@@ -50,6 +50,19 @@ void bytes;
 ### `@tsonic/core/runtime.js`
 
 Runtime-facing helpers used by generated code and first-party source packages.
+This module includes compiler-recognized runtime declarations such as
+`Union`, `DynamicObject`, `DictionaryAdapter`, `Structural`, and `JSON`.
+
+## Broad values
+
+Use concrete domain types at API boundaries whenever possible. When an API
+needs a deliberately broad value, use TypeScript `unknown` and narrow it before
+member access.
+
+`JsValue` exists in `@tsonic/core/types.js` for first-party runtime declaration
+surfaces that model JavaScript carriers. It is not the general-purpose CLR
+object type. Generated CLR binding packages use `unknown` for `System.Object`
+and `NonNullable<unknown>` for value-type constraints.
 
 ## Primitive aliases
 
