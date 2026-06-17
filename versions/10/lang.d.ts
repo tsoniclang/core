@@ -1,10 +1,11 @@
 /**
  * @tsonic/core - Language Intrinsics
  *
- * TypeScript declarations for C# language-level intrinsics.
- * These compile to C# keywords and special syntax.
+ * TypeScript declarations for Tsonic source-level marker APIs.
+ * These are compile-time markers consumed by TSTS extensions and target
+ * capability validation.
  *
- * All intrinsics are lowercase to match C# keyword style.
+ * Intrinsic names are lowercase source markers.
  *
  * @example
  * ```typescript
@@ -29,7 +30,7 @@ import { int } from "./types.js";
  * Allocates memory on the stack.
  *
  * TypeScript: `stackalloc<int>(100)`
- * C#: `stackalloc int[100]`
+ * Target lowering: stack allocation of 100 int values
  *
  * Returns a Span<T> pointing to stack-allocated memory.
  * The memory is automatically freed when the scope exits.
@@ -43,8 +44,8 @@ import { int } from "./types.js";
  * buffer[0] = 42;
  * ```
  *
- * In C#, this emits:
- * ```csharp
+ * Target lowering example:
+ * ```text
  * Span<int> buffer = stackalloc int[256];
  * buffer[0] = 42;
  * ```
@@ -59,7 +60,7 @@ export declare function stackalloc<T>(size: int): Span<T>;
  * Returns the size in bytes of a type.
  *
  * TypeScript: `sizeof<int>()`
- * C#: `sizeof(int)`
+ * Target lowering: target size-of operation for int
  *
  * Only valid for unmanaged types (primitives, structs with no reference fields).
  *
@@ -72,8 +73,8 @@ export declare function stackalloc<T>(size: int): Span<T>;
  * const longSize: int = sizeof<long>();   // 8
  * ```
  *
- * In C#, this emits:
- * ```csharp
+ * Target lowering example:
+ * ```text
  * int intSize = sizeof(int);   // 4
  * int longSize = sizeof(long); // 8
  * ```
@@ -84,7 +85,7 @@ export declare function sizeof<T>(): int;
  * Returns the default value for a type.
  *
  * TypeScript: `defaultof<int>()`
- * C#: `default(int)`
+ * Target lowering: target default value operation for int
  *
  * For value types, returns the zero value.
  * For reference types, returns null.
@@ -99,8 +100,8 @@ export declare function sizeof<T>(): int;
  * const nullRef = defaultof<Person>();        // null
  * ```
  *
- * In C#, this emits:
- * ```csharp
+ * Target lowering example:
+ * ```text
  * int zero = default(int);         // 0
  * bool falseBool = default(bool);  // false
  * Person? nullRef = default;       // null
@@ -116,7 +117,7 @@ export declare function defaultof<T>(): T;
  * Returns the name of a symbol as a string.
  *
  * TypeScript: `nameof(myVariable)`
- * C#: `nameof(myVariable)`
+ * Target lowering: target symbol-name operation
  *
  * Useful for refactoring-safe string literals.
  *
@@ -128,8 +129,8 @@ export declare function defaultof<T>(): T;
  * const prop = nameof(person.name); // "name"
  * ```
  *
- * In C#, this emits:
- * ```csharp
+ * Target lowering example:
+ * ```text
  * string name = nameof(myVariable);  // "myVariable"
  * string prop = nameof(person.name); // "name"
  * ```
@@ -144,9 +145,9 @@ export declare function nameof(expression: unknown): string;
  * Safe cast - returns T or null if cast fails.
  *
  * TypeScript: `trycast<Person>(obj)`
- * C#: `obj as Person`
+ * Target lowering: target safe-cast operation
  *
- * Unlike `x as T` type assertion which throws on failure (C# `(T)x`),
+ * Unlike an explicit assertion/cast that may throw on failure,
  * this returns null if the cast is not valid.
  *
  * @example
@@ -159,8 +160,8 @@ export declare function nameof(expression: unknown): string;
  * }
  * ```
  *
- * In C#, this emits:
- * ```csharp
+ * Target lowering example:
+ * ```text
  * Person? person = unknownObj as Person;
  * if (person != null) {
  *   Console.WriteLine(person.name);
@@ -172,24 +173,24 @@ export declare function trycast<T>(value: unknown): T | null;
 /**
  * Compile-time-only interface view.
  *
- * This is NOT a runtime cast. The compiler must erase this call before emitting C#.
+ * This is NOT a runtime cast. The compiler must erase this call before target emission.
  *
- * Primary use: treat a value as a CLR interface/nominal type for TypeScript type checking,
- * without introducing runtime casts in emitted C# (important for EF Core precompilation).
+ * Primary use: treat a value as a target interface/nominal type for TypeScript type checking,
+ * without introducing runtime casts in emitted target code.
  *
  * @example
  * ```ts
  * import { asinterface } from "@tsonic/core/lang.js";
- * import type { IQueryable } from "@tsonic/dotnet/System.Linq.js";
+ * interface Queryable<T> { readonly items: readonly T[]; }
  *
- * const q = asinterface<IQueryable<User>>(db.Users);
- * // q is typed as IQueryable<User> in TS, but emits without a cast in C#.
+ * const q = asinterface<Queryable<User>>(source);
+ * // q is typed as Queryable<User> in TS, but emits without a runtime cast.
  * ```
  */
 export declare function asinterface<T>(value: unknown): T;
 
 /**
- * Makes a CLR interface type implementable in TypeScript without requiring
+ * Makes a target interface type implementable in TypeScript without requiring
  * internal `__tsonic_iface_*` nominal brand fields.
  *
  * Use ONLY in `implements` clauses.
@@ -197,11 +198,11 @@ export declare function asinterface<T>(value: unknown): T;
  * @example
  * ```ts
  * import type { Interface } from "@tsonic/core/lang.js";
- * import type { IDesignTimeDbContextFactory } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js";
+ * interface Factory<T> { create(): T; }
  *
- * export class MyFactory implements Interface<IDesignTimeDbContextFactory<MyDbContext>> {
- *   CreateDbContext(_args: string[]): MyDbContext {
- *     return new MyDbContext();
+ * export class MyFactory implements Interface<Factory<MyContext>> {
+ *   create(): MyContext {
+ *     return new MyContext();
  *   }
  * }
  * ```
@@ -213,8 +214,8 @@ export type Interface<T> = {
 /**
  * Compile-time-only field marker.
  *
- * By default, Tsonic emits TypeScript class properties as C# auto-properties.
- * Use `field<T>` to force emission as a C# field instead.
+ * By default, target backends choose the idiomatic member representation for TypeScript class properties.
+ * Use `field<T>` to request field lowering instead.
  *
  * This is a type-level marker only and is erased for typing (`field<T> = T`).
  *
@@ -228,7 +229,7 @@ export type Interface<T> = {
  * ```
  *
  * Emits:
- * ```csharp
+ * ```text
  * class User
  * {
  *     private string email = "";
@@ -241,7 +242,7 @@ export type field<T> = T;
  * Parameter passing modifiers (call-site markers).
  *
  * These are compile-time-only intrinsics. The compiler must erase them and emit
- * the corresponding C# argument modifiers: `out`, `ref`, `in`.
+ * the corresponding target argument-passing mode: `out`, `ref`, or `in`.
  *
  * These are *not* runtime functions.
  *
@@ -272,9 +273,9 @@ export declare function inref<T>(value: T): T;
 /**
  * Compile-time-only type selection marker.
  *
- * This is NOT a runtime type test. The compiler must erase this call before emitting C#.
+ * This is NOT a runtime type test. The compiler must erase this call before target emission.
  *
- * Primary use: specialize a single TypeScript overload implementation into one CLR method
+ * Primary use: specialize a single TypeScript overload implementation into one target method
  * per signature (e.g., overriding a protected virtual overload family).
  *
  * @example
@@ -301,20 +302,20 @@ export declare function istype<T extends unknown>(value: unknown): value is T;
 // ============================================================================
 
 /**
- * Marks the receiver parameter of a C# extension method.
+ * Marks the receiver parameter of a target extension method.
  *
  * Use as a wrapper for the FIRST parameter type of a static function.
- * The compiler emits `this` on that parameter.
+ * The compiler emits the target receiver marker on that parameter.
  *
  * @example
  * ```typescript
  * import type { thisarg } from "@tsonic/core/lang.js";
- * import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
+ * interface Sequence<T> { readonly length: number; }
  *
  * export function where<TSource>(
- *   source: thisarg<IEnumerable<TSource>>,
+ *   source: thisarg<Sequence<TSource>>,
  *   predicate: (x: TSource) => boolean
- * ): IEnumerable<TSource> {
+ * ): Sequence<TSource> {
  *   throw new Error("not implemented");
  * }
  * ```
@@ -355,7 +356,7 @@ type __TsonicExtCarrier<TReceiver> =
  * Rewrap a return shape with the extension scopes that were in scope on the receiver.
  *
  * This is used by generated `ExtensionMethods_*` typings so fluent chains keep the same
- * extension namespaces "sticky" (similar to C# `using` semantics).
+ * extension namespaces "sticky" across fluent calls.
  *
  * This is compile-time-only. There is no runtime behavior.
  */
@@ -397,7 +398,7 @@ export type AnyCtor<T = object> = new (...args: never[]) => T;
 export type AttributeCtor = AnyCtor<object>;
 
 /**
- * C# attribute target specifiers (the `target:` prefix in `[target: Attr]`).
+ * Target attribute specifiers.
  *
  * @example
  * ```ts
@@ -413,8 +414,8 @@ export type AttributeCtor = AnyCtor<object>;
  *   .add(MarshalAsAttribute, UnmanagedType.Bool);
  * ```
  *
- * Emits C#:
- * ```csharp
+ * Target lowering example:
+ * ```text
  * [return: MarshalAs(UnmanagedType.Bool)]
  * public bool foo() { ... }
  * ```
@@ -446,7 +447,7 @@ export type AttributeTarget = AttributeTargets[keyof AttributeTargets];
  *
  * TypeScript's built-in ConstructorParameters<C> collapses overloads to the
  * last signature, which makes attribute ctor typing unusably strict for many
- * .NET attributes.
+ * target attribute APIs.
  */
 export type OverloadedConstructorParameters<C extends AttributeCtor> =
   C extends {
@@ -552,7 +553,7 @@ export interface AttributeTargetBuilder<
   TAllowedTargets extends AttributeTarget = AttributeTarget,
 > {
   /**
-   * Add a C# attribute target specifier.
+   * Add a target attribute specifier.
    *
    * @example
    * ```ts
@@ -562,8 +563,8 @@ export interface AttributeTargetBuilder<
    *   .add(NonSerializedAttribute);
    * ```
    *
-   * Emits C#:
-   * ```csharp
+   * Target lowering example:
+   * ```text
    * [field: NonSerialized]
    * public string name { get; set; }
    * ```
@@ -601,8 +602,8 @@ export interface AttributeTargetBuilder<
  *   A<Config>().add(ObsoleteAttribute, "Will be removed in v2");
  *
  * Emits:
- *   [System.SerializableAttribute]
- *   [System.ObsoleteAttribute("Will be removed in v2")]
+ *   [SerializableAttribute]
+ *   [ObsoleteAttribute("Will be removed in v2")]
  */
 export interface AttributesApi {
   /**
@@ -636,7 +637,7 @@ export declare const attributes: AttributesApi;
  * Overload-family marker API.
  *
  * Use real TS overload declarations for the public stub surface, then bind
- * emitted CLR bodies from distinct real implementations.
+ * emitted target bodies from distinct real implementations.
  *
  * Examples:
  *   O<Parser>().method(x => x.parse_string).family(x => x.Parse);

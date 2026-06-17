@@ -1,6 +1,6 @@
 # Agent Notes (core)
 
-This repo publishes `@tsonic/core` from `versions/<dotnetMajor>/`.
+This repo publishes `@tsonic/core` from `versions/<major>/`.
 
 ## Branch Hygiene (IMPORTANT)
 

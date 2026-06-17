@@ -3,7 +3,7 @@
 Core language-facing declarations and intrinsics for Tsonic.
 
 `@tsonic/core` is not an ambient surface by itself. It provides the shared
-modules that source packages and CLR binding packages use for primitive intent,
+modules that source packages and binding packages use for primitive intent,
 language intrinsics, and compiler-recognized runtime helpers.
 
 ## Install
@@ -16,7 +16,7 @@ npm install @tsonic/core
 
 ### `@tsonic/core/types.js`
 
-CLR primitive intent aliases:
+Source primitive intent aliases:
 
 ```typescript
 import type { int, long, double, bool, char } from "@tsonic/core/types.js";
@@ -47,12 +47,6 @@ void name;
 void bytes;
 ```
 
-### `@tsonic/core/runtime.js`
-
-Runtime-facing helpers used by generated code and first-party source packages.
-This module includes compiler-recognized runtime declarations such as
-`Union`, `DynamicObject`, `DictionaryAdapter`, `Structural`, and `JSON`.
-
 ## Broad values
 
 Use concrete domain types at API boundaries whenever possible. When an API
@@ -60,53 +54,53 @@ needs a deliberately broad value, use TypeScript `unknown` and narrow it before
 member access.
 
 `JsValue` exists in `@tsonic/core/types.js` for first-party runtime declaration
-surfaces that model JavaScript carriers. It is not the general-purpose CLR
-object type. Generated CLR binding packages use `unknown` for `System.Object`
-and `NonNullable<unknown>` for value-type constraints.
+surfaces that model JavaScript carriers. It is not a general-purpose host object
+type. Binding packages use `unknown` for broad host values unless a closed source
+type is known.
 
 ## Primitive aliases
 
 ### Signed Integer Types
-- `sbyte` - System.SByte (-128 to 127)
-- `short` - System.Int16 (-32,768 to 32,767)
-- `int` - System.Int32 (-2,147,483,648 to 2,147,483,647)
-- `long` - System.Int64
-- `nint` - System.IntPtr (native int)
-- `int128` - System.Int128
+- `sbyte` - signed 8-bit integer (-128 to 127)
+- `short` - signed 16-bit integer (-32,768 to 32,767)
+- `int` - signed 32-bit integer (-2,147,483,648 to 2,147,483,647)
+- `long` - signed 64-bit integer
+- `nint` - native signed integer
+- `int128` - signed 128-bit integer
 
 ### Unsigned Integer Types
-- `byte` - System.Byte (0 to 255)
-- `ushort` - System.UInt16 (0 to 65,535)
-- `uint` - System.UInt32 (0 to 4,294,967,295)
-- `ulong` - System.UInt64
-- `nuint` - System.UIntPtr (native uint)
-- `uint128` - System.UInt128
+- `byte` - unsigned 8-bit integer (0 to 255)
+- `ushort` - unsigned 16-bit integer (0 to 65,535)
+- `uint` - unsigned 32-bit integer (0 to 4,294,967,295)
+- `ulong` - unsigned 64-bit integer
+- `nuint` - native unsigned integer
+- `uint128` - unsigned 128-bit integer
 
 ### Floating-Point Types
-- `half` - System.Half (16-bit float)
-- `float` - System.Single (32-bit float)
-- `double` - System.Double (64-bit float)
-- `decimal` - System.Decimal (128-bit decimal)
+- `half` - 16-bit floating-point number
+- `float` - 32-bit floating-point number
+- `double` - 64-bit floating-point number
+- `decimal` - fixed-precision decimal number
 
 ### Other Types
-- `bool` - System.Boolean
-- `char` - System.Char (single UTF-16 code unit)
-- `ptr<T>` - C# unsafe pointer types
+- `bool` - boolean value
+- `char` - single UTF-16 code unit
+- `ptr<T>` - target-supported unsafe pointer types
 
 ## TypeScript versus Tsonic
 
 The TypeScript checker sees most numeric aliases as `number`. Tsonic carries the
-semantic primitive identity through its own compiler pipeline and enforces the
-CLR-facing rules during compilation.
+semantic primitive identity through its compiler pipeline and enforces the
+active target's rules during compilation.
 
 Use these aliases to express intent at source level; do not expect plain
-TypeScript to enforce every CLR primitive distinction by itself.
+TypeScript to enforce every primitive distinction by itself.
 
 ## Versioning
 
-This repo is versioned by .NET major:
+This repo is versioned by source contract major:
 
-- .NET 10 declarations live under `versions/10/`.
+- Version 10 declarations live under `versions/10/`.
 - The npm package is published as `@tsonic/core@10.x`.
 
 ## Development

@@ -1,9 +1,0 @@
-{
-  "Tsonic.Runtime.Union": {
-    "stem": "Union",
-    "namespace": "Tsonic.Runtime",
-    "minArity": 2,
-    "maxArity": 8,
-    "isDelegate": false
-  }
-}

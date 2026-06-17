@@ -1,7 +1,7 @@
 /**
  * @tsonic/core - Type Definitions
  *
- * TypeScript type aliases for CLR/.NET runtime primitives.
+ * TypeScript type aliases for Tsonic source primitive intent.
  *
  * IMPORTANT: These are simple type aliases with NO runtime enforcement.
  * TypeScript treats all numeric types as `number`, bool as `boolean`, etc.
@@ -25,41 +25,41 @@ export type JsPrimitive = string | number | boolean | bigint | symbol;
 export type JsValue = object | JsPrimitive | null;
 
 // Signed integer types
-export type sbyte = number; // System.SByte (-128 to 127)
-export type short = number; // System.Int16 (-32,768 to 32,767)
-export type int = number; // System.Int32 (-2,147,483,648 to 2,147,483,647)
-export type long = number; // System.Int64 (approx -9.2e18 to 9.2e18)
-export type nint = number; // System.IntPtr (native int)
-export type int128 = number; // System.Int128 (128-bit signed)
+export type sbyte = number; // signed 8-bit integer (-128 to 127)
+export type short = number; // signed 16-bit integer (-32,768 to 32,767)
+export type int = number; // signed 32-bit integer (-2,147,483,648 to 2,147,483,647)
+export type long = number; // signed 64-bit integer intent
+export type nint = number; // native signed integer intent
+export type int128 = number; // signed 128-bit integer intent
 
 // Unsigned integer types
-export type byte = number; // System.Byte (0 to 255)
-export type ushort = number; // System.UInt16 (0 to 65,535)
-export type uint = number; // System.UInt32 (0 to 4,294,967,295)
-export type ulong = number; // System.UInt64 (approx 0 to 1.8e19)
-export type nuint = number; // System.UIntPtr (native uint)
-export type uint128 = number; // System.UInt128 (128-bit unsigned)
+export type byte = number; // unsigned 8-bit integer (0 to 255)
+export type ushort = number; // unsigned 16-bit integer (0 to 65,535)
+export type uint = number; // unsigned 32-bit integer (0 to 4,294,967,295)
+export type ulong = number; // unsigned 64-bit integer intent
+export type nuint = number; // native unsigned integer intent
+export type uint128 = number; // unsigned 128-bit integer intent
 
 // Floating-point types
-export type half = number; // System.Half (16-bit float)
-export type float = number; // System.Single (32-bit float)
-export type double = number; // System.Double (64-bit float)
-export type decimal = number; // System.Decimal (128-bit decimal)
+export type half = number; // 16-bit floating-point intent
+export type float = number; // 32-bit floating-point intent
+export type double = number; // 64-bit floating-point intent
+export type decimal = number; // fixed-precision decimal intent
 
 // Other primitive types
-export type bool = boolean; // System.Boolean
-export type char = string; // System.Char (single UTF-16 code unit)
+export type bool = boolean; // boolean intent
+export type char = string; // single UTF-16 code-unit intent
 // Tsonic enforces char must be length-1 literal or proven conversion
 
 // Pointer type
-// Represents C# unsafe pointer types (T*, void*, int*, etc.)
+// Represents target-supported unsafe pointer types.
 // Explicit branded support type - requires explicit handling
 declare const __tsonicPtrBrand: unique symbol;
 export type ptr<T> = {
   readonly [__tsonicPtrBrand]: T;
 };
 
-// CLR function pointer type
+// Target function pointer type
 // Represents delegate* signatures and signature-only runtime callbacks.
 // Explicit branded support type - not callable as a normal JS function.
 declare const __tsonicFnPtrBrand: unique symbol;
@@ -129,16 +129,16 @@ export type inref<T> = T;
 // ============================================================================
 
 /**
- * Marker interface for C# struct types.
+ * Marker interface for source value types.
  *
- * Types that extend `struct` will be emitted as C# structs instead of classes.
+ * Types that extend `struct` request value-type lowering on targets that support it.
  * This enables value semantics and stack allocation in the generated code.
  *
  * @example
  * ```typescript
  * import { struct } from "@tsonic/core/types.js";
  *
- * // This becomes a C# struct
+ * // This requests target value-type lowering
  * export interface Point extends struct {
  *   x: number;
  *   y: number;
@@ -150,8 +150,8 @@ export type inref<T> = T;
  * }
  * ```
  *
- * In C#, this emits:
- * ```csharp
+ * Target lowering example:
+ * ```text
  * public struct Point {
  *   public double x { get; set; }
  *   public double y { get; set; }
