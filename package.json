@@ -1,10 +1,10 @@
 {
   "name": "@tsonic/core-repo",
   "private": true,
-  "description": "Repo for @tsonic/core (versioned by .NET major in versions/<major>/)",
+  "description": "Repo for @tsonic/core portable source contracts",
   "type": "module",
   "scripts": {
-    "generate:10": "./__build/scripts/generate.sh 10",
+    "generate:10": "echo '@tsonic/core is source-authored; no generation step'",
     "publish:10": "npm publish ./versions/10 --access public"
   }
 }
