@@ -1,6 +1,6 @@
 # Agent Notes (core)
 
-This repo publishes `@tsonic/core` from `versions/<major>/`.
+This repo publishes `@tsonic/core` from the repository root.
 
 ## Branch Hygiene (IMPORTANT)
 
@@ -14,10 +14,10 @@ This repo publishes `@tsonic/core` from `versions/<major>/`.
 
 - **Do not publish from feature/release branches.** Always publish from `main`.
 - If you need to regenerate:
-  1) Run generation (e.g. `npm run generate:10`)
+  1) Run generation (e.g. `npm run generate`)
   2) Commit the regenerated output
   3) Merge to `main` (PR if required)
-  4) Publish (e.g. `npm run publish:10`)
+  4) Publish (e.g. `npm run publish:npm`)
 - If npm already has a version that `main` does not reflect:
   - First bump `main` to the next patch and publish from `main`.
   - Avoid publishing from non-main branches.

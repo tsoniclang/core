@@ -1,10 +1,36 @@
 {
-  "name": "@tsonic/core-repo",
-  "private": true,
-  "description": "Repo for @tsonic/core portable source contracts",
+  "name": "@tsonic/core",
+  "version": "10.0.46",
+  "description": "Target-neutral core source contracts for Tsonic",
   "type": "module",
   "scripts": {
-    "generate:10": "echo '@tsonic/core is source-authored; no generation step'",
-    "publish:10": "npm publish ./versions/10 --access public"
+    "generate": "echo '@tsonic/core is source-authored; no generation step'",
+    "publish:npm": "npm publish --access public"
+  },
+  "keywords": [
+    "typescript",
+    "primitives",
+    "source-surface",
+    "tsonic"
+  ],
+  "author": "Tsonic Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsoniclang/core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tsoniclang/core/issues"
+  },
+  "homepage": "https://github.com/tsoniclang/core#readme",
+  "exports": {
+    "./types.js": {
+      "types": "./types.js.d.ts",
+      "default": "./types.js"
+    },
+    "./lang.js": {
+      "types": "./lang.js.d.ts",
+      "default": "./lang.js"
+    }
   }
 }
