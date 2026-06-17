@@ -96,18 +96,11 @@ active target's rules during compilation.
 Use these aliases to express intent at source level; do not expect plain
 TypeScript to enforce every primitive distinction by itself.
 
-## Versioning
-
-This repo is versioned by source contract major:
-
-- Version 10 declarations live under `versions/10/`.
-- The npm package is published as `@tsonic/core@10.x`.
-
 ## Development
 
 ```bash
 npm install
-npm run generate:10
+npm run generate
 ```
 
 ## License
